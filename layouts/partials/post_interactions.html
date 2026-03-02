@@ -1,0 +1,149 @@
+{{- if and (eq .Kind "page") (in .RelPermalink "/posts/") }}
+<section class="post-interactions" id="post-interactions" data-post-key="{{ .RelPermalink }}">
+  <div class="post-like">
+    <button type="button" class="post-like-button" id="post-like-button">👍 Like</button>
+    <span class="post-like-count" id="post-like-count">0</span>
+  </div>
+
+  <div class="post-comments">
+    <h2>Comments</h2>
+    <form id="post-comment-form" class="post-comment-form">
+      <label class="post-comment-label" for="post-comment-input">Add a comment</label>
+      <textarea id="post-comment-input" rows="3" maxlength="500" required></textarea>
+      <div class="post-comment-actions">
+        <span id="post-replying-to" class="post-replying-to" hidden></span>
+        <button type="submit">Post</button>
+      </div>
+    </form>
+    <div id="post-comments-list" class="post-comments-list"></div>
+  </div>
+</section>
+
+<script>
+  (() => {
+    const root = document.getElementById("post-interactions");
+    if (!root) return;
+
+    const postKey = root.dataset.postKey || window.location.pathname;
+    const likesKey = `post-likes:${postKey}`;
+    const commentsKey = `post-comments:${postKey}`;
+
+    const likeButton = document.getElementById("post-like-button");
+    const likeCount = document.getElementById("post-like-count");
+    const form = document.getElementById("post-comment-form");
+    const input = document.getElementById("post-comment-input");
+    const replyingTo = document.getElementById("post-replying-to");
+    const commentsList = document.getElementById("post-comments-list");
+
+    let likes = Number.parseInt(localStorage.getItem(likesKey) || "0", 10);
+    if (!Number.isFinite(likes) || likes < 0) likes = 0;
+
+    const escapeHtml = (value) =>
+      value
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+
+    const safeText = (value) => (typeof value === "string" ? value.trim().slice(0, 500) : "");
+
+    const rawComments = (() => {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(commentsKey) || "[]");
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    })();
+
+    let comments = rawComments
+      .map((item) => ({
+        id: String(item.id || ""),
+        parentId: item.parentId ? String(item.parentId) : null,
+        text: safeText(item.text),
+        createdAt: item.createdAt || "",
+      }))
+      .filter((item) => item.id && item.text);
+
+    const topLevelIds = new Set(comments.filter((item) => !item.parentId).map((item) => item.id));
+    comments = comments.map((item) => ({
+      ...item,
+      parentId: item.parentId && topLevelIds.has(item.parentId) ? item.parentId : null,
+    }));
+
+    let replyTargetId = null;
+
+    const saveComments = () => localStorage.setItem(commentsKey, JSON.stringify(comments));
+
+    const setReplyTarget = (commentId) => {
+      replyTargetId = commentId || null;
+      if (!replyTargetId) {
+        replyingTo.hidden = true;
+        replyingTo.textContent = "";
+        return;
+      }
+      replyingTo.hidden = false;
+      replyingTo.textContent = "Replying";
+    };
+
+    const commentHtml = (comment, isReply = false) => `
+      <div class="post-comment ${isReply ? "is-reply" : ""}" data-comment-id="${escapeHtml(comment.id)}">
+        <p>${escapeHtml(comment.text)}</p>
+        ${isReply ? "" : `<button type="button" class="post-reply-button" data-reply-id="${escapeHtml(comment.id)}">Reply</button>`}
+      </div>
+    `;
+
+    const renderComments = () => {
+      if (!comments.length) {
+        commentsList.innerHTML = "<p class=\"post-comments-empty\">No comments yet.</p>";
+        return;
+      }
+
+      const topLevel = comments.filter((comment) => !comment.parentId);
+      commentsList.innerHTML = topLevel
+        .map((comment) => {
+          const replies = comments.filter((reply) => reply.parentId === comment.id);
+          return `
+            <div class="post-comment-thread">
+              ${commentHtml(comment)}
+              ${replies.length ? `<div class="post-replies">${replies.map((reply) => commentHtml(reply, true)).join("")}</div>` : ""}
+            </div>
+          `;
+        })
+        .join("");
+
+      commentsList.querySelectorAll(".post-reply-button").forEach((button) => {
+        button.addEventListener("click", () => setReplyTarget(button.dataset.replyId));
+      });
+    };
+
+    likeCount.textContent = String(likes);
+    likeButton.addEventListener("click", () => {
+      likes += 1;
+      localStorage.setItem(likesKey, String(likes));
+      likeCount.textContent = String(likes);
+    });
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const text = safeText(input.value);
+      if (!text) return;
+
+      comments.push({
+        id: `${Date.now()}-${Math.random().toString(16).slice(2, 8)}`,
+        parentId: replyTargetId,
+        text,
+        createdAt: new Date().toISOString(),
+      });
+
+      saveComments();
+      input.value = "";
+      setReplyTarget(null);
+      renderComments();
+    });
+
+    renderComments();
+  })();
+</script>
+{{- end }}
