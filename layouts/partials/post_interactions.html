@@ -26,7 +26,9 @@
 
     const postKey = root.dataset.postKey || window.location.pathname;
     const likesKey = `post-likes:${postKey}`;
+    const likedKey = `post-liked:${postKey}`;
     const commentsKey = `post-comments:${postKey}`;
+    const commentSeqKey = `post-comment-seq:${postKey}`;
 
     const likeButton = document.getElementById("post-like-button");
     const likeCount = document.getElementById("post-like-count");
@@ -36,7 +38,9 @@
     const commentsList = document.getElementById("post-comments-list");
 
     let likes = Number.parseInt(localStorage.getItem(likesKey) || "0", 10);
+    let hasLiked = localStorage.getItem(likedKey) === "true";
     if (!Number.isFinite(likes) || likes < 0) likes = 0;
+    const REPLY_PREVIEW_LENGTH = 60;
 
     const escapeHtml = (value) =>
       value
@@ -75,8 +79,13 @@
     let replyTargetId = null;
 
     const saveComments = () => localStorage.setItem(commentsKey, JSON.stringify(comments));
+    const nextFallbackCommentId = () => {
+      const seq = Number.parseInt(localStorage.getItem(commentSeqKey) || "0", 10) + 1;
+      localStorage.setItem(commentSeqKey, String(seq));
+      return `${Date.now()}-${seq}`;
+    };
 
-    const setReplyTarget = (commentId) => {
+    const setReplyTarget = (commentId, previewText = "") => {
       replyTargetId = commentId || null;
       if (!replyTargetId) {
         replyingTo.hidden = true;
@@ -84,13 +93,14 @@
         return;
       }
       replyingTo.hidden = false;
-      replyingTo.textContent = "Replying";
+      const preview = previewText.length > REPLY_PREVIEW_LENGTH ? `${previewText.slice(0, REPLY_PREVIEW_LENGTH)}...` : previewText;
+      replyingTo.textContent = `Replying to: ${preview}`;
     };
 
     const commentHtml = (comment, isReply = false) => `
       <div class="post-comment ${isReply ? "is-reply" : ""}" data-comment-id="${escapeHtml(comment.id)}">
         <p>${escapeHtml(comment.text)}</p>
-        ${isReply ? "" : `<button type="button" class="post-reply-button" data-reply-id="${escapeHtml(comment.id)}">Reply</button>`}
+        ${isReply ? "" : `<button type="button" class="post-reply-button" data-reply-id="${escapeHtml(comment.id)}" data-reply-text="${escapeHtml(comment.text)}">Reply</button>`}
       </div>
     `;
 
@@ -114,15 +124,24 @@
         .join("");
 
       commentsList.querySelectorAll(".post-reply-button").forEach((button) => {
-        button.addEventListener("click", () => setReplyTarget(button.dataset.replyId));
+        button.addEventListener("click", () => setReplyTarget(button.dataset.replyId, button.dataset.replyText || ""));
       });
     };
 
     likeCount.textContent = String(likes);
+    if (hasLiked) {
+      likeButton.disabled = true;
+      likeButton.textContent = "👍 Liked";
+    }
     likeButton.addEventListener("click", () => {
+      if (hasLiked) return;
       likes += 1;
+      hasLiked = true;
       localStorage.setItem(likesKey, String(likes));
+      localStorage.setItem(likedKey, "true");
       likeCount.textContent = String(likes);
+      likeButton.disabled = true;
+      likeButton.textContent = "👍 Liked";
     });
 
     form.addEventListener("submit", (event) => {
@@ -131,7 +150,7 @@
       if (!text) return;
 
       comments.push({
-        id: `${Date.now()}-${Math.random().toString(16).slice(2, 8)}`,
+        id: window.crypto?.randomUUID?.() || nextFallbackCommentId(),
         parentId: replyTargetId,
         text,
         createdAt: new Date().toISOString(),

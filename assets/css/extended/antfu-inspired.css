@@ -262,7 +262,7 @@ body.list {
 .post-comment-actions button,
 .post-reply-button {
   border: 1px solid var(--border);
-  background: #fff;
+  background: var(--entry);
   color: var(--primary);
   border-radius: 8px;
   padding: 0.35rem 0.75rem;
@@ -283,7 +283,7 @@ body.list {
   border-radius: 8px;
   padding: 0.65rem;
   resize: vertical;
-  background: #fff;
+  background: var(--entry);
 }
 
 .post-comment-actions {
@@ -304,7 +304,7 @@ body.list {
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 0.7rem 0.8rem;
-  background: #fff;
+  background: var(--entry);
 }
 
 .post-comment p {
@@ -320,7 +320,7 @@ body.list {
 }
 
 .post-comment.is-reply {
-  background: #faf9f7;
+  background: var(--theme);
 }
 
 /* footer */
