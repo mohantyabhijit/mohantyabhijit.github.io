@@ -1,5 +1,5 @@
-{{- if and (eq .Kind "page") (in .RelPermalink "/posts/") }}
-<section class="post-interactions" id="post-interactions" data-post-key="{{ .RelPermalink }}">
+{{- if eq .Kind "page" }}
+<section class="post-interactions" id="post-interactions">
   <div class="post-like">
     <button type="button" class="post-like-button" id="post-like-button">👍 Like</button>
     <span class="post-like-count" id="post-like-count">0</span>
@@ -24,7 +24,12 @@
     const root = document.getElementById("post-interactions");
     if (!root) return;
 
-    const postKey = root.dataset.postKey || window.location.pathname;
+    if (!window.location.pathname.includes("/posts/")) {
+      root.hidden = true;
+      return;
+    }
+
+    const postKey = window.location.pathname;
     const likesKey = `post-likes:${postKey}`;
     const likedKey = `post-liked:${postKey}`;
     const commentsKey = `post-comments:${postKey}`;
