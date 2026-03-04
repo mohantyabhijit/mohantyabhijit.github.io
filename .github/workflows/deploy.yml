@@ -72,6 +72,16 @@ jobs:
       - name: Build site for production
         run: hugo --minify --baseURL "https://abhijitmohanty.com/"
 
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.23"
+
+      - name: Build API server
+        run: |
+          cd server
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o blog-api .
+
       - name: Setup SSH key
         run: |
           mkdir -p ~/.ssh
@@ -83,15 +93,20 @@ jobs:
         run: |
           TS=$(date +%Y%m%d%H%M%S)
           REMOTE_RELEASE="/srv/blog/releases/$TS"
+          SSH="ssh -p ${{ secrets.DO_PORT }} ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}"
+          SCP="scp -P ${{ secrets.DO_PORT }}"
 
-          ssh -p "${{ secrets.DO_PORT }}" "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}" \
-            "mkdir -p $REMOTE_RELEASE /srv/blog/releases"
+          $SSH "mkdir -p $REMOTE_RELEASE /srv/blog/releases /srv/blog/data"
 
           rsync -az --delete \
             -e "ssh -p ${{ secrets.DO_PORT }}" \
             public/ "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:$REMOTE_RELEASE/"
 
-          ssh -p "${{ secrets.DO_PORT }}" "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}" \
-            "ln -sfn $REMOTE_RELEASE /srv/blog/current && ls -1dt /srv/blog/releases/* | tail -n +8 | xargs -r rm -rf"
+          $SCP server/blog-api "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/srv/blog/blog-api.new"
+          $SSH "chmod +x /srv/blog/blog-api.new && mv /srv/blog/blog-api.new /srv/blog/blog-api"
+
+          $SSH "ln -sfn $REMOTE_RELEASE /srv/blog/current && ls -1dt /srv/blog/releases/* | tail -n +8 | xargs -r rm -rf"
+
+          $SSH "sudo systemctl restart blog-api" || echo "⚠ Could not restart blog-api service (may need initial setup)"
 
           echo "✓ Production deployed to /srv/blog/current"

@@ -25,10 +25,9 @@
     if (!root) return;
 
     const postKey = root.dataset.postKey || window.location.pathname;
-    const likesKey = `post-likes:${postKey}`;
     const likedKey = `post-liked:${postKey}`;
-    const commentsKey = `post-comments:${postKey}`;
-    const commentSeqKey = `post-comment-seq:${postKey}`;
+    const API = "/api/interactions";
+    const REPLY_PREVIEW_LENGTH = 60;
 
     const likeButton = document.getElementById("post-like-button");
     const likeCount = document.getElementById("post-like-count");
@@ -37,10 +36,9 @@
     const replyingTo = document.getElementById("post-replying-to");
     const commentsList = document.getElementById("post-comments-list");
 
-    let likes = Number.parseInt(localStorage.getItem(likesKey) || "0", 10);
     let hasLiked = localStorage.getItem(likedKey) === "true";
-    if (!Number.isFinite(likes) || likes < 0) likes = 0;
-    const REPLY_PREVIEW_LENGTH = 60;
+    let comments = [];
+    let replyTargetId = null;
 
     const escapeHtml = (value) =>
       value
@@ -49,41 +47,6 @@
         .replace(/>/g, "&gt;")
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
-
-    const safeText = (value) => (typeof value === "string" ? value.trim().slice(0, 500) : "");
-
-    const rawComments = (() => {
-      try {
-        const parsed = JSON.parse(localStorage.getItem(commentsKey) || "[]");
-        return Array.isArray(parsed) ? parsed : [];
-      } catch {
-        return [];
-      }
-    })();
-
-    let comments = rawComments
-      .map((item) => ({
-        id: String(item.id || ""),
-        parentId: item.parentId ? String(item.parentId) : null,
-        text: safeText(item.text),
-        createdAt: item.createdAt || "",
-      }))
-      .filter((item) => item.id && item.text);
-
-    const topLevelIds = new Set(comments.filter((item) => !item.parentId).map((item) => item.id));
-    comments = comments.map((item) => ({
-      ...item,
-      parentId: item.parentId && topLevelIds.has(item.parentId) ? item.parentId : null,
-    }));
-
-    let replyTargetId = null;
-
-    const saveComments = () => localStorage.setItem(commentsKey, JSON.stringify(comments));
-    const nextFallbackCommentId = () => {
-      const seq = Number.parseInt(localStorage.getItem(commentSeqKey) || "0", 10) + 1;
-      localStorage.setItem(commentSeqKey, String(seq));
-      return `${Date.now()}-${seq}`;
-    };
 
     const setReplyTarget = (commentId, previewText = "") => {
       replyTargetId = commentId || null;
@@ -110,14 +73,16 @@
         return;
       }
 
-      const topLevel = comments.filter((comment) => !comment.parentId);
+      const topLevel = comments.filter((c) => !c.parentId);
+      const topLevelIds = new Set(topLevel.map((c) => c.id));
+
       commentsList.innerHTML = topLevel
-        .map((comment) => {
-          const replies = comments.filter((reply) => reply.parentId === comment.id);
+        .map((c) => {
+          const replies = comments.filter((r) => r.parentId === c.id);
           return `
             <div class="post-comment-thread">
-              ${commentHtml(comment)}
-              ${replies.length ? `<div class="post-replies">${replies.map((reply) => commentHtml(reply, true)).join("")}</div>` : ""}
+              ${commentHtml(c)}
+              ${replies.length ? `<div class="post-replies">${replies.map((r) => commentHtml(r, true)).join("")}</div>` : ""}
             </div>
           `;
         })
@@ -128,41 +93,80 @@
       });
     };
 
-    likeCount.textContent = String(likes);
+    // Fetch initial data from API
+    fetch(`${API}?post=${encodeURIComponent(postKey)}`)
+      .then((r) => r.json())
+      .then((data) => {
+        likeCount.textContent = String(data.likes || 0);
+        comments = data.comments || [];
+        renderComments();
+      })
+      .catch(() => {
+        commentsList.innerHTML = "<p class=\"post-comments-empty\">Could not load comments.</p>";
+      });
+
     if (hasLiked) {
       likeButton.disabled = true;
       likeButton.textContent = "👍 Liked";
     }
+
     likeButton.addEventListener("click", () => {
       if (hasLiked) return;
-      likes += 1;
-      hasLiked = true;
-      localStorage.setItem(likesKey, String(likes));
-      localStorage.setItem(likedKey, "true");
-      likeCount.textContent = String(likes);
       likeButton.disabled = true;
       likeButton.textContent = "👍 Liked";
+
+      fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ action: "like", post: postKey }),
+      })
+        .then((r) => r.json())
+        .then((data) => {
+          hasLiked = true;
+          localStorage.setItem(likedKey, "true");
+          likeCount.textContent = String(data.likes);
+        })
+        .catch(() => {
+          likeButton.disabled = false;
+          likeButton.textContent = "👍 Like";
+        });
     });
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      const text = safeText(input.value);
+      const text = input.value.trim().slice(0, 500);
       if (!text) return;
 
-      comments.push({
-        id: window.crypto?.randomUUID?.() || nextFallbackCommentId(),
-        parentId: replyTargetId,
-        text,
-        createdAt: new Date().toISOString(),
-      });
+      const submitBtn = form.querySelector("button[type=submit]");
+      submitBtn.disabled = true;
 
-      saveComments();
-      input.value = "";
-      setReplyTarget(null);
-      renderComments();
+      fetch(API, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          action: "comment",
+          post: postKey,
+          text,
+          parentId: replyTargetId || "",
+        }),
+      })
+        .then((r) => {
+          if (!r.ok) throw new Error("Failed");
+          return r.json();
+        })
+        .then((newComment) => {
+          comments.push(newComment);
+          input.value = "";
+          setReplyTarget(null);
+          renderComments();
+        })
+        .catch(() => {
+          alert("Could not post comment. Please try again.");
+        })
+        .finally(() => {
+          submitBtn.disabled = false;
+        });
     });
-
-    renderComments();
   })();
 </script>
 {{- end }}
