@@ -1,0 +1,13 @@
+[Unit]
+Description=Blog Interactions API
+After=network.target
+
+[Service]
+Type=simple
+User=deploy
+ExecStart=/srv/blog/blog-api -addr 127.0.0.1:9090 -db /srv/blog/data/interactions.db
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
