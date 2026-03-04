@@ -165,6 +165,8 @@ func handlePost(w http.ResponseWriter, r *http.Request) {
 	switch req.Action {
 	case "like":
 		handleLike(w, req)
+	case "unlike":
+		handleUnlike(w, req)
 	case "comment":
 		handleComment(w, req)
 	default:
@@ -176,6 +178,20 @@ func handleLike(w http.ResponseWriter, req actionRequest) {
 	_, err := db.Exec(`
 		INSERT INTO likes (post, count) VALUES (?, 1)
 		ON CONFLICT(post) DO UPDATE SET count = count + 1
+	`, req.Post)
+	if err != nil {
+		http.Error(w, `{"error":"internal error"}`, http.StatusInternalServerError)
+		return
+	}
+
+	var count int
+	db.QueryRow("SELECT count FROM likes WHERE post = ?", req.Post).Scan(&count)
+	json.NewEncoder(w).Encode(map[string]int{"likes": count})
+}
+
+func handleUnlike(w http.ResponseWriter, req actionRequest) {
+	_, err := db.Exec(`
+		UPDATE likes SET count = MAX(count - 1, 0) WHERE post = ?
 	`, req.Post)
 	if err != nil {
 		http.Error(w, `{"error":"internal error"}`, http.StatusInternalServerError)

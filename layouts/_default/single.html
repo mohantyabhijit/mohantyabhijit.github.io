@@ -25,6 +25,9 @@
       {{- partial "translation_list.html" . -}}
       {{- partial "edit_post.html" . -}}
       {{- partial "post_canonical.html" . -}}
+      {{- if and (eq .Kind "page") (in .RelPermalink "/posts/") }}
+      <span id="post-header-likes" class="post-header-likes" style="display:none;"></span>
+      {{- end }}
     </div>
     {{- end }}
   </header>

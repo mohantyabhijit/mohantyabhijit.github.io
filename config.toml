@@ -9,8 +9,8 @@ enableRobotsTXT = true
 
 [params]
   description = "Thoughts on software, systems, and building things."
-  defaultTheme = "light"
-  disableThemeToggle = true
+  defaultTheme = "auto"
+  disableThemeToggle = false
   ShowReadingTime = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = false
