@@ -8,10 +8,10 @@
   <div class="post-comments">
     <h2>Comments</h2>
     <form id="post-comment-form" class="post-comment-form">
-      <label class="post-comment-label" for="post-comment-input">Add a comment</label>
+      <label class="post-comment-label" for="post-comment-name">Add a comment</label>
+      <input type="text" id="post-comment-name" class="post-comment-name" placeholder="Name (optional)" maxlength="50">
       <textarea id="post-comment-input" rows="3" maxlength="500" required></textarea>
       <div class="post-comment-actions">
-        <span id="post-replying-to" class="post-replying-to" hidden></span>
         <button type="submit">Post</button>
       </div>
     </form>
@@ -25,20 +25,18 @@
     if (!root) return;
 
     const postKey = root.dataset.postKey || window.location.pathname;
-    const likedKey = `post-liked:${postKey}`;
     const API = "/api/interactions";
-    const REPLY_PREVIEW_LENGTH = 60;
 
     const likeButton = document.getElementById("post-like-button");
     const likeCount = document.getElementById("post-like-count");
     const form = document.getElementById("post-comment-form");
-    const input = document.getElementById("post-comment-input");
-    const replyingTo = document.getElementById("post-replying-to");
+    const nameInput = document.getElementById("post-comment-name");
+    const textInput = document.getElementById("post-comment-input");
     const commentsList = document.getElementById("post-comments-list");
 
+    const likedKey = `post-liked:${postKey}`;
     let hasLiked = localStorage.getItem(likedKey) === "true";
     let comments = [];
-    let replyTargetId = null;
 
     const escapeHtml = (value) =>
       value
@@ -48,24 +46,77 @@
         .replace(/"/g, "&quot;")
         .replace(/'/g, "&#039;");
 
-    const setReplyTarget = (commentId, previewText = "") => {
-      replyTargetId = commentId || null;
-      if (!replyTargetId) {
-        replyingTo.hidden = true;
-        replyingTo.textContent = "";
-        return;
-      }
-      replyingTo.hidden = false;
-      const preview = previewText.length > REPLY_PREVIEW_LENGTH ? `${previewText.slice(0, REPLY_PREVIEW_LENGTH)}...` : previewText;
-      replyingTo.textContent = `Replying to: ${preview}`;
+    const commentHtml = (c, isReply = false) => {
+      const displayName = c.name ? escapeHtml(c.name) : "Anonymous";
+      return `
+        <div class="post-comment ${isReply ? "is-reply" : ""}" data-comment-id="${escapeHtml(c.id)}">
+          <span class="post-comment-author">${displayName}</span>
+          <p>${escapeHtml(c.text)}</p>
+          ${isReply ? "" : `<button type="button" class="post-reply-button" data-reply-id="${escapeHtml(c.id)}">Reply</button>`}
+        </div>
+      `;
     };
 
-    const commentHtml = (comment, isReply = false) => `
-      <div class="post-comment ${isReply ? "is-reply" : ""}" data-comment-id="${escapeHtml(comment.id)}">
-        <p>${escapeHtml(comment.text)}</p>
-        ${isReply ? "" : `<button type="button" class="post-reply-button" data-reply-id="${escapeHtml(comment.id)}" data-reply-text="${escapeHtml(comment.text)}">Reply</button>`}
-      </div>
-    `;
+    const closeInlineReplyForm = () => {
+      const existing = commentsList.querySelector(".post-inline-reply-form");
+      if (existing) existing.remove();
+    };
+
+    const openInlineReplyForm = (parentId, threadEl) => {
+      closeInlineReplyForm();
+
+      const formEl = document.createElement("div");
+      formEl.className = "post-inline-reply-form";
+      formEl.innerHTML = `
+        <input type="text" class="post-comment-name" placeholder="Name (optional)" maxlength="50">
+        <textarea rows="2" maxlength="500" placeholder="Write a reply..." required></textarea>
+        <div class="post-inline-reply-actions">
+          <button type="button" class="post-inline-reply-submit">Post</button>
+          <button type="button" class="post-inline-reply-cancel">Cancel</button>
+        </div>
+      `;
+
+      threadEl.appendChild(formEl);
+
+      const replyNameInput = formEl.querySelector("input");
+      const replyTextarea = formEl.querySelector("textarea");
+      const submitBtn = formEl.querySelector(".post-inline-reply-submit");
+      const cancelBtn = formEl.querySelector(".post-inline-reply-cancel");
+
+      replyTextarea.focus();
+
+      cancelBtn.addEventListener("click", () => formEl.remove());
+
+      submitBtn.addEventListener("click", () => {
+        const text = replyTextarea.value.trim().slice(0, 500);
+        if (!text) return;
+        submitBtn.disabled = true;
+
+        fetch(API, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            action: "comment",
+            post: postKey,
+            text,
+            name: replyNameInput.value.trim().slice(0, 50),
+            parentId: parentId,
+          }),
+        })
+          .then((r) => {
+            if (!r.ok) throw new Error("Failed");
+            return r.json();
+          })
+          .then((newComment) => {
+            comments.push(newComment);
+            renderComments();
+          })
+          .catch(() => {
+            alert("Could not post reply. Please try again.");
+            submitBtn.disabled = false;
+          });
+      });
+    };
 
     const renderComments = () => {
       if (!comments.length) {
@@ -74,7 +125,6 @@
       }
 
       const topLevel = comments.filter((c) => !c.parentId);
-      const topLevelIds = new Set(topLevel.map((c) => c.id));
 
       commentsList.innerHTML = topLevel
         .map((c) => {
@@ -89,11 +139,15 @@
         .join("");
 
       commentsList.querySelectorAll(".post-reply-button").forEach((button) => {
-        button.addEventListener("click", () => setReplyTarget(button.dataset.replyId, button.dataset.replyText || ""));
+        button.addEventListener("click", () => {
+          const parentId = button.dataset.replyId;
+          const threadEl = button.closest(".post-comment-thread");
+          openInlineReplyForm(parentId, threadEl);
+        });
       });
     };
 
-    // Fetch initial data from API
+    // Fetch initial data
     fetch(`${API}?post=${encodeURIComponent(postKey)}`)
       .then((r) => r.json())
       .then((data) => {
@@ -134,7 +188,7 @@
 
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      const text = input.value.trim().slice(0, 500);
+      const text = textInput.value.trim().slice(0, 500);
       if (!text) return;
 
       const submitBtn = form.querySelector("button[type=submit]");
@@ -147,7 +201,7 @@
           action: "comment",
           post: postKey,
           text,
-          parentId: replyTargetId || "",
+          name: nameInput.value.trim().slice(0, 50),
         }),
       })
         .then((r) => {
@@ -156,8 +210,7 @@
         })
         .then((newComment) => {
           comments.push(newComment);
-          input.value = "";
-          setReplyTarget(null);
+          textInput.value = "";
           renderComments();
         })
         .catch(() => {

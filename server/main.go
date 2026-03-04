@@ -51,7 +51,23 @@ func migrate(db *sql.DB) error {
 		);
 		CREATE INDEX IF NOT EXISTS idx_comments_post ON comments(post);
 	`)
-	return err
+	if err != nil {
+		return err
+	}
+
+	// Add name column if it doesn't exist
+	var count int
+	err = db.QueryRow("SELECT COUNT(*) FROM pragma_table_info('comments') WHERE name='name'").Scan(&count)
+	if err != nil {
+		return err
+	}
+	if count == 0 {
+		_, err = db.Exec("ALTER TABLE comments ADD COLUMN name TEXT NOT NULL DEFAULT ''")
+		if err != nil {
+			return err
+		}
+	}
+	return nil
 }
 
 type interactionsResponse struct {
@@ -62,6 +78,7 @@ type interactionsResponse struct {
 type comment struct {
 	ID        string `json:"id"`
 	ParentID  string `json:"parentId,omitempty"`
+	Name      string `json:"name"`
 	Text      string `json:"text"`
 	CreatedAt string `json:"createdAt"`
 }
@@ -70,6 +87,7 @@ type actionRequest struct {
 	Action   string `json:"action"`
 	Post     string `json:"post"`
 	Text     string `json:"text,omitempty"`
+	Name     string `json:"name,omitempty"`
 	ParentID string `json:"parentId,omitempty"`
 }
 
@@ -105,7 +123,7 @@ func handleGet(w http.ResponseWriter, r *http.Request) {
 	}
 
 	rows, err := db.Query(
-		"SELECT id, parent_id, text, created_at FROM comments WHERE post = ? ORDER BY created_at ASC",
+		"SELECT id, parent_id, name, text, created_at FROM comments WHERE post = ? ORDER BY created_at ASC",
 		post,
 	)
 	if err != nil {
@@ -118,7 +136,7 @@ func handleGet(w http.ResponseWriter, r *http.Request) {
 	for rows.Next() {
 		var c comment
 		var parentID sql.NullString
-		if err := rows.Scan(&c.ID, &parentID, &c.Text, &c.CreatedAt); err != nil {
+		if err := rows.Scan(&c.ID, &parentID, &c.Name, &c.Text, &c.CreatedAt); err != nil {
 			continue
 		}
 		if parentID.Valid {
@@ -176,6 +194,11 @@ func handleComment(w http.ResponseWriter, req actionRequest) {
 		return
 	}
 
+	name := strings.TrimSpace(req.Name)
+	if len(name) > 50 {
+		name = name[:50]
+	}
+
 	id := fmt.Sprintf("%d", time.Now().UnixNano())
 
 	var parentID sql.NullString
@@ -191,15 +214,15 @@ func handleComment(w http.ResponseWriter, req actionRequest) {
 
 	now := time.Now().UTC().Format(time.RFC3339)
 	_, err := db.Exec(
-		"INSERT INTO comments (id, post, parent_id, text, created_at) VALUES (?, ?, ?, ?, ?)",
-		id, req.Post, parentID, text, now,
+		"INSERT INTO comments (id, post, parent_id, name, text, created_at) VALUES (?, ?, ?, ?, ?, ?)",
+		id, req.Post, parentID, name, text, now,
 	)
 	if err != nil {
 		http.Error(w, `{"error":"internal error"}`, http.StatusInternalServerError)
 		return
 	}
 
-	c := comment{ID: id, Text: text, CreatedAt: now}
+	c := comment{ID: id, Name: name, Text: text, CreatedAt: now}
 	if parentID.Valid {
 		c.ParentID = parentID.String
 	}
