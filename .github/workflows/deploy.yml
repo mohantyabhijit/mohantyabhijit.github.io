@@ -80,7 +80,7 @@ jobs:
       - name: Build API server
         run: |
           cd server
-          CGO_ENABLED=1 go build -o blog-api .
+          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o blog-api .
 
       - name: Setup SSH key
         run: |
