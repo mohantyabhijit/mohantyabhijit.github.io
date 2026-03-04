@@ -791,6 +791,171 @@ a.job__company:hover {
   color: var(--primary);
 }
 
+/* ============================
+   THEME TOGGLE SWITCH
+   ============================ */
+
+.theme-toggle-li {
+  display: flex;
+  align-items: center;
+  margin-inline-start: 0.5rem;
+}
+
+.switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+button#theme-toggle {
+  position: relative;
+  width: 46px;
+  height: 26px;
+  border-radius: 100px;
+  border: 1px solid var(--border);
+  background: var(--tertiary);
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0;
+  margin: 0;
+  transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+button#theme-toggle svg {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+  margin: 0 3px;
+  color: var(--secondary);
+  transition: color 0.3s ease;
+}
+
+.toggle-thumb {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .toggle-thumb {
+  transform: translateX(20px);
+}
+
+[data-theme="dark"] button#theme-toggle {
+  background: #444;
+  border-color: #555;
+}
+
+[data-theme="dark"] button#theme-toggle svg {
+  color: #aaa;
+}
+
+[data-theme="dark"] .toggle-thumb {
+  background: #1d1e20;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* hide/show sun/moon based on theme */
+[data-theme="dark"] #moon {
+  display: none;
+}
+
+[data-theme="light"] #sun {
+  display: none;
+}
+
+/* ============================
+   DARK MODE OVERRIDES
+   ============================ */
+
+:root[data-theme="dark"] {
+  --theme: #1d1e20;
+  --entry: #25262a;
+  --primary: #ddd;
+  --secondary: #8b8b8b;
+  --tertiary: #333;
+  --content: #b0b0b0;
+  --hljs-bg: #171717;
+  --code-bg: #22222a;
+  --border: #3a3a3a;
+}
+
+[data-theme="dark"] body,
+[data-theme="dark"] body.list {
+  background-color: #1d1e20;
+  background-image: radial-gradient(circle, #333 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+[data-theme="dark"] #menu a {
+  color: #666;
+}
+
+[data-theme="dark"] .profile-copy a {
+  text-decoration-color: #555;
+}
+
+[data-theme="dark"] .post-content blockquote {
+  border-inline-start-color: #444;
+  background: rgba(40, 40, 40, 0.7);
+}
+
+[data-theme="dark"] .post-content a {
+  text-decoration-color: #555;
+}
+
+[data-theme="dark"] .social-icons a {
+  background: #25262a;
+}
+
+[data-theme="dark"] .post-entry:hover {
+  background: rgba(40, 40, 40, 0.6);
+}
+
+[data-theme="dark"] .posts-tabs span {
+  color: #444;
+}
+
+[data-theme="dark"] .resume-dl-btn:hover {
+  background: #2a2a2e;
+}
+
+[data-theme="dark"] .post-meta {
+  color: #777;
+}
+
+[data-theme="dark"] .footer {
+  color: #666;
+}
+
+[data-theme="dark"] .entry-footer {
+  color: #555;
+}
+
+[data-theme="dark"] .reads-title a {
+  text-decoration-color: #555;
+}
+
+/* smooth transition for theme switch */
+body,
+body.list,
+.header,
+.footer,
+.post-entry,
+.social-icons a,
+.post-content blockquote,
+.resume-dl-btn {
+  transition: background-color 0.3s ease, background-image 0.3s ease,
+    color 0.3s ease, border-color 0.3s ease;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   :root {
@@ -872,5 +1037,30 @@ a.job__company:hover {
   .resume-project__header {
     flex-direction: column;
     gap: 0.1rem;
+  }
+
+  .theme-toggle-li {
+    margin-inline-start: 0.3rem;
+  }
+
+  button#theme-toggle {
+    width: 40px;
+    height: 22px;
+  }
+
+  button#theme-toggle svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .toggle-thumb {
+    width: 16px;
+    height: 16px;
+    top: 2px;
+    left: 2px;
+  }
+
+  [data-theme="dark"] .toggle-thumb {
+    transform: translateX(18px);
   }
 }
