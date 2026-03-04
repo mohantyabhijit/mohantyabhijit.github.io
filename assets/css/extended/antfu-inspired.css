@@ -277,6 +277,19 @@ body.list {
   margin-bottom: 0.75rem;
 }
 
+.post-comment-name {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.5rem 0.65rem;
+  background: var(--entry);
+  font-family: inherit;
+  font-size: 0.95rem;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+  box-sizing: border-box;
+}
+
 .post-comment-form textarea {
   width: 100%;
   border: 1px solid var(--border);
@@ -321,6 +334,63 @@ body.list {
 
 .post-comment.is-reply {
   background: var(--theme);
+}
+
+.post-comment-author {
+  display: block;
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--primary);
+  margin-bottom: 0.25rem;
+}
+
+.post-inline-reply-form {
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--theme);
+}
+
+.post-inline-reply-form .post-comment-name {
+  margin-bottom: 0.4rem;
+  font-size: 0.88rem;
+  padding: 0.35rem 0.5rem;
+}
+
+.post-inline-reply-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.45rem 0.5rem;
+  resize: vertical;
+  background: var(--entry);
+  font-family: inherit;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+}
+
+.post-inline-reply-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+}
+
+.post-inline-reply-actions button {
+  border: 1px solid var(--border);
+  background: var(--entry);
+  color: var(--primary);
+  border-radius: 6px;
+  padding: 0.25rem 0.6rem;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.post-inline-reply-cancel {
+  color: var(--secondary) !important;
+  border-color: transparent !important;
+  background: transparent !important;
 }
 
 /* footer */
