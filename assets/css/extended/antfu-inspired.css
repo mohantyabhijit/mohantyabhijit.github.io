@@ -209,6 +209,10 @@ body.list {
   font-size: 0.92rem;
 }
 
+.post-header-likes {
+  margin-left: 0.25rem;
+}
+
 .post-content h2,
 .post-content h3 {
   margin-top: 36px;

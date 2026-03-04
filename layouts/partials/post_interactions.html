@@ -34,6 +34,19 @@
     const textInput = document.getElementById("post-comment-input");
     const commentsList = document.getElementById("post-comments-list");
 
+    const headerLikes = document.getElementById("post-header-likes");
+
+    const updateHeaderLikes = (count) => {
+      if (headerLikes) {
+        if (count > 0) {
+          headerLikes.textContent = `👍 ${count}`;
+          headerLikes.style.display = "";
+        } else {
+          headerLikes.style.display = "none";
+        }
+      }
+    };
+
     const likedKey = `post-liked:${postKey}`;
     let hasLiked = localStorage.getItem(likedKey) === "true";
     let comments = [];
@@ -152,6 +165,7 @@
       .then((r) => r.json())
       .then((data) => {
         likeCount.textContent = String(data.likes || 0);
+        updateHeaderLikes(data.likes || 0);
         comments = data.comments || [];
         renderComments();
       })
@@ -159,30 +173,32 @@
         commentsList.innerHTML = "<p class=\"post-comments-empty\">Could not load comments.</p>";
       });
 
-    if (hasLiked) {
-      likeButton.disabled = true;
-      likeButton.textContent = "👍 Liked";
-    }
+    const updateLikeButton = () => {
+      likeButton.textContent = hasLiked ? "👍 Liked" : "👍 Like";
+    };
+
+    updateLikeButton();
 
     likeButton.addEventListener("click", () => {
-      if (hasLiked) return;
+      const action = hasLiked ? "unlike" : "like";
       likeButton.disabled = true;
-      likeButton.textContent = "👍 Liked";
 
       fetch(API, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ action: "like", post: postKey }),
+        body: JSON.stringify({ action, post: postKey }),
       })
         .then((r) => r.json())
         .then((data) => {
-          hasLiked = true;
-          localStorage.setItem(likedKey, "true");
+          hasLiked = !hasLiked;
+          localStorage.setItem(likedKey, hasLiked ? "true" : "");
           likeCount.textContent = String(data.likes);
+          updateHeaderLikes(data.likes);
+          updateLikeButton();
         })
-        .catch(() => {
+        .catch(() => {})
+        .finally(() => {
           likeButton.disabled = false;
-          likeButton.textContent = "👍 Like";
         });
     });
 
@@ -211,6 +227,7 @@
         .then((newComment) => {
           comments.push(newComment);
           textInput.value = "";
+          nameInput.value = "";
           renderComments();
         })
         .catch(() => {
