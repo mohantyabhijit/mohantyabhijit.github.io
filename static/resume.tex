@@ -1,125 +1,203 @@
-\documentclass[11pt,a4paper]{article}
+%-------------------------
+% Resume in Latex
+% Author : Abhijit Mohanty
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
-\usepackage[margin=0.65in]{geometry}
-\usepackage{enumitem}
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.5in]{geometry}
 \usepackage{titlesec}
-\usepackage{hyperref}
 \usepackage{xcolor}
-\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
 
-% Colors
-\definecolor{linkblue}{HTML}{1a73e8}
 
-% Hyperlinks
-\hypersetup{colorlinks=true,urlcolor=linkblue,linkcolor=linkblue}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-% Section formatting
-\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
-\titlespacing*{\section}{0pt}{10pt}{6pt}
+% Margins handled by geometry package above
 
-% Remove page numbers
-\pagestyle{empty}
+\urlstyle{same}
 
-% Compact lists
-\setlist[itemize]{nosep,left=0pt..1.5em,topsep=2pt}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+% Key Tech line (not a bullet, rendered below the bullet list)
+\newcommand{\resumeKeyTech}[1]{
+  \vspace{3pt}\hspace{0.15in}{\small\textbf{Key Tech:} #1}\vspace{4pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
-% ── HEADER ──
+%----------HEADING----------
 \begin{center}
-  {\LARGE\bfseries Abhijit Mohanty}\\[4pt]
-  \href{https://abhijitmohanty.com}{abhijitmohanty.com} \enspace$\cdot$\enspace
-  \href{https://github.com/mohantyabhijit}{github.com/mohantyabhijit} \enspace$\cdot$\enspace
-  Singapore
+    \textbf{\Huge \scshape Abhijit Mohanty} \\ \vspace{1pt}
+    \small Software Engineer -- Backend $|$ Golang $|$ Microservices $|$ AWS $|$ Kubernetes \\ \vspace{1pt}
+    \small +65-8886-2458 $|$
+    \href{mailto:abhijitmohanty.dev@gmail.com}{\underline{abhijitmohanty.dev@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/mohantyabhijit/}{\underline{linkedin.com/in/mohantyabhijit}} $|$
+    \href{https://github.com/mohantyabhijit}{\underline{github.com/mohantyabhijit}}
 \end{center}
 
-% ── EXPERIENCE ──
-\section{Experience}
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Team-oriented software engineer with \textbf{8+ years experience} building multi-tier, distributed systems and consumer products; delivered high-volume platforms (\textbf{50M+ daily transactions}), REST APIs, and zero-downtime releases via CI/CD; proficient in Golang with MySQL, BigQuery, AWS, Kubernetes; employs clean code practices and TDD.}
 
-\textbf{\href{https://grab.com}{Grab}} \hfill Singapore\\
-\textit{Senior Software Engineer -- Backend} \hfill Jun 2022 -- Present\\[-2pt]
-{\small Golang $\cdot$ MySQL $\cdot$ FastAPI $\cdot$ Claude Sonnet $\cdot$ Apache Kafka}
-\begin{itemize}
-  \item Architected and developed a centralized reconciliation platform unlocking end-to-end visibility of 25M+ transactions daily.
-  \item Led real-time cross-organisation integrations with banks and consumer-facing applications, increasing annual revenue by USD 3.5 million.
-  \item Migrated critical applications from GCP to AWS with zero downtime --- 20\% cost savings and 4$\times$ performance improvement.
-  \item Developed Snowflake MCP used by 10+ engineers to perform data analysis in natural language via their IDE.
-  \item Created an OnCall helper bot using LLMs and Chain of Thought prompting, reducing time to triage issues by 40\%.
-\end{itemize}
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
 
-\vspace{4pt}
-\textbf{UST Global} \hfill India $\cdot$ (acquired Advalent Corporation)\\
-\textit{Senior Software Engineer -- Platform Systems} \hfill Apr 2020 -- Jun 2021\\[-2pt]
-{\small Java $\cdot$ Spring Boot $\cdot$ MySQL}
-\begin{itemize}
-  \item Led development of a high-reliability healthcare insurance system, scaling to 50K+ users and USD 6 million in annual revenue.
-  \item Upgraded and migrated the entire monolithic application to Java 11 in one week, ensuring backward compatibility and zero production incidents.
-  \item Designed a custom file ingestion framework, cutting integration time from 5 days to 1 day via reusable parsing architecture.
-\end{itemize}
+    \resumeSubheading
+      {\href{https://grab.com}{Grab} -- Senior Software Engineer, Backend}{Singapore, Jun 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected and developed a centralized reconciliation platform unlocking end-to-end visibility of \textbf{50M+ transactions daily}.}
+        \resumeItem{Led real-time cross-organisation integrations with banks and consumer-facing applications, increasing annual revenue by \textbf{USD 3.5 million}.}
+        \resumeItem{Migrated critical applications from GCP to AWS with \textbf{zero downtime} --- \textbf{20\% cost savings} and \textbf{4$\times$ performance improvement}.}
+        \resumeItem{Developed Snowflake MCP used by \textbf{10+ engineers} to perform data analysis in natural language via their IDE.}
+        \resumeItem{Created an OnCall helper bot using LLMs and Chain of Thought prompting, reducing time to triage issues by \textbf{40\%}.}
+      \resumeItemListEnd
+      \resumeKeyTech{Golang, MySQL, FastAPI, Claude Sonnet, Apache Kafka}
 
-\vspace{4pt}
-\textbf{Lothal Labs} \hfill India\\
-\textit{Frontend Engineer -- E-commerce Platform} \hfill Jan 2019 -- Apr 2020\\[-2pt]
-{\small React Native $\cdot$ Redux $\cdot$ AdobeXD}
-\begin{itemize}
-  \item Joined as first engineering hire; designed end-to-end app user journeys.
-  \item Led UI/UX design and created a reusable internal design library to standardize patterns and accelerate delivery.
-  \item Developed and tested cross-platform React Native mobile app (iOS/Android) with Redux-based state management.
-\end{itemize}
+    \resumeSubheading
+      {UST Global -- Senior Software Engineer, Platform Systems}{India, Apr 2020 -- Jun 2021}
+      \resumeItemListStart
+        \resumeItem{Led development of a high-reliability healthcare insurance system, scaling to \textbf{50K+ users} and \textbf{USD 6 million} in annual revenue.}
+        \resumeItem{Upgraded and migrated the entire monolithic application to Java 11 in \textbf{one week}, ensuring backward compatibility and \textbf{zero production incidents}.}
+        \resumeItem{Designed a custom file ingestion framework, cutting integration time from \textbf{5 days to 1 day} via reusable parsing architecture.}
+      \resumeItemListEnd
+      \resumeKeyTech{Java, Spring Boot, MySQL}
 
-\vspace{4pt}
-\textbf{Mindfire Solutions} \hfill India\\
-\textit{Software Engineer} \hfill Jul 2016 -- Dec 2018\\[-2pt]
-{\small Java $\cdot$ Spring Boot $\cdot$ jQuery $\cdot$ Bootstrap $\cdot$ MySQL}
-\begin{itemize}
-  \item Delivered end-to-end web application for finance analysts, reducing manual reporting from 24 hours to 6 hours.
-  \item Led a team of 6 developers and interfaced directly with clients for requirement gathering.
-\end{itemize}
+    \resumeSubheading
+      {Lothal Labs -- Frontend Engineer, E-commerce Platform}{India, Jan 2019 -- Apr 2020}
+      \resumeItemListStart
+        \resumeItem{Joined as \textbf{first engineering hire}; designed end-to-end app user journeys.}
+        \resumeItem{Led UI/UX design and created a reusable internal design library to standardize patterns and accelerate delivery.}
+        \resumeItem{Developed and tested cross-platform React Native mobile app (iOS/Android) with Redux-based state management.}
+      \resumeItemListEnd
+      \resumeKeyTech{React Native, Redux, AdobeXD}
 
-% ── EDUCATION ──
+    \resumeSubheading
+      {Mindfire Solutions -- Software Engineer}{India, Jul 2016 -- Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Delivered end-to-end web application for finance analysts, reducing manual reporting from \textbf{24 hours to 6 hours}.}
+        \resumeItem{Led a \textbf{team of 6 developers} and interfaced directly with clients for requirement gathering.}
+      \resumeItemListEnd
+      \resumeKeyTech{Java, Spring Boot, jQuery, Bootstrap, MySQL}
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
 \section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore -- M.Tech, Software Engineering}{Singapore, 2021 -- 2022}
+      \resumeItemListStart
+        \resumeItem{Won \textbf{Best Internship Project} among 200+ students for RTSP Web Player at ST Engineering.}
+        \resumeItem{\textbf{Ranked 2nd among 140+ students} in academic grades. CAP 4.41/5.00}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-\textbf{National University of Singapore} \hfill Singapore\\
-\textit{Master of Technology, Software Engineering} \enspace$\cdot$\enspace CAP 4.41\,/\,5.00 \hfill 2021 -- 2022
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Golang, Java, JavaScript} \\
+    \textbf{Frontend Libraries}{: React, Redux, jQuery, Bootstrap} \\
+    \textbf{Cloud \& Streaming}{: AWS (EKS, Redshift), GCP (GKE, BigQuery), Apache Kafka} \\
+    \textbf{Build Tools}{: Git, Maven, Docker, Jenkins} \\
+    \textbf{Architecture}{: Distributed Systems, Microservices, High Availability} \\
+    \textbf{Java Ecosystem}{: Spring Boot, REST, Hibernate, JUnit} \\
+    \textbf{Databases}{: MySQL (RDBMS), Redshift \& BigQuery (Analytics), DynamoDB (NoSQL)} \\
+    \textbf{AI Tools}{: Cursor IDE, Claude Code, Amp Code}
+    }}
+ \end{itemize}
 
-% ── SKILLS ──
-\section{Skills}
-
-\begin{tabular}{@{}l l}
-  \textbf{Languages} & Golang, Java, JavaScript \\
-  \textbf{Frontend} & React, Redux, jQuery, Bootstrap \\
-  \textbf{Cloud} & AWS (EKS, Redshift), GCP (GKE, BigQuery), Apache Kafka \\
-  \textbf{Databases} & MySQL, DynamoDB, Redshift, BigQuery \\
-  \textbf{Backend} & Spring Boot, REST, Hibernate, Microservices \\
-  \textbf{Tools} & Git, Docker, Maven, Jenkins, Kubernetes \\
-\end{tabular}
-
-% ── PROJECTS ──
+%-----------PROJECTS-----------
 \section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Personal ChatGPT} $|$ \emph{Ollama, Llama 3.1, Go, React}}{2024}
+        \resumeItemListStart
+          \resumeItem{Secure, full-stack personal ChatGPT instance with custom front end and local hosting.}
+          \resumeItem{Implemented backend and frontend with locally running LLMs.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Centralized Video Gateway} $|$ \emph{React, Java, WebRTC}}{2022}
+        \resumeItemListStart
+          \resumeItem{Built low-latency live video gateway managing CCTV feeds at scale, replacing proprietary licensed software and saving \textbf{\$50K+ annually}.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://abhijitmohanty.com}{abhijitmohanty.com}} $|$ \emph{Hugo, GitHub Actions, DigitalOcean, Apache}}{2026}
+        \resumeItemListStart
+          \resumeItem{Personal blog and portfolio built with Hugo, deployed via GitHub Actions with manual approval for production.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://plugsandsockets.org}{plugsandsockets.org}}}{2025}
+        \resumeItemListStart
+          \resumeItem{Reference resource for global electrical plug and socket standards --- outlet types, voltage, and frequency by country.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-\textbf{Personal ChatGPT} \hfill 2024\\
-Secure, full-stack personal ChatGPT instance with custom front end and local hosting.\\[-2pt]
-{\small Ollama $\cdot$ Llama 3.1 $\cdot$ Go $\cdot$ React}
-\begin{itemize}
-  \item Implemented backend and frontend with locally running LLMs.
-\end{itemize}
-
-\vspace{4pt}
-\textbf{Centralized Video Gateway} \hfill 2022\\
-Full-stack web app to onboard and manage IP camera feeds across enterprise zones.\\
-Won Best Internship Project among 200+ students at NUS.\\[-2pt]
-{\small React $\cdot$ Java $\cdot$ WebRTC}
-\begin{itemize}
-  \item Built low-latency live video gateway managing CCTV feeds at scale, replacing proprietary licensed software and saving \$50K+ annually.
-\end{itemize}
-
-\vspace{4pt}
-\textbf{\href{https://abhijitmohanty.com}{abhijitmohanty.com}} \hfill 2026\\
-Personal blog and portfolio built with Hugo, deployed via GitHub Actions with manual approval for production.\\[-2pt]
-{\small Hugo $\cdot$ GitHub Actions $\cdot$ DigitalOcean $\cdot$ Apache}
-
-\vspace{4pt}
-\textbf{\href{https://plugsandsockets.org}{plugsandsockets.org}}\\
-Reference resource for global electrical plug and socket standards --- outlet types, voltage, and frequency by country.
-
+%-------------------------------------------
 \end{document}
