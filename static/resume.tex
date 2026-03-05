@@ -1,0 +1,203 @@
+%-------------------------
+% Resume in Latex
+% Author : Abhijit Mohanty
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Margins handled by geometry package above
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[2]{
+  \vspace{2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+% Key Tech line (not a bullet, rendered below the bullet list)
+\newcommand{\resumeKeyTech}[1]{
+  \vspace{3pt}\hspace{0.15in}{\small\textbf{Key Tech:} #1}\vspace{4pt}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Abhijit Mohanty} \\ \vspace{1pt}
+    \small Software Engineer -- Backend $|$ Golang $|$ Microservices $|$ AWS $|$ Kubernetes \\ \vspace{1pt}
+    \small +65-8886-2458 $|$
+    \href{mailto:abhijitmohanty.dev@gmail.com}{\underline{abhijitmohanty.dev@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/mohantyabhijit/}{\underline{linkedin.com/in/mohantyabhijit}} $|$
+    \href{https://github.com/mohantyabhijit}{\underline{github.com/mohantyabhijit}}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{Team-oriented software engineer with \textbf{8+ years experience} building multi-tier, distributed systems and consumer products; delivered high-volume platforms (\textbf{50M+ daily transactions}), REST APIs, and zero-downtime releases via CI/CD; proficient in Golang with MySQL, BigQuery, AWS, Kubernetes; employs clean code practices and TDD.}
+
+%-----------WORK EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {\href{https://grab.com}{Grab} -- Senior Software Engineer, Backend}{Singapore, Jun 2022 -- Present}
+      \resumeItemListStart
+        \resumeItem{Architected and developed a centralized reconciliation platform unlocking end-to-end visibility of \textbf{50M+ transactions daily}.}
+        \resumeItem{Led real-time cross-organisation integrations with banks and consumer-facing applications, increasing annual revenue by \textbf{USD 3.5 million}.}
+        \resumeItem{Migrated critical applications from GCP to AWS with \textbf{zero downtime} --- \textbf{20\% cost savings} and \textbf{4$\times$ performance improvement}.}
+        \resumeItem{Developed Snowflake MCP used by \textbf{10+ engineers} to perform data analysis in natural language via their IDE.}
+        \resumeItem{Created an OnCall helper bot using LLMs and Chain of Thought prompting, reducing time to triage issues by \textbf{40\%}.}
+      \resumeItemListEnd
+      \resumeKeyTech{Golang, MySQL, FastAPI, Claude Sonnet, Apache Kafka}
+
+    \resumeSubheading
+      {UST Global -- Senior Software Engineer, Platform Systems}{India, Apr 2020 -- Jun 2021}
+      \resumeItemListStart
+        \resumeItem{Led development of a high-reliability healthcare insurance system, scaling to \textbf{50K+ users} and \textbf{USD 6 million} in annual revenue.}
+        \resumeItem{Upgraded and migrated the entire monolithic application to Java 11 in \textbf{one week}, ensuring backward compatibility and \textbf{zero production incidents}.}
+        \resumeItem{Designed a custom file ingestion framework, cutting integration time from \textbf{5 days to 1 day} via reusable parsing architecture.}
+      \resumeItemListEnd
+      \resumeKeyTech{Java, Spring Boot, MySQL}
+
+    \resumeSubheading
+      {Lothal Labs -- Frontend Engineer, E-commerce Platform}{India, Jan 2019 -- Apr 2020}
+      \resumeItemListStart
+        \resumeItem{Joined as \textbf{first engineering hire}; designed end-to-end app user journeys.}
+        \resumeItem{Led UI/UX design and created a reusable internal design library to standardize patterns and accelerate delivery.}
+        \resumeItem{Developed and tested cross-platform React Native mobile app (iOS/Android) with Redux-based state management.}
+      \resumeItemListEnd
+      \resumeKeyTech{React Native, Redux, AdobeXD}
+
+    \resumeSubheading
+      {Mindfire Solutions -- Software Engineer}{India, Jul 2016 -- Dec 2018}
+      \resumeItemListStart
+        \resumeItem{Delivered end-to-end web application for finance analysts, reducing manual reporting from \textbf{24 hours to 6 hours}.}
+        \resumeItem{Led a \textbf{team of 6 developers} and interfaced directly with clients for requirement gathering.}
+      \resumeItemListEnd
+      \resumeKeyTech{Java, Spring Boot, jQuery, Bootstrap, MySQL}
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore -- M.Tech, Software Engineering}{Singapore, 2021 -- 2022}
+      \resumeItemListStart
+        \resumeItem{Won \textbf{Best Internship Project} among 200+ students for RTSP Web Player at ST Engineering.}
+        \resumeItem{\textbf{Ranked 2nd among 140+ students} in academic grades. CAP 4.41/5.00}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Languages}{: Golang, Java, JavaScript} \\
+    \textbf{Frontend Libraries}{: React, Redux, jQuery, Bootstrap} \\
+    \textbf{Cloud \& Streaming}{: AWS (EKS, Redshift), GCP (GKE, BigQuery), Apache Kafka} \\
+    \textbf{Build Tools}{: Git, Maven, Docker, Jenkins} \\
+    \textbf{Architecture}{: Distributed Systems, Microservices, High Availability} \\
+    \textbf{Java Ecosystem}{: Spring Boot, REST, Hibernate, JUnit} \\
+    \textbf{Databases}{: MySQL (RDBMS), Redshift \& BigQuery (Analytics), DynamoDB (NoSQL)} \\
+    \textbf{AI Tools}{: Cursor IDE, Claude Code, Amp Code}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Personal ChatGPT} $|$ \emph{Ollama, Llama 3.1, Go, React}}{2024}
+        \resumeItemListStart
+          \resumeItem{Secure, full-stack personal ChatGPT instance with custom front end and local hosting.}
+          \resumeItem{Implemented backend and frontend with locally running LLMs.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{Centralized Video Gateway} $|$ \emph{React, Java, WebRTC}}{2022}
+        \resumeItemListStart
+          \resumeItem{Built low-latency live video gateway managing CCTV feeds at scale, replacing proprietary licensed software and saving \textbf{\$50K+ annually}.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://abhijitmohanty.com}{abhijitmohanty.com}} $|$ \emph{Hugo, GitHub Actions, DigitalOcean, Apache}}{2026}
+        \resumeItemListStart
+          \resumeItem{Personal blog and portfolio built with Hugo, deployed via GitHub Actions with manual approval for production.}
+        \resumeItemListEnd
+      \resumeProjectHeading
+        {\textbf{\href{https://plugsandsockets.org}{plugsandsockets.org}}}{2025}
+        \resumeItemListStart
+          \resumeItem{Reference resource for global electrical plug and socket standards --- outlet types, voltage, and frequency by country.}
+        \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
