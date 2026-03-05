@@ -10,7 +10,8 @@
     <form id="post-comment-form" class="post-comment-form">
       <label class="post-comment-label" for="post-comment-name">Add a comment</label>
       <input type="text" id="post-comment-name" class="post-comment-name" placeholder="Name (optional)" maxlength="50">
-      <textarea id="post-comment-input" rows="3" maxlength="500" required></textarea>
+      <label for="post-comment-input" class="sr-only">Comment</label>
+      <textarea id="post-comment-input" rows="3" maxlength="500" placeholder="Your comment..." required></textarea>
       <div class="post-comment-actions">
         <button type="submit">Post</button>
       </div>

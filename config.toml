@@ -32,6 +32,10 @@ enableRobotsTXT = true
     url = "https://github.com/mohantyabhijit"
 
   [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/mohantyabhijit"
+
+  [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
 

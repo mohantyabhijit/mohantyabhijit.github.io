@@ -31,9 +31,40 @@ func main() {
 		log.Fatal(err)
 	}
 
-	http.HandleFunc("/api/interactions", handleInteractions)
+	http.HandleFunc("/api/interactions", withCORS(handleInteractions))
+	http.HandleFunc("/api/counter", withCORS(handleCounter))
 	log.Printf("listening on %s (db: %s)", *addr, *dbPath)
 	log.Fatal(http.ListenAndServe(*addr, nil))
+}
+
+func withCORS(h http.HandlerFunc) http.HandlerFunc {
+	return func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("Access-Control-Allow-Origin", "https://abhijitmohanty.com")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+		if r.Method == http.MethodOptions {
+			w.WriteHeader(http.StatusNoContent)
+			return
+		}
+		h(w, r)
+	}
+}
+
+func handleCounter(w http.ResponseWriter, r *http.Request) {
+	w.Header().Set("Content-Type", "application/json")
+	if r.Method != http.MethodGet {
+		http.Error(w, `{"error":"method not allowed"}`, http.StatusMethodNotAllowed)
+		return
+	}
+
+	var count int
+	err := db.QueryRow("SELECT COALESCE(SUM(count), 0) FROM page_views").Scan(&count)
+	if err != nil {
+		http.Error(w, `{"error":"internal error"}`, http.StatusInternalServerError)
+		return
+	}
+
+	json.NewEncoder(w).Encode(map[string]int{"count": count})
 }
 
 func migrate(db *sql.DB) error {
@@ -48,6 +79,10 @@ func migrate(db *sql.DB) error {
 			parent_id  TEXT,
 			text       TEXT NOT NULL,
 			created_at TEXT NOT NULL
+		);
+		CREATE TABLE IF NOT EXISTS page_views (
+			page  TEXT PRIMARY KEY,
+			count INTEGER NOT NULL DEFAULT 0
 		);
 		CREATE INDEX IF NOT EXISTS idx_comments_post ON comments(post);
 	`)
@@ -99,8 +134,6 @@ func handleInteractions(w http.ResponseWriter, r *http.Request) {
 		handleGet(w, r)
 	case http.MethodPost:
 		handlePost(w, r)
-	case http.MethodOptions:
-		w.WriteHeader(http.StatusNoContent)
 	default:
 		http.Error(w, `{"error":"method not allowed"}`, http.StatusMethodNotAllowed)
 	}
