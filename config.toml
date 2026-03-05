@@ -23,9 +23,7 @@ enableRobotsTXT = true
   [params.label]
     text = "am"
 
-  [params.author]
-    name = "Abhijit Mohanty"
-    email = ""
+  author = "Abhijit Mohanty"
 
   [[params.socialIcons]]
     name = "github"
