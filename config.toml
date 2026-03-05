@@ -19,11 +19,10 @@ enableRobotsTXT = true
   ShowWordCount = true
   disableSpecial1stPost = false
   mainSections = ["posts"]
+  author = "Abhijit Mohanty"
 
   [params.label]
     text = "am"
-
-  author = "Abhijit Mohanty"
 
   [[params.socialIcons]]
     name = "github"
