@@ -1,6 +1,6 @@
 +++
 title = "Shipping Static Sites to Production: DNS, Droplets, and GitHub Actions"
-date = 2026-03-07T09:00:00+05:30
+date = 2026-03-06T10:00:00+05:30
 description = "A practical guide to pointing domains at a VPS, setting up nginx to serve multiple sites, and wiring GitHub Actions to deploy via rsync — no manual SSH after the first time."
 tags = ["devops", "github-actions", "nginx", "tutorial", "infrastructure"]
 slug = "deploy-static-sites-to-droplet"
