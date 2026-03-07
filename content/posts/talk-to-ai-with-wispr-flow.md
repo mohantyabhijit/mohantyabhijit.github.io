@@ -4,6 +4,8 @@ date = 2026-03-06T10:00:00+05:30
 description = "How Wispr Flow lets you dictate to Claude, ChatGPT, and any AI tool — and why it's dramatically faster than typing."
 tags = ["ai", "productivity", "workflow", "tools"]
 slug = "talk-to-ai-with-wispr-flow"
+cover.image = "images/posts/talk-to-ai-with-wispr-flow/cover.svg"
+cover.alt = "Voice dictation workflow from Wispr Flow into AI tools"
 draft = false
 +++
 

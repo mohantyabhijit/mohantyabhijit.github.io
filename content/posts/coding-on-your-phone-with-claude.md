@@ -4,6 +4,8 @@ date = 2026-03-02T10:00:00+05:30
 description = "How to connect Claude Code to GitHub and write, review, and ship blog posts straight from the Claude app on your phone — with automatic staging and one-tap production deploys."
 tags = ["claude", "ai", "workflow", "devops", "tutorial"]
 slug = "coding-on-your-phone-with-claude"
+cover.image = "images/posts/coding-on-your-phone-with-claude/cover.svg"
+cover.alt = "Illustration of coding from phone with Claude and GitHub workflow"
 draft = false
 +++
 
