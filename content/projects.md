@@ -23,7 +23,7 @@ An education platform to browse mutual fund data, compare schemes, and backtest 
 
 A collection of daily-use utilities for developers — JSON formatters, Base64 converters, password generators, and more.
 
-[Visit →](https://simpledevutils.com) · **Status: Coming Soon**
+[Visit →](https://simpledevutils.com)
 
 ---
 
