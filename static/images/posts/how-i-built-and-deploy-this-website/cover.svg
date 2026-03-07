@@ -1,0 +1,31 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Hugo staging and production deployment diagram">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg3)"/>
+  <text x="70" y="110" fill="#e5e7eb" font-family="Inter,Arial,sans-serif" font-size="52" font-weight="700">How I Built and Deploy This Website</text>
+  <text x="70" y="152" fill="#bfdbfe" font-family="Inter,Arial,sans-serif" font-size="26">Hugo + GitHub Actions + staged production release</text>
+
+  <g font-family="Inter,Arial,sans-serif" font-size="22" fill="#e5e7eb" stroke="#93c5fd" stroke-width="3">
+    <rect x="95" y="250" width="230" height="100" rx="14" fill="#0f172a"/>
+    <text x="180" y="310">Hugo</text>
+
+    <rect x="390" y="250" width="300" height="100" rx="14" fill="#0f172a"/>
+    <text x="456" y="310">GitHub Actions</text>
+
+    <rect x="755" y="185" width="320" height="100" rx="14" fill="#0f172a"/>
+    <text x="825" y="245">Staging</text>
+
+    <rect x="755" y="345" width="320" height="100" rx="14" fill="#0f172a"/>
+    <text x="796" y="405">Production</text>
+  </g>
+
+  <path d="M325 300 L390 300" stroke="#93c5fd" stroke-width="4"/>
+  <path d="M690 300 L755 235" stroke="#93c5fd" stroke-width="4"/>
+  <path d="M690 300 L755 395" stroke="#93c5fd" stroke-width="4"/>
+  <circle cx="722" cy="347" r="18" fill="#1e3a8a" stroke="#93c5fd" stroke-width="3"/>
+  <text x="716" y="354" fill="#bfdbfe" font-family="Inter,Arial,sans-serif" font-size="20">✓</text>
+</svg>

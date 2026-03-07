@@ -4,6 +4,8 @@ date = 2026-02-28T10:00:00+05:30
 description = "A complete walkthrough of building a personal site with Hugo, deploying to staging on GitHub Pages, and shipping to production on a DigitalOcean droplet — all automated with GitHub Actions."
 tags = ["devops", "hugo", "infrastructure", "tutorial"]
 slug = "how-i-built-and-deploy-this-website"
+cover.image = "images/posts/how-i-built-and-deploy-this-website/cover.svg"
+cover.alt = "Hugo staging and production deployment pipeline illustration"
 draft = false
 +++
 

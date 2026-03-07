@@ -1,0 +1,32 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Static site deployment pipeline illustration">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#052e16"/>
+      <stop offset="100%" stop-color="#14532d"/>
+    </linearGradient>
+    <marker id="arrow2" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#86efac"/>
+    </marker>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg2)"/>
+  <text x="70" y="110" fill="#dcfce7" font-family="Inter,Arial,sans-serif" font-size="52" font-weight="700">Shipping Static Sites to Production</text>
+  <text x="70" y="155" fill="#bbf7d0" font-family="Inter,Arial,sans-serif" font-size="28">DNS + GitHub Actions + nginx on a Droplet</text>
+
+  <g fill="#022c22" stroke="#86efac" stroke-width="3" font-family="Inter,Arial,sans-serif" font-size="24">
+    <rect x="80" y="260" width="250" height="110" rx="16"/>
+    <text x="135" y="326" fill="#dcfce7">git push main</text>
+
+    <rect x="410" y="260" width="300" height="110" rx="16"/>
+    <text x="447" y="326" fill="#dcfce7">GitHub Actions</text>
+
+    <rect x="790" y="230" width="320" height="180" rx="16"/>
+    <text x="895" y="290" fill="#dcfce7">Droplet</text>
+    <text x="875" y="330" fill="#bbf7d0" font-size="20">nginx serves site</text>
+    <text x="854" y="360" fill="#bbf7d0" font-size="20">/var/www/yoursite</text>
+  </g>
+
+  <line x1="330" y1="315" x2="410" y2="315" stroke="#86efac" stroke-width="4" marker-end="url(#arrow2)"/>
+  <line x1="710" y1="315" x2="790" y2="315" stroke="#86efac" stroke-width="4" marker-end="url(#arrow2)"/>
+
+  <text x="804" y="470" fill="#dcfce7" font-family="JetBrains Mono,monospace" font-size="24">A record → 152.42.x.x</text>
+</svg>

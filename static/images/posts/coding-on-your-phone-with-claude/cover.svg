@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Claude mobile coding workflow illustration">
+  <defs>
+    <linearGradient id="bg4" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#27272a"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg4)"/>
+  <text x="70" y="110" fill="#faf5ff" font-family="Inter,Arial,sans-serif" font-size="54" font-weight="700">Coding on Your Phone with Claude</text>
+  <text x="70" y="155" fill="#ddd6fe" font-family="Inter,Arial,sans-serif" font-size="28">Prompt → PR → staged deploy → production</text>
+
+  <rect x="130" y="210" width="210" height="360" rx="26" fill="#18181b" stroke="#c4b5fd" stroke-width="4"/>
+  <rect x="155" y="250" width="160" height="240" rx="14" fill="#312e81"/>
+  <text x="182" y="320" fill="#ede9fe" font-family="Inter,Arial,sans-serif" font-size="26">Claude</text>
+  <text x="188" y="355" fill="#c4b5fd" font-family="Inter,Arial,sans-serif" font-size="18">on mobile</text>
+
+  <rect x="440" y="245" width="280" height="90" rx="14" fill="#2e1065" stroke="#c4b5fd" stroke-width="3"/>
+  <text x="526" y="300" fill="#ede9fe" font-family="Inter,Arial,sans-serif" font-size="24">GitHub PR</text>
+
+  <rect x="790" y="190" width="280" height="90" rx="14" fill="#2e1065" stroke="#c4b5fd" stroke-width="3"/>
+  <text x="844" y="246" fill="#ede9fe" font-family="Inter,Arial,sans-serif" font-size="24">Staging</text>
+
+  <rect x="790" y="350" width="280" height="90" rx="14" fill="#2e1065" stroke="#c4b5fd" stroke-width="3"/>
+  <text x="822" y="406" fill="#ede9fe" font-family="Inter,Arial,sans-serif" font-size="24">Production</text>
+
+  <path d="M340 305 L440 290" stroke="#c4b5fd" stroke-width="4"/>
+  <path d="M720 290 L790 235" stroke="#c4b5fd" stroke-width="4"/>
+  <path d="M720 290 L790 395" stroke="#c4b5fd" stroke-width="4"/>
+</svg>
