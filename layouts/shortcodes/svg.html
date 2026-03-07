@@ -1,0 +1,14 @@
+{{- /*
+  Usage: {{< svg src="svgs/my-diagram.svg" >}}
+  Embeds an SVG inline so its CSS variables inherit the page theme.
+  SVGs should live in assets/svgs/ and use var(--bg), var(--fg), etc.
+  with :root[data-theme="dark"] overrides for dark mode support.
+*/ -}}
+{{- $src := .Get "src" -}}
+{{- with resources.Get $src -}}
+<div class="svg-diagram">
+  {{- .Content | safeHTML -}}
+</div>
+{{- else -}}
+<p class="svg-missing">Diagram not found: {{ $src }}</p>
+{{- end -}}

@@ -1064,3 +1064,19 @@ body.list,
     transform: translateX(18px);
   }
 }
+
+/* ============================
+   SVG DIAGRAM (themed)
+   ============================ */
+
+.svg-diagram {
+  margin: 2rem auto;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.svg-diagram svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
