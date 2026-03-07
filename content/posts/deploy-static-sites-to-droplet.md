@@ -15,30 +15,7 @@ The stack: a DigitalOcean droplet, nginx, and GitHub Actions deploying via rsync
 
 Before getting into steps, here is what the end state looks like:
 
-```mermaid
-flowchart TD
-    A[git push to main] --> B[GitHub Actions triggers]
-    B --> C[rsync files to droplet]
-    C --> D[nginx serves from /var/www/yoursite]
-
-    DNS[Domain registrar\nA record → droplet IP] --> D
-
-    subgraph Droplet [Droplet: 152.42.x.x]
-        D
-        E[nginx: site 1]
-        F[nginx: site 2]
-        G[nginx: site 3]
-        D --> E
-        D --> F
-        D --> G
-    end
-
-    subgraph GitHub
-        B
-        SECRETS[Repository secrets\nHOST · USER · SSH_KEY]
-        SECRETS -.->|injected at runtime| B
-    end
-```
+{{< svg src="svgs/deploy-diagram.svg" >}}
 
 One droplet can host as many static sites as you want. nginx routes requests by domain name. Each GitHub repo has its own workflow and its own secrets pointing at the same server.
 
