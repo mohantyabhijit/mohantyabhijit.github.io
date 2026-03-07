@@ -3,22 +3,6 @@ title = "Projects"
 draft = false
 +++
 
-## checkmyspend.com
-
-Upload your bank or credit card statements to get them analysed and saved, helping you take control of your personal finances.
-
-[Visit →](https://checkmyspend.com) · **Status: Coming Soon**
-
----
-
-## mutualfundresearch.org
-
-An education platform to browse mutual fund data, compare schemes, and backtest different investment strategies.
-
-[Visit →](https://mutualfundresearch.org) · **Status: Coming Soon**
-
----
-
 ## simpledevutils.com
 
 A collection of daily-use utilities for developers — JSON formatters, Base64 converters, password generators, and more.
@@ -56,6 +40,22 @@ A self-hosted personal GPT service that runs a local LLaMA3 model. Built a Go-ba
 A platform for centralised ingestion, storage, and retrieval of video content. Designed for scalable media management with a clean API surface for upstream consumers.
 
 [Demo →](https://docs.google.com/presentation/d/1JQ7QTJnVl2srONV45JFZlyPGCA0x_mxM/mobilepresent?slide=id.p1)
+
+---
+
+## checkmyspend.com
+
+Upload your bank or credit card statements to get them analysed and saved, helping you take control of your personal finances.
+
+[Visit →](https://checkmyspend.com) · **Status: Coming Soon**
+
+---
+
+## mutualfundresearch.org
+
+An education platform to browse mutual fund data, compare schemes, and backtest different investment strategies.
+
+[Visit →](https://mutualfundresearch.org) · **Status: Coming Soon**
 
 ---
 
