@@ -4,8 +4,6 @@ date = 2026-03-06T10:00:00+05:30
 description = "A practical guide to pointing domains at a VPS, setting up nginx to serve multiple sites, and wiring GitHub Actions to deploy via rsync — no manual SSH after the first time."
 tags = ["devops", "github-actions", "nginx", "tutorial", "infrastructure"]
 slug = "deploy-static-sites-to-droplet"
-cover.image = "images/posts/deploy-static-sites-to-droplet/cover.svg"
-cover.alt = "Diagram showing static site deployment to a droplet with DNS and GitHub Actions"
 draft = false
 +++
 

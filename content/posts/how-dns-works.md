@@ -4,8 +4,6 @@ date = 2026-03-05T10:00:00+05:30
 description = "A deep dive into DNS resolution — how your browser turns 'google.com' into an IP address, what each record type does, and how the whole distributed system hangs together."
 tags = ["dns", "networking", "infrastructure", "explainer", "web"]
 slug = "how-dns-works"
-cover.image = "images/posts/how-dns-works/cover.svg"
-cover.alt = "DNS resolution flow from browser to authoritative nameserver"
 draft = false
 +++
 
