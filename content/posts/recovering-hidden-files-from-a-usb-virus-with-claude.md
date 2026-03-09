@@ -1,7 +1,7 @@
 +++
 title = "Recovering Hidden Files from a USB Virus with Claude Code"
 date = 2026-03-09T10:00:00+05:30
-description = "How I used Claude Code to recover the only video of my grandmother — hidden on a pen drive by a USB virus — without losing a single file."
+description = "How I used Claude Code to recover precious family videos hidden on a pen drive by a USB virus — without losing a single file."
 tags = ["claude", "ai", "terminal", "recovery", "tutorial"]
 slug = "recovering-hidden-files-from-a-usb-virus-with-claude"
 draft = false
