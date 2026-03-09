@@ -1,21 +1,25 @@
 +++
 title = "Recovering Hidden Files from a USB Virus with Claude Code"
 date = 2026-03-09T10:00:00+05:30
-description = "How I used Claude Code to recover 11 GB of family videos and photos hidden by a USB virus on my sister's pen drive — without losing a single file."
+description = "How I used Claude Code to recover the only video of my grandmother — hidden on a pen drive by a USB virus — without losing a single file."
 tags = ["claude", "ai", "terminal", "recovery", "tutorial"]
 slug = "recovering-hidden-files-from-a-usb-virus-with-claude"
 draft = false
 +++
 
-My sister handed me a pen drive in a panic. It was labeled **NILU** — she uses it to store family videos and photos — and it looked completely empty. A file browser showed nothing. But the drive's storage info said 11 GB was in use.
+My pen drive looked completely empty. A file browser showed nothing. But the storage info said 11 GB was in use.
 
-The files were still there. A virus had hidden them.
+The drive is labeled **NILU**. On it was the only recording we have of my grandparents' 50th wedding anniversary celebration. My grandmother has since passed away. That video is the only footage we have of her.
 
-This is the story of how I used Claude Code to figure out exactly what happened, find every hidden file, recover them intact, and clean the drive.
+I had lost all hope we would ever get it back.
 
-## What Had Happened
+The files were still there. A virus had hidden them. And Claude Code helped me find them.
 
-The pen drive had picked up a classic USB virus, most likely from a Windows machine or an Android device. This type of malware does not encrypt or delete your files. It hides them by moving everything into a folder whose name is designed to be invisible.
+## How It Got Corrupted
+
+Our family has a 10-year-old TV that we plug pen drives into to watch videos. Somehow, any device connected to that TV was getting corrupted. I had used NILU with it, and the next time I plugged the drive into my Mac, it appeared empty.
+
+The pen drive had picked up a classic USB virus. This type of malware does not encrypt or delete your files. It hides them by moving everything into a folder whose name is designed to be invisible.
 
 In this case, the folder name was a single Unicode non-breaking space character: **U+00A0**, encoded in UTF-8 as the byte sequence `\xc2\xa0`. To any file browser, that folder simply does not appear. Your files are inside it, perfectly intact, silently waiting.
 
@@ -100,7 +104,7 @@ Everything appeared:
 | Anniversary video/ (5 VOB files) | DVD video |
 | photos/ (1,115 photos from July 2018) | — |
 
-Family memories, going back to 2018. All intact.
+I stared at that list for a moment. Every file was there.
 
 ## Step 8: Copy Everything to Safety
 
@@ -108,7 +112,7 @@ Family memories, going back to 2018. All intact.
 cp -Rv "$(printf '/Volumes/NILU/\xc2\xa0')" ~/Desktop/NILU_backup/
 ```
 
-The `-R` flag copies directories recursively. The `-v` flag prints each file as it copies so you can watch the progress and confirm nothing is missed. Every file transferred successfully.
+The `-R` flag copies directories recursively. The `-v` flag prints each file as it copies so you can watch the progress and confirm nothing is missed. I watched each filename scroll past. Every file transferred successfully.
 
 ## Step 9: Format the Drive Clean
 
@@ -134,16 +138,18 @@ The entire recovery took about 20 minutes from "the drive looks empty" to "all f
 
 ## Lessons Learned
 
-**Scan USB drives before opening them on Windows.** This type of virus spreads most easily on Windows, where `autorun.inf` and `desktop.ini` can trigger automatically.
+**Old TVs and shared devices can be infection vectors.** I did not think twice about plugging NILU into our family TV. Now I know to treat shared devices the same way I would treat an unknown USB port at a hotel.
 
-**A drive that looks empty is not always empty.** If your storage stats do not match what you see, something is hidden — not deleted.
+**A drive that looks empty is not always empty.** If your storage stats do not match what you see, something is hidden — not deleted. Do not reformat. Investigate first.
 
 **You do not need to be a terminal expert.** I had Claude explain each command before running it. Understanding what you are doing matters, especially when you are working with raw disk operations. Claude made that accessible.
 
-**Back up important files.** The NILU drive is now reformatted and clean. The videos and photos are now in two places. That is how it should have always been.
+**Back up irreplaceable files immediately.** The 50th anniversary video, the Malaysia and Singapore travel diaries, 1,115 photos from 2018 — none of it had a second copy. It does now.
 
 ---
 
-The files recovered included anniversary videos, travel diaries from Malaysia and Singapore, and 1,115 photos from a family trip in July 2018. None of it was lost.
+My grandmother passed away after that anniversary celebration. That video is the only footage we have of her at that milestone. We nearly lost it to a piece of malware that cost us nothing to remove.
 
-That is the thing about this kind of malware: it looks catastrophic but it is not. The data is there. You just need to know where to look.
+That is the thing about this kind of virus: it looks catastrophic but it is not. The data is there. You just need to know where to look.
+
+I am glad Claude did.
