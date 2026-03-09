@@ -1,7 +1,7 @@
 +++
 title = "Recovering Hidden Files from a USB Virus with Claude Code"
 date = 2026-03-09T10:00:00+05:30
-description = "How I used Claude Code to recover the only video of my grandmother — hidden on a pen drive by a USB virus — without losing a single file."
+description = "How I used Claude Code to recover previous family videos — hidden on a pen drive by a USB virus — without losing a single file."
 tags = ["claude", "ai", "terminal", "recovery", "tutorial"]
 slug = "recovering-hidden-files-from-a-usb-virus-with-claude"
 draft = false
@@ -9,7 +9,7 @@ draft = false
 
 My pen drive looked completely empty. A file browser showed nothing. But the storage info said 11 GB was in use.
 
-The drive is labeled **NILU**. On it was the only recording we have of my grandparents' 50th wedding anniversary celebration. My grandmother has since passed away. That video is the only footage we have of her.
+The drive is labeled **PHOTOS**. On it was the only recording we have of my grandparents' 50th wedding anniversary celebration. My grandmother has since passed away. That video is the only footage we have of her.
 
 I had lost all hope we would ever get it back.
 
@@ -17,7 +17,7 @@ The files were still there. A virus had hidden them. And Claude Code helped me f
 
 ## How It Got Corrupted
 
-Our family has a 10-year-old TV that we plug pen drives into to watch videos. Somehow, any device connected to that TV was getting corrupted. I had used NILU with it, and the next time I plugged the drive into my Mac, it appeared empty.
+Our family has a 10-year-old TV that we plug pen drives into to watch videos. Somehow, any device connected to that TV was getting corrupted. I had used PHOTOS with it, and the next time I plugged the drive into my Mac, it appeared empty.
 
 The pen drive had picked up a classic USB virus. This type of malware does not encrypt or delete your files. It hides them by moving everything into a folder whose name is designed to be invisible.
 
@@ -42,12 +42,12 @@ This is what made the difference. I could have searched for answers across a doz
 diskutil list external
 ```
 
-This listed all external disks. NILU showed up at `/dev/disk2` — a 15.6 GB FAT32 volume mounted at `/Volumes/NILU`.
+This listed all external disks. PHOTOS showed up at `/dev/disk2` — a 15.6 GB FAT32 volume mounted at `/Volumes/PHOTOS`.
 
 ## Step 2: Confirm the Drive Looked Empty
 
 ```bash
-ls -la /Volumes/NILU/
+ls -la /Volumes/PHOTOS/
 ```
 
 The output showed only system-level folders like `.Spotlight-V100` and `.fseventsd`. No user files. From the outside, the drive was empty.
@@ -55,7 +55,7 @@ The output showed only system-level folders like `.Spotlight-V100` and `.fsevent
 ## Step 3: Confirm the Space Was Still Used
 
 ```bash
-df -h /Volumes/NILU
+df -h /Volumes/PHOTOS
 ```
 
 This showed 11 GB used out of 15.6 GB. The files had not been deleted. They were somewhere on the drive, just hidden.
@@ -63,7 +63,7 @@ This showed 11 GB used out of 15.6 GB. The files had not been deleted. They were
 ## Step 4: Find Every File Regardless of Folder Name
 
 ```bash
-find /Volumes/NILU/ -type f
+find /Volumes/PHOTOS/ -type f
 ```
 
 This recursively listed every file on the drive without caring about hidden attributes or invisible folder names. Files started appearing: `.mp4` videos, `.jpg` photos, `.VOB` DVD files. They were all in a folder whose name looked like a blank space in the terminal output.
@@ -71,7 +71,7 @@ This recursively listed every file on the drive without caring about hidden attr
 ## Step 5: Pinpoint the Hidden Folder
 
 ```bash
-du -sh /Volumes/NILU/*/
+du -sh /Volumes/PHOTOS/*/
 ```
 
 This measured disk usage per top-level directory. One entry — the invisible-named folder — reported 11 GB. That confirmed exactly where everything was hiding.
@@ -81,7 +81,7 @@ This measured disk usage per top-level directory. One entry — the invisible-na
 Claude suggested inspecting the raw bytes of the directory listing to identify the invisible character:
 
 ```bash
-ls /Volumes/NILU/ | xxd
+ls /Volumes/PHOTOS/ | xxd
 ```
 
 The `xxd` output showed `c2 a0` — the UTF-8 encoding of U+00A0, the non-breaking space. That was the folder name. A single invisible character, invisible to every file browser, but perfectly real on disk.
@@ -91,7 +91,7 @@ The `xxd` output showed `c2 a0` — the UTF-8 encoding of U+00A0, the non-breaki
 Now that the exact byte sequence was known, the hidden folder could be accessed directly:
 
 ```bash
-ls -la "$(printf '/Volumes/NILU/\xc2\xa0')"
+ls -la "$(printf '/Volumes/PHOTOS/\xc2\xa0')"
 ```
 
 Everything appeared:
@@ -109,7 +109,7 @@ I stared at that list for a moment. Every file was there.
 ## Step 8: Copy Everything to Safety
 
 ```bash
-cp -Rv "$(printf '/Volumes/NILU/\xc2\xa0')" ~/Desktop/NILU_backup/
+cp -Rv "$(printf '/Volumes/PHOTOS/\xc2\xa0')" ~/Desktop/PHOTOS_backup/
 ```
 
 The `-R` flag copies directories recursively. The `-v` flag prints each file as it copies so you can watch the progress and confirm nothing is missed. I watched each filename scroll past. Every file transferred successfully.
@@ -119,7 +119,7 @@ The `-R` flag copies directories recursively. The `-v` flag prints each file as 
 With all files safely backed up, the last step was to wipe the pen drive completely to remove the malware:
 
 ```bash
-diskutil eraseDisk FAT32 NILU MBRFormat /dev/disk2
+diskutil eraseDisk FAT32 PHOTOS MBRFormat /dev/disk2
 ```
 
 This reformatted the drive as FAT32 with an MBR partition table — the same format it had before, compatible with both Windows and Mac. All virus artifacts were gone. The drive is safe to use again.
@@ -138,7 +138,7 @@ The entire recovery took about 20 minutes from "the drive looks empty" to "all f
 
 ## Lessons Learned
 
-**Old TVs and shared devices can be infection vectors.** I did not think twice about plugging NILU into our family TV. Now I know to treat shared devices the same way I would treat an unknown USB port at a hotel.
+**Old TVs and shared devices can be infection vectors.** I did not think twice about plugging PHOTOS into our family TV. Now I know to treat shared devices the same way I would treat an unknown USB port at a hotel.
 
 **A drive that looks empty is not always empty.** If your storage stats do not match what you see, something is hidden — not deleted. Do not reformat. Investigate first.
 
