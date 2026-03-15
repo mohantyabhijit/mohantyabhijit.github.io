@@ -1,0 +1,6 @@
+{{- /*
+  Usage: {{< rawhtml >}}<p>Raw HTML here</p>{{< /rawhtml >}}
+  Renders inner content as safe HTML, bypassing the Goldmark unsafe restriction.
+  Use sparingly — only for chart embeds and interactive elements.
+*/ -}}
+{{- .Inner | safeHTML -}}
