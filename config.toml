@@ -35,9 +35,9 @@ enableRobotsTXT = true
 
   [params.assets]
     favicon = "/favicon.svg"
-    favicon16x16 = "/favicon.svg"
-    favicon32x32 = "/favicon.svg"
-    apple_touch_icon = "/favicon.svg"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
     theme_color = "#ffffff"
     msapplication_TileColor = "#ffffff"
 
