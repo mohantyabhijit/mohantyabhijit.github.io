@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Abhijit Mohanty">
+  <rect width="1200" height="630" fill="#f7f7f3"/>
+  <rect x="72" y="72" width="1056" height="486" rx="28" fill="#ffffff" stroke="#deded7"/>
+  <rect x="128" y="126" width="112" height="112" rx="22" fill="#111827"/>
+  <text x="184" y="194" text-anchor="middle" fill="#ffffff" font-family="Manrope, Inter, Arial, sans-serif" font-size="39" font-weight="800" letter-spacing="-1">am</text>
+  <text x="128" y="316" fill="#111827" font-family="Newsreader, Georgia, serif" font-size="78" font-weight="700">Abhijit Mohanty</text>
+  <text x="128" y="386" fill="#4b5563" font-family="Manrope, Inter, Arial, sans-serif" font-size="32" font-weight="700">Software engineer building backend systems and AI tools.</text>
+  <text x="128" y="462" fill="#6b7280" font-family="Manrope, Inter, Arial, sans-serif" font-size="24" font-weight="600">abhijitmohanty.com</text>
+</svg>

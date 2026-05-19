@@ -9,6 +9,7 @@ enableRobotsTXT = true
 
 [params]
   description = "Thoughts on software, systems, and building things."
+  images = ["/og.png"]
   defaultTheme = "auto"
   disableThemeToggle = false
   ShowReadingTime = true
@@ -31,6 +32,14 @@ enableRobotsTXT = true
   [[params.socialIcons]]
     name = "rss"
     url = "/index.xml"
+
+  [params.assets]
+    favicon = "/favicon.svg"
+    favicon16x16 = "/favicon.svg"
+    favicon32x32 = "/favicon.svg"
+    apple_touch_icon = "/favicon.svg"
+    theme_color = "#ffffff"
+    msapplication_TileColor = "#ffffff"
 
 [permalinks]
   posts = "/posts/:slug/"
