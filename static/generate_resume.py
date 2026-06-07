@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate resume.pdf using reportlab."""
+"""Generate Abhijit-Mohanty-Resume.pdf using reportlab."""
 
 import os
 from reportlab.lib.pagesizes import A4
@@ -15,7 +15,7 @@ LINK_BLUE = HexColor("#1a73e8")
 BLACK = HexColor("#000000")
 GREY = HexColor("#444444")
 
-OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "resume.pdf")
+OUTPUT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "Abhijit-Mohanty-Resume.pdf")
 
 # ── Styles ──
 
@@ -122,13 +122,15 @@ def build():
     story.extend(company_block(
         "Grab", "Singapore",
         "Senior Software Engineer \u2013 Backend", "Jun 2022 \u2013 Present",
-        "Golang \u00b7 MySQL \u00b7 FastAPI \u00b7 Claude Sonnet \u00b7 Apache Kafka",
+        "Golang \u00b7 MySQL \u00b7 Apache Kafka \u00b7 AWS \u00b7 Claude Code \u00b7 Codex \u00b7 MCPs",
         [
-            "Architected and developed a centralized reconciliation platform unlocking end-to-end visibility of 25M+ transactions daily.",
+            "Built Slack and Atlassian MCP automations that removed repetitive on-call workflows, saving engineers ~3 hours per week.",
+            "Revamped platform onboarding with natural-language input backed by LLMs, cutting a 2-day manual process to a 30-minute guided workflow.",
+            "Built and shared reusable AI skills for Jira execution, Snowflake analysis, and UAT workflows, freeing 3\u20135 hours per week for engineers.",
+            "Ranked in the top 2% at Grab for AI tool usage; selected for Grab's Power AI users group, driving org-wide AI adoption across the Payments division.",
+            "Architected a centralized reconciliation platform unlocking end-to-end visibility across 50M+ daily transactions.",
             "Led real-time cross-organisation integrations with banks and consumer-facing applications, increasing annual revenue by USD 3.5 million.",
             "Migrated critical applications from GCP to AWS with zero downtime \u2014 20% cost savings and 4\u00d7 performance improvement.",
-            "Developed Snowflake MCP used by 10+ engineers to perform data analysis in natural language via their IDE.",
-            "Created an OnCall helper bot using LLMs and Chain of Thought prompting, reducing time to triage issues by 40%.",
         ],
         company_url="https://grab.com",
     ))
@@ -138,7 +140,7 @@ def build():
         "Senior Software Engineer \u2013 Platform Systems", "Apr 2020 \u2013 Jun 2021",
         "Java \u00b7 Spring Boot \u00b7 MySQL",
         [
-            "Led development of a high-reliability healthcare insurance system, scaling to 50K+ users and USD 6 million in annual revenue.",
+            "Worked directly with the CTO and lead client stakeholder to deliver a healthcare insurance platform end-to-end, scaling to 50K+ users and USD 6 million in annual revenue.",
             "Upgraded and migrated the entire monolithic application to Java 11 in one week, ensuring backward compatibility and zero production incidents.",
             "Designed a custom file ingestion framework, cutting integration time from 5 days to 1 day via reusable parsing architecture.",
         ],
@@ -202,14 +204,15 @@ def build():
         ("Languages", "Golang, Java, JavaScript"),
         ("Frontend", "React, Redux, jQuery, Bootstrap"),
         ("Cloud", "AWS (EKS, Redshift), GCP (GKE, BigQuery), Apache Kafka"),
-        ("Databases", "MySQL, DynamoDB, Redshift, BigQuery"),
+        ("Databases", "MySQL, DynamoDB, Redshift, BigQuery, Snowflake"),
         ("Backend", "Spring Boot, REST, Hibernate, Microservices"),
+        ("AI / Automation", "Claude Code, Codex, Cursor, MCPs, Skills"),
         ("Tools", "Git, Docker, Maven, Jenkins, Kubernetes"),
     ]
     for label, value in skills:
         story.append(Table(
             [[Paragraph(label, style_skill_label), Paragraph(value, style_skill_value)]],
-            colWidths=[70, None],
+            colWidths=[90, None],
             style=TableStyle([
                 ("LEFTPADDING", (0, 0), (-1, -1), 0),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 0),
@@ -221,6 +224,24 @@ def build():
 
     # ── Projects ──
     story.extend(section_heading("Projects"))
+
+    # Second Brain
+    story.append(Table(
+        [[Paragraph(f'<b>{link("https://abhijitmohanty.com/second-brain", "Second Brain")}</b>', style_normal),
+          Paragraph("2026", style_normal)]],
+        colWidths=["70%", "30%"],
+        style=TableStyle([
+            ("ALIGN", (1, 0), (1, 0), "RIGHT"),
+            ("LEFTPADDING", (0, 0), (-1, -1), 0), ("RIGHTPADDING", (0, 0), (-1, -1), 0),
+            ("TOPPADDING", (0, 0), (-1, -1), 0), ("BOTTOMPADDING", (0, 0), (-1, -1), 0),
+        ]),
+    ))
+    story.append(Paragraph(
+        "Self-hosted personal knowledge app that ingests notes and sources, embeds them with pgvector, and makes them semantically searchable.",
+        style_normal,
+    ))
+    story.append(Paragraph("Next.js · Go · Postgres (pgvector) · Cloudflare", style_tech))
+    story.append(Spacer(1, 4))
 
     # Personal ChatGPT
     story.append(Table(

@@ -2,7 +2,7 @@
 <section class="resume-page">
 
   <div class="resume-dl-row">
-    <a href="/resume.pdf" class="resume-dl-btn" download>
+    <a href="/Abhijit-Mohanty-Resume.pdf" class="resume-dl-btn" download>
       <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
       Download Resume
     </a>
@@ -22,13 +22,15 @@
           <span class="job__time">Jun 2022 – Present</span>
         </div>
         <div class="job__title">Senior Software Engineer – Backend</div>
-        <div class="job__stack">Golang · MySQL · FastAPI · Claude Sonnet · Apache Kafka</div>
+        <div class="job__stack">Golang · MySQL · Apache Kafka · AWS · Claude Code · Codex · MCPs</div>
         <ul class="job__bullets">
-          <li>Architected and developed a centralized reconciliation platform unlocking end-to-end visibility of 50M+ transactions daily.</li>
+          <li>Built Slack and Atlassian MCP automations that removed repetitive on-call workflows, saving engineers ~3 hours per week.</li>
+          <li>Revamped platform onboarding with natural-language input backed by LLMs, cutting a 2-day manual process to a 30-minute guided workflow.</li>
+          <li>Built and shared reusable AI skills for Jira execution, Snowflake analysis, and UAT workflows, freeing 3–5 hours per week for engineers.</li>
+          <li>Ranked in the top 2% at Grab for AI tool usage; selected for Grab's Power AI users group, driving org-wide AI adoption across the Payments division.</li>
+          <li>Architected a centralized reconciliation platform unlocking end-to-end visibility across 50M+ daily transactions.</li>
           <li>Led real-time cross-organisation integrations with banks and consumer-facing applications, increasing annual revenue by USD 3.5 million.</li>
           <li>Migrated critical applications from GCP to AWS with zero downtime — 20% cost savings and 4× performance improvement.</li>
-          <li>Developed Snowflake MCP used by 10+ engineers to perform data analysis in natural language via their IDE.</li>
-          <li>Created an OnCall helper bot using LLMs and Chain of Thought prompting, reducing time to triage issues by 40%.</li>
         </ul>
       </div>
 
@@ -43,7 +45,7 @@
         <div class="job__title">Senior Software Engineer – Platform Systems</div>
         <div class="job__stack">Java · Spring Boot · MySQL</div>
         <ul class="job__bullets">
-          <li>Led development of a high-reliability healthcare insurance system, scaling to 50K+ users and USD 6 million in annual revenue.</li>
+          <li>Worked directly with the CTO and lead client stakeholder to deliver a healthcare insurance platform end-to-end, scaling to 50K+ users and USD 6 million in annual revenue.</li>
           <li>Upgraded and migrated the entire monolithic application to Java 11 in one week, ensuring backward compatibility and zero production incidents.</li>
           <li>Designed a custom file ingestion framework, cutting integration time from 5 days to 1 day via reusable parsing architecture.</li>
         </ul>
@@ -128,15 +130,21 @@
       </div>
       <div class="skillz__category">
         <div class="skillz__category__label">Databases</div>
-        <div class="skillz__category__item">MySQL</div>
-        <div class="skillz__category__item">DynamoDB</div>
+        <div class="skillz__category__item">MySQL · DynamoDB</div>
         <div class="skillz__category__item">Redshift · BigQuery</div>
+        <div class="skillz__category__item">Snowflake</div>
       </div>
       <div class="skillz__category">
         <div class="skillz__category__label">Backend</div>
         <div class="skillz__category__item">Spring Boot</div>
         <div class="skillz__category__item">REST · Hibernate</div>
         <div class="skillz__category__item">Microservices</div>
+      </div>
+      <div class="skillz__category">
+        <div class="skillz__category__label">AI / Automation</div>
+        <div class="skillz__category__item">Claude Code · Codex</div>
+        <div class="skillz__category__item">Cursor · MCPs</div>
+        <div class="skillz__category__item">Skills</div>
       </div>
       <div class="skillz__category">
         <div class="skillz__category__label">Tools</div>
@@ -150,6 +158,22 @@
   <!-- PROJECTS -->
   <div class="resume-section">
     <h2>Projects</h2>
+
+    <div class="resume-project">
+      <div class="resume-project__header">
+        <span class="resume-project__name">Second Brain</span>
+        <span class="resume-project__year">2026</span>
+      </div>
+      <p class="resume-project__desc">Self-hosted personal knowledge app that ingests notes and sources, embeds them with pgvector, and makes them semantically searchable.</p>
+      <ul class="resume-project__bullets">
+        <li>Built end-to-end on self-hosted Postgres and filesystem storage, with edge caching on Cloudflare.</li>
+      </ul>
+      <div class="resume-project__stack">Next.js · Go · Postgres (pgvector) · Cloudflare</div>
+      <div class="resume-project__links">
+        <a href="https://abhijitmohanty.com/second-brain" target="_blank" rel="noopener">Visit ↗</a>
+        <a href="https://github.com/mohantyabhijit/second-brain" target="_blank" rel="noopener">Code ↗</a>
+      </div>
+    </div>
 
     <div class="resume-project">
       <div class="resume-project__header">
