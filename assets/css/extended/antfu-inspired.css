@@ -404,6 +404,19 @@ body.list {
   color: #aaa;
 }
 
+/* buy me a coffee (Stripe buy button) */
+.coffee-button-slot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 100%;
+  margin-top: 12px;
+}
+
+.coffee-button-slot stripe-buy-button {
+  display: inline-flex;
+}
+
 /* social icons (PaperMod home) */
 .social-icons {
   gap: 12px;

@@ -21,6 +21,13 @@
     </span>
     {{- print " · "}}
     <span class="visitor-count">total visitors: <span id="view-count">...</span></span>
+
+    <div class="coffee-button-slot" aria-label="Support via Stripe">
+        <stripe-buy-button
+            buy-button-id="buy_btn_1TfXKIRWkJ6QCdjhHqKmr2xi"
+            publishable-key="pk_live_51TOyiQRWkJ6QCdjhlLKvkb0gUa5kT8kku8R5A1LzigLjUp5obbdvTvp30e9gSwHacwuuR5yulsAUEpjcF2KrcXeo00DQKYShcF">
+        </stripe-buy-button>
+    </div>
 </footer>
 {{- end }}
 
