@@ -1,6 +1,7 @@
 +++
 title = "Projects"
 draft = false
+showCoffee = true
 +++
 
 ## Second Brain
