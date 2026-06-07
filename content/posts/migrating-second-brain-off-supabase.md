@@ -1,207 +1,64 @@
 +++
-title = "Migrating Second Brain Off Supabase: Database, Storage, and the Line We Didn't Cross"
+title = "Migrating Second Brain Off Supabase to Stop Paying for Egress"
 date = 2026-06-07T10:00:00+05:30
-description = "How I moved a production app from Supabase's managed Postgres and object storage to self-hosted Postgres and filesystem storage — without touching auth."
+description = "How a growing bill pushed me to move a production app's database and storage off Supabase onto two small VPSes — and why I left auth exactly where it was."
 tags = ["postgres", "infrastructure", "devops", "self-hosted", "migration"]
 slug = "migrating-second-brain-off-supabase"
 draft = false
 +++
 
-Second Brain is a personal knowledge app I run in production. It stores notes, embeddings, and source files. For a long time it ran entirely on Supabase: the database, object storage, and auth all lived there.
+Second Brain is a personal knowledge app I run in production. It holds notes, embeddings, and the source files behind them. For most of its life it ran entirely on Supabase — database, object storage, and auth, all in one place. That convenience is exactly what Supabase sells, and for a while it was the right trade.
 
-On June 4, 2026, I moved the database and object storage off Supabase and onto two small VPSes I control. Supabase Auth stayed. This post explains why, how, and what the migration actually looked like.
+Then the bill started talking.
 
-## Why Move at All
+## The Bill That Started It
 
-The honest reason: I did not want the app to stop working if Supabase access or billing became a problem. Supabase is a real product and I have no complaint about it, but any managed service is a dependency you cannot fully control. The database was already shaped entirely around Postgres — `pgvector`, `jsonb`, UUID defaults, `pgx`, concurrent API and worker writes. Moving to a different managed Postgres would not reduce operational risk by much. Running my own Postgres on a machine I control does.
+The free plan was generous, and I had quietly outgrown it. The part that actually stung was egress. Every time the app pulled data out — and a knowledge app pulls data out constantly — I was being metered for the privilege. The numbers were not catastrophic, but they were the wrong shape: a cost that grew with usage, on data that was already mine, moving between services I was already paying for.
 
-Object storage was a similar story but easier. The data was small: about 2,059 objects totalling 13 MB. That fits easily on a filesystem.
+The fix was sitting right there. I run a couple of small VPSes on DigitalOcean, and DigitalOcean lets those machines talk to each other over a private network for free. No egress meter on the private link. If I moved the database onto my own box and let the app reach it across that private VPC, the egress line on my bill would simply disappear.
 
-Auth was different. Supabase Auth is not just a database table — it handles token issuance, OAuth flows, and session management. Replacing it would have been a project on its own with real user-facing risk. So I left it alone.
+So the goal was never "escape Supabase." It was "stop paying to move my own bytes."
 
-## The Two-VPS Layout
+## What Moved, and What Didn't
 
-My first instinct was to put everything on one server. The app (`ubuntu-sgp`) was already running nginx, a Go API, a background worker, and Redis. Adding Postgres there seemed obvious.
+Three things lived on Supabase: the database, object storage, and auth. I made a deliberate decision about each.
 
-It was not a safe plan. That server is memory-tight. Postgres under load plus the Go processes plus Redis would have competed for the same pool and created unpredictable pressure. I had a second VPS (`codex-crapbox`) sitting mostly idle. Postgres went there instead.
+**The database had to move.** It was the source of the egress, and it was already shaped entirely around Postgres — vector embeddings, JSON columns, concurrent reads and writes from both the API and a background worker. Moving it to a different *managed* Postgres would have just relocated the same problem. Running my own Postgres on a machine I control made the egress vanish and gave me a database nobody could meter.
 
-The two machines are connected by a private VPC. Postgres listens only on the private network interface. The app server talks to the database over the private link. The database port is never exposed publicly.
+**Object storage had to move too**, though it was almost an afterthought. The whole store was about 2,000 files totalling 13 MB. That is not a storage problem; it is a rounding error that happens to sit behind an egress meter. It belonged on a plain filesystem.
 
-Final runtime layout:
+**Auth stayed.** This is the part people find surprising. Supabase Auth is genuinely excellent, and on the free plan it is generous enough that it costs me nothing. More importantly, auth is not where the egress was — nobody is streaming gigabytes through a login flow. Replacing it would have meant rebuilding token issuance, sessions, and OAuth, taking on real user-facing risk, to solve a problem that did not exist. So I left it exactly as it was. The clean line turned out to be: move the data that costs money, keep the service that doesn't.
 
-- **App server**: nginx, static frontend, Go API, background worker, Redis, filesystem object storage
-- **Database server**: PostgreSQL 17 with pgvector
-- **Supabase**: Auth only
+## Two Boxes, Not One
 
-## Splitting the Migration in Two
+My first instinct was to drop Postgres onto the server that already ran the app. One machine, fewer moving parts. I talked myself out of it within an hour. That box was already running nginx, the Go API, a background worker, and Redis, and it was memory-tight. Postgres is hungry, and under load it would have fought everything else for the same scarce RAM. The failure mode there is the worst kind: fine in testing, ugly at the exact moment of real traffic.
 
-Supabase's database backup does not include Storage object bytes. They are separate systems that happen to share a project dashboard. This matters because any migration plan that treats them as one step will fail or miss data.
+I had a second VPS sitting nearly idle. Postgres went there. The two machines speak over DigitalOcean's private network, and Postgres listens *only* on that private interface — never on a public port. The app reaches the database across the private link, which is both the secure arrangement and, not coincidentally, the free one.
 
-I split the work into two independent migrations:
+The end state:
 
-1. Database schema and data
-2. Storage objects
+- **App server** — nginx, frontend, Go API, worker, Redis, and filesystem object storage
+- **Database server** — PostgreSQL with pgvector, private network only
+- **Supabase** — auth, and nothing else
 
-## Database Migration
+## The Migration Itself
 
-The database was not dumped locally and then uploaded. The transfer happened directly between Supabase and the database server:
+The first thing I learned is that Supabase's database backup does *not* include your storage files. They look like one product in the dashboard, but they are two systems wearing the same logo. Any plan that treats them as a single export will quietly lose half your data. So I ran two separate migrations.
 
-1. Pass the Supabase connection string securely to the database server
-2. Run `pg_dump` on the database server, pulling from Supabase
-3. Write the dump locally on the database server
-4. Create a fresh database with the right owner
-5. Pre-create required extensions and a minimal `auth.users` stub
-6. Run `pg_restore` locally
-7. Fix ownership and grants
-8. Verify row counts
+For the **database**, I didn't pull the data down to my laptop and push it back up — that would have meant paying egress on the way out *and* burning an afternoon. Instead I let the database server pull directly from Supabase: dump straight across, restore locally, fix up ownership, and check the row counts against the original. The one subtlety was that Supabase keeps user records in its own schema that some of my tables referenced, so I stubbed out a minimal placeholder for that during the restore — enough to satisfy the references, while real identity kept living in Supabase Auth. When the counts matched, the data was home.
 
-The Supabase connection string was passed through macOS Keychain to avoid ever writing a credential to disk in plaintext:
+For **storage**, a small script running on the app server pulled every object straight from Supabase's storage API using short-lived credentials, dropped them onto disk in the same path layout the app already expected, and then the credentials were thrown away. Because the on-disk paths mirrored the old bucket paths, the application code didn't need to learn anything new — I just pointed it at the filesystem instead of the network.
 
-```bash
-security find-generic-password -a "$USER" -s "second-brain/SUPABASE_DB_URL" -w \
-  | ssh db-server 'umask 077; cat > /home/deploy/.supabase-source-url.tmp'
+On the app side, the changes were almost boring, which is the goal. The database connection became a single environment variable. The storage backend flipped from "Supabase" to "filesystem" with three settings and zero code changes, because that abstraction had been there all along. The only thing I had to walk back was auth: my first pass migrated a little too aggressively and briefly stood in its own login mechanism, and a follow-up put the boundary back where it belonged — Supabase Auth, untouched.
 
-ssh db-server 'bash -s' <<'REMOTE'
-set -euo pipefail
-SOURCE_DATABASE_URL="$(cat /home/deploy/.supabase-source-url.tmp)"
-TARGET_DATABASE_URL="$(cat /home/deploy/.second-brain-database-url)"
-stamp="$(date -u +%Y%m%dT%H%M%SZ)"
-workdir="/home/deploy/second-brain-migration-$stamp"
-mkdir -p "$workdir"
-dump_file="$workdir/supabase-public.dump"
+## Knowing It Actually Worked
 
-cleanup() {
-  rm -f /home/deploy/.supabase-source-url.tmp
-}
-trap cleanup EXIT
+Migrations are easy to *declare* done and hard to *prove* done. Before I believed it, I watched the health checks return clean, confirmed the app's state endpoint responded, saw the cache doing its job, ran a real login end to end, and read through the API and worker logs looking for anything unhappy. Nothing complained. The row count on the new database matched the old one exactly.
 
-pg_dump "$SOURCE_DATABASE_URL" \
-  --format=custom \
-  --no-owner \
-  --no-acl \
-  --schema=public \
-  --file="$dump_file"
+Only then did I clean up: I took verified backups of everything first, then emptied the old data out of Supabase, deleted the storage buckets, and left the project itself alive — because auth still lives there, and that was always the plan.
 
-sudo -u postgres dropdb --if-exists second_brain --force
-sudo -u postgres createdb -O second_brain_app second_brain
+## The Payoff
 
-sudo -u postgres psql -v ON_ERROR_STOP=1 -d second_brain <<'SQL'
-CREATE EXTENSION IF NOT EXISTS vector;
-CREATE SCHEMA IF NOT EXISTS auth;
-CREATE TABLE IF NOT EXISTS auth.users (
-  id uuid PRIMARY KEY,
-  email text,
-  created_at timestamptz DEFAULT now()
-);
-SQL
+The egress line is gone. The data that used to cost money every time it moved now travels across a private link that costs nothing. The database sits on a box I control, the files sit on a disk I own, and the one service I still lean on — auth — is the one that was never charging me in the first place.
 
-pg_restore \
-  --dbname="$TARGET_DATABASE_URL" \
-  --no-owner \
-  --no-acl \
-  --role=second_brain_app \
-  --verbose \
-  "$dump_file" > "$workdir/restore.log" 2>&1
-
-sudo -u postgres psql -v ON_ERROR_STOP=1 -d second_brain <<'SQL'
-ALTER SCHEMA public OWNER TO second_brain_app;
-GRANT USAGE ON SCHEMA public TO second_brain_app;
-GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO second_brain_app;
-GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA public TO second_brain_app;
-SQL
-REMOTE
-```
-
-A few things worth noting:
-
-**The `auth.users` stub.** Supabase puts user records in a schema called `auth`. The `public.user_profiles` table had a foreign key pointing there. I created a minimal stub table so the restore did not fail on a missing schema reference. This stub is local and does not participate in actual authentication — that still happens in Supabase.
-
-**No-owner, no-acl.** The dump was taken from Supabase, where roles are managed by the platform. Importing those roles into a fresh Postgres instance would fail. `--no-owner --no-acl` strips them out. The `--role=second_brain_app` flag on restore ensures the restored objects land under the right application user.
-
-**Dump format is custom.** The custom format is parallel-restorable and compresses well. For a dump this size it does not matter, but it is a better habit than plain SQL.
-
-After the restore, row counts confirmed the data was all there. The `knowledge_runs` table had 226 rows, matching Supabase.
-
-## Storage Migration
-
-The storage export cannot be reconstructed precisely because the export script was not committed to the repo. What I can say with confidence:
-
-- Objects lived in two Supabase buckets: `sources` and `second-brain`
-- A script ran on the app server and pulled objects directly from Supabase's storage API — no local laptop involved
-- The script used temporary credentials scoped to the export job, which were removed afterward
-- Objects landed at `/srv/second-brain/object-storage/{bucket}/{path}` on the app server
-
-About 2,059 objects, 13 MB total. The export was fast.
-
-The destination path structure meant the app could be pointed at the filesystem backend with no path-mapping logic. The same relative paths that worked in Supabase Storage worked on disk.
-
-## Runtime Changes
-
-### Database
-
-`DATABASE_URL` became the canonical environment variable for the database connection. The migration scripts were split:
-
-- `scripts/migrate-postgres.sh` — provider-neutral, works against any Postgres
-- `scripts/migrate-supabase.sh` — kept as a compatibility wrapper
-
-### Storage
-
-Three environment variables switched the storage backend:
-
-```
-OBJECT_STORAGE_BACKEND=filesystem
-OBJECT_STORAGE_ROOT=/srv/second-brain/object-storage
-OBJECT_STORAGE_BUCKET=sources
-```
-
-No code path changed. The backend abstraction was already there.
-
-### Auth: One Follow-Up Correction
-
-The first pass of the migration went slightly too far on auth. It temporarily replaced auth with an admin token mechanism while things were being wired up. A follow-up pass restored the intended boundary: Supabase Auth only, no local auth.
-
-The concrete fix was removing the foreign key from `public.user_profiles.auth_user_id` to the local `auth.users` compatibility stub. With that constraint gone, Supabase-issued user IDs can live in `user_profiles` without the database trying to resolve them against a local table. The migration file for this was `supabase/migrations/202606040001_external_supabase_auth_identity.sql`.
-
-## Deploy After Migration
-
-The deploy sequence after the runtime changes were ready:
-
-1. Build Linux binaries and the static frontend locally
-2. Package under `artifacts/manual-deploy`
-3. Push artifacts to the app server
-4. Update environment variables to point at the self-hosted database
-5. Run migrations against the new database
-6. Restart the API and worker
-7. Verify health endpoints
-
-## What We Verified
-
-Before calling it done:
-
-- `npm run ci` passed
-- Production health check returned `200`
-- `/api/app-state` returned `200`
-- Cache headers showed `X-Second-Brain-Cache: hit`
-- Protected auth flow worked end to end
-- API and worker logs had no warnings or errors
-- Row count on the migrated database matched Supabase
-
-## Cleanup and Backups
-
-After the runtime was stable, cleanup reduced Supabase's `public` schema from roughly 731 MB to 19 MB. Legacy application tables were emptied while schema and migration history were preserved. The `sources` and `second-brain` storage buckets were deleted. The Supabase project itself was not deleted — Auth still depends on it.
-
-Before cleanup, three backup artifacts were created and verified:
-
-- Supabase pre-cleanup dump: ~376 MB
-- Self-hosted Postgres dump taken at the same time: ~410 MB
-- Object storage archive: ~3.1 MB
-
-All three were validated with `pg_restore --list` and SHA-256 checksums.
-
-## What Stayed on Supabase
-
-One thing. Auth. And that was intentional.
-
-Supabase Auth is not just a row in a database table. It handles token issuance, session lifetimes, and OAuth. Replacing it in the same week as the database migration would have been two migrations at once with user-facing consequences if anything went wrong. Keeping Auth on Supabase and moving data off it is a clean boundary. The data is mine, the identity layer is delegated, and the app keeps working.
-
-That is the line I did not cross. Not because I could not, but because it was not worth crossing yet.
+The lesson I'm keeping: you don't have to leave a platform to stop overpaying for it. You just have to move the part that's metered and keep the part that isn't. Migrating off a service is a project. Migrating off a *line item* is an afternoon.
