@@ -5,10 +5,10 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
-\usepackage[margin=0.5in]{geometry}
+\usepackage[top=0.4in,bottom=0.3in,left=0.45in,right=0.45in]{geometry}
 \usepackage{titlesec}
 \usepackage{xcolor}
 \usepackage{enumitem}
@@ -35,8 +35,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{2pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-3pt}]
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -50,10 +50,10 @@
 }
 
 \newcommand{\resumeSubheading}[2]{
-  \vspace{2pt}\item
+  \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -77,11 +77,11 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
 
 % Key Tech line (not a bullet, rendered below the bullet list)
 \newcommand{\resumeKeyTech}[1]{
-  \vspace{3pt}\hspace{0.15in}{\small\textbf{Key Tech:} #1}\vspace{4pt}
+  \vspace{1pt}\hspace{0.15in}{\small\textbf{Key Tech:} #1}\vspace{2pt}
 }
 
 %-------------------------------------------
@@ -103,6 +103,7 @@
 %-----------PROFESSIONAL SUMMARY-----------
 \section{Professional Summary}
 \small{Team-oriented software engineer with \textbf{8+ years experience} building multi-tier, distributed systems and consumer products; delivered high-volume platforms (\textbf{50M+ daily transactions}), REST APIs, and zero-downtime releases via CI/CD; proficient in Golang with MySQL, BigQuery, AWS, Kubernetes; employs clean code practices and TDD.}
+\vspace{-2pt}
 
 %-----------WORK EXPERIENCE-----------
 \section{Work Experience}
