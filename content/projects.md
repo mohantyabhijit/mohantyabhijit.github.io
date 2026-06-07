@@ -3,6 +3,14 @@ title = "Projects"
 draft = false
 +++
 
+## Second Brain
+
+A self-hosted personal knowledge app that ingests notes and sources, embeds them with pgvector, and makes them searchable — running on self-hosted Postgres and filesystem storage.
+
+[Visit →](https://www.abhijitmohanty.com/second-brain) · [Code →](https://github.com/mohantyabhijit/second-brain)
+
+---
+
 ## simpledevutils.com
 
 A collection of daily-use utilities for developers — JSON formatters, Base64 converters, password generators, and more.
