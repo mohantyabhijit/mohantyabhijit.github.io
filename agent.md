@@ -46,7 +46,8 @@ mohantyabhijit.github.io/
 │   ├── go.mod, go.sum
 │   └── blog-api.service            # systemd unit file
 ├── static/
-│   ├── Abhijit-Mohanty-Resume.pdf, resume.tex, generate_resume.py
+│   ├── Abhijit-Mohanty-Resume.pdf  # served PDF, compiled from resume.tex (LaTeX)
+│   ├── resume.tex                  # LaTeX source of truth for the resume PDF
 ├── themes/PaperMod/                # Vendored PaperMod theme
 ├── .github/workflows/
 │   ├── deploy.yml                  # Build + deploy pipeline
