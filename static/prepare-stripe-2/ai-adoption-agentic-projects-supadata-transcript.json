@@ -1,0 +1,3239 @@
+{
+  "video_id": "AGkzpxMdPn8",
+  "url": "https://www.youtube.com/watch?v=AGkzpxMdPn8",
+  "title": "Most Enterprise Agentic Projects Are Doomed, Here's Why \u2014 Jess Grogan-Avignon & Jack Wang, Accenture",
+  "author": "AI Engineer",
+  "status": "available",
+  "chars": 17617,
+  "supadata": {
+    "lang": "en",
+    "availableLangs": [
+      "en"
+    ],
+    "content": [
+      {
+        "lang": "en",
+        "text": "[music]",
+        "offset": 7205,
+        "duration": 2020
+      },
+      {
+        "lang": "en",
+        "text": ">> All right. Hi everyone. I'm Jess. This",
+        "offset": 15640,
+        "duration": 3840
+      },
+      {
+        "lang": "en",
+        "text": "is Jack.",
+        "offset": 18280,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "And we're very excited to be here today.",
+        "offset": 19480,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "So,",
+        "offset": 21720,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "let us tell you about our world.",
+        "offset": 23560,
+        "duration": 5280
+      },
+      {
+        "lang": "en",
+        "text": "So, we work in the world of enormous",
+        "offset": 26080,
+        "duration": 5800
+      },
+      {
+        "lang": "en",
+        "text": "enterprises. So, telecoms, utilities,",
+        "offset": 28840,
+        "duration": 5400
+      },
+      {
+        "lang": "en",
+        "text": "serving entire nations, government,",
+        "offset": 31880,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "healthcare that you just heard a little",
+        "offset": 34240,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "bit about, consumer products in your",
+        "offset": 35520,
+        "duration": 5720
+      },
+      {
+        "lang": "en",
+        "text": "home right now. And when you operate at",
+        "offset": 38040,
+        "duration": 6080
+      },
+      {
+        "lang": "en",
+        "text": "that scale, actions have consequences.",
+        "offset": 41240,
+        "duration": 4920
+      },
+      {
+        "lang": "en",
+        "text": "So, bad deployment for example can take",
+        "offset": 44120,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "down critical national infrastructure.",
+        "offset": 46160,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "And so, over time these organizations",
+        "offset": 48520,
+        "duration": 5160
+      },
+      {
+        "lang": "en",
+        "text": "have built structures for this reality.",
+        "offset": 50600,
+        "duration": 6120
+      },
+      {
+        "lang": "en",
+        "text": "Control process repeatability",
+        "offset": 53680,
+        "duration": 7560
+      },
+      {
+        "lang": "en",
+        "text": "governance, layers and layers of it.",
+        "offset": 56720,
+        "duration": 5760
+      },
+      {
+        "lang": "en",
+        "text": "And this has worked really well, right?",
+        "offset": 61240,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "Like for years these companies have seen",
+        "offset": 62480,
+        "duration": 5200
+      },
+      {
+        "lang": "en",
+        "text": "massive successes and growth.",
+        "offset": 64640,
+        "duration": 5520
+      },
+      {
+        "lang": "en",
+        "text": "But always at human pace.",
+        "offset": 67680,
+        "duration": 5800
+      },
+      {
+        "lang": "en",
+        "text": "Human pace. That is what shifted.",
+        "offset": 70160,
+        "duration": 5160
+      },
+      {
+        "lang": "en",
+        "text": "We're entering a world at a machine",
+        "offset": 73480,
+        "duration": 3120
+      },
+      {
+        "lang": "en",
+        "text": "speed",
+        "offset": 75320,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "and transforming everything we know.",
+        "offset": 76600,
+        "duration": 6120
+      },
+      {
+        "lang": "en",
+        "text": "Our work, our clients, and ultimately",
+        "offset": 79240,
+        "duration": 5440
+      },
+      {
+        "lang": "en",
+        "text": "the societies these enterprises",
+        "offset": 82720,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "underpinning.",
+        "offset": 84680,
+        "duration": 5080
+      },
+      {
+        "lang": "en",
+        "text": "Our research show that 12% of companies",
+        "offset": 86400,
+        "duration": 6320
+      },
+      {
+        "lang": "en",
+        "text": "reach what we called AI achiever.",
+        "offset": 89760,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "It means that most of the company are",
+        "offset": 92720,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "still stuck piloting",
+        "offset": 94280,
+        "duration": 4880
+      },
+      {
+        "lang": "en",
+        "text": "and spending millions and perhaps not",
+        "offset": 96840,
+        "duration": 5120
+      },
+      {
+        "lang": "en",
+        "text": "getting too much in their return.",
+        "offset": 99160,
+        "duration": 4840
+      },
+      {
+        "lang": "en",
+        "text": "80%",
+        "offset": 101960,
+        "duration": 4800
+      },
+      {
+        "lang": "en",
+        "text": "The tragedy is not just wasted spend.",
+        "offset": 104000,
+        "duration": 5040
+      },
+      {
+        "lang": "en",
+        "text": "It's about falling behind in a world",
+        "offset": 106760,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "that accelerating beyond what they can",
+        "offset": 109040,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "compute.",
+        "offset": 110960,
+        "duration": 2640
+      },
+      {
+        "lang": "en",
+        "text": "Many of you here may ship here on",
+        "offset": 115280,
+        "duration": 4880
+      },
+      {
+        "lang": "en",
+        "text": "Fridays and then rollbacks on Saturdays.",
+        "offset": 117120,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "A decision you take an afternoon could",
+        "offset": 120160,
+        "duration": 4160
+      },
+      {
+        "lang": "en",
+        "text": "easily take an enterprise 6 months or",
+        "offset": 122360,
+        "duration": 3000
+      },
+      {
+        "lang": "en",
+        "text": "more.",
+        "offset": 124320,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "Octopus, Klarna, Shein, they think",
+        "offset": 125360,
+        "duration": 5360
+      },
+      {
+        "lang": "en",
+        "text": "that's insane. And then they go on and",
+        "offset": 128520,
+        "duration": 4840
+      },
+      {
+        "lang": "en",
+        "text": "redefine the games themselves.",
+        "offset": 130720,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "Others studied the games, crafted the",
+        "offset": 133360,
+        "duration": 5360
+      },
+      {
+        "lang": "en",
+        "text": "playbooks, and then ran the workshop.",
+        "offset": 135680,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "But they went home.",
+        "offset": 138720,
+        "duration": 3320
+      },
+      {
+        "lang": "en",
+        "text": "We stayed.",
+        "offset": 140640,
+        "duration": 3840
+      },
+      {
+        "lang": "en",
+        "text": "We shipped through the reality. And that",
+        "offset": 142040,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "is our mode.",
+        "offset": 144480,
+        "duration": 2800
+      },
+      {
+        "lang": "en",
+        "text": "When you stay, you learn things that the",
+        "offset": 147520,
+        "duration": 5480
+      },
+      {
+        "lang": "en",
+        "text": "slide decks don't warn you about. So,",
+        "offset": 150480,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "for example, it's not just about data",
+        "offset": 153000,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "availability or API availability that",
+        "offset": 154800,
+        "duration": 5680
+      },
+      {
+        "lang": "en",
+        "text": "impacts AI success. It's the entire",
+        "offset": 157520,
+        "duration": 5680
+      },
+      {
+        "lang": "en",
+        "text": "enterprise scaffold itself. The very",
+        "offset": 160480,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "thing that has made these companies so",
+        "offset": 163200,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "successful, which is increasingly",
+        "offset": 165040,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "becoming the drag, the thing that is",
+        "offset": 167120,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "holding them back from capturing AI",
+        "offset": 169280,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "value at scale.",
+        "offset": 171040,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "So, we're going to share with you today",
+        "offset": 173240,
+        "duration": 4160
+      },
+      {
+        "lang": "en",
+        "text": "five enterprise tensions,",
+        "offset": 175040,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "learning from our experience deploying",
+        "offset": 177400,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "AI at large enterprises over the last",
+        "offset": 179600,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "couple of years. And if you understand",
+        "offset": 181800,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "these five, we think you can probably",
+        "offset": 184320,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "predict the success of your next AI",
+        "offset": 186240,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "project before you get started.",
+        "offset": 187760,
+        "duration": 5520
+      },
+      {
+        "lang": "en",
+        "text": "Cool. Let's get into it.",
+        "offset": 190360,
+        "duration": 5080
+      },
+      {
+        "lang": "en",
+        "text": "Um 18 months ago,",
+        "offset": 193280,
+        "duration": 3240
+      },
+      {
+        "lang": "en",
+        "text": "you were probably still needed to",
+        "offset": 195440,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "explain why AI mattered, why speed",
+        "offset": 196520,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "mattered.",
+        "offset": 199080,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "But that battle's gone.",
+        "offset": 200320,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "The C-levels are convinced. You know,",
+        "offset": 202840,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "the CEOs are terrified of being left",
+        "offset": 204520,
+        "duration": 3200
+      },
+      {
+        "lang": "en",
+        "text": "behind now.",
+        "offset": 206480,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "But yet, the enterprise speed has not",
+        "offset": 207720,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "really shifted.",
+        "offset": 209960,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "It's not because AI cannot write good",
+        "offset": 211680,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "code. It is not because our engineers",
+        "offset": 213880,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "can't solve the context problem. I think",
+        "offset": 216080,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "it's something a lot more deeper. It is",
+        "offset": 218600,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "the actual enterprise scaffolding",
+        "offset": 221040,
+        "duration": 3200
+      },
+      {
+        "lang": "en",
+        "text": "itself.",
+        "offset": 222960,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "A human operating system that designed",
+        "offset": 224240,
+        "duration": 6480
+      },
+      {
+        "lang": "en",
+        "text": "for human and running at a human speed.",
+        "offset": 226760,
+        "duration": 6280
+      },
+      {
+        "lang": "en",
+        "text": "The automation behind every delivery and",
+        "offset": 230720,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "that Jess mentioned about.",
+        "offset": 233040,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "Think about data access, security",
+        "offset": 235040,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "reviews, you know, deployment process.",
+        "offset": 237000,
+        "duration": 5080
+      },
+      {
+        "lang": "en",
+        "text": "Most of the enterprises never",
+        "offset": 239720,
+        "duration": 5720
+      },
+      {
+        "lang": "en",
+        "text": "needed to invest like a tech company.",
+        "offset": 242080,
+        "duration": 5320
+      },
+      {
+        "lang": "en",
+        "text": "Corporate process balanced with minimal",
+        "offset": 245440,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "engineering investment",
+        "offset": 247400,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "with the complementary of stakeholder",
+        "offset": 249680,
+        "duration": 3200
+      },
+      {
+        "lang": "en",
+        "text": "meetings.",
+        "offset": 251440,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "And that is how enterprise runs today.",
+        "offset": 252880,
+        "duration": 6240
+      },
+      {
+        "lang": "en",
+        "text": "Fit for enterprise, fit for human.",
+        "offset": 255800,
+        "duration": 4600
+      },
+      {
+        "lang": "en",
+        "text": "We had the pleasure of delivering",
+        "offset": 259120,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "agentic solution in a large corp",
+        "offset": 260400,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "and integrating their centralized AI",
+        "offset": 262800,
+        "duration": 3000
+      },
+      {
+        "lang": "en",
+        "text": "gateway.",
+        "offset": 264440,
+        "duration": 2880
+      },
+      {
+        "lang": "en",
+        "text": "You know, we've been given the",
+        "offset": 265800,
+        "duration": 2960
+      },
+      {
+        "lang": "en",
+        "text": "essentially testing configuration",
+        "offset": 267320,
+        "duration": 2960
+      },
+      {
+        "lang": "en",
+        "text": "templated to us.",
+        "offset": 268760,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "Every single configuration change",
+        "offset": 270280,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "required a manual review before you can",
+        "offset": 272400,
+        "duration": 5040
+      },
+      {
+        "lang": "en",
+        "text": "actually hit the test to run.",
+        "offset": 274840,
+        "duration": 4760
+      },
+      {
+        "lang": "en",
+        "text": "And we eventually have to automate it at",
+        "offset": 277440,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "and the whole application we built took",
+        "offset": 279600,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "about 2 weeks.",
+        "offset": 281920,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "It then took another 12 months to get",
+        "offset": 283280,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "that into production.",
+        "offset": 285400,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "And because their infrastructure team,",
+        "offset": 287400,
+        "duration": 3880
+      },
+      {
+        "lang": "en",
+        "text": "their security team,",
+        "offset": 289600,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "their AI gateway team, their data",
+        "offset": 291280,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "governance team,",
+        "offset": 293360,
+        "duration": 3040
+      },
+      {
+        "lang": "en",
+        "text": "their application teams,",
+        "offset": 294760,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "they all needed to align.",
+        "offset": 296400,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "Um the best way I can describe this is",
+        "offset": 299200,
+        "duration": 4160
+      },
+      {
+        "lang": "en",
+        "text": "think about Google search.",
+        "offset": 301360,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "Before you see the results come out,",
+        "offset": 303360,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "they're going to be three teams review",
+        "offset": 305480,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "the results first.",
+        "offset": 307360,
+        "duration": 2960
+      },
+      {
+        "lang": "en",
+        "text": "Need to be a legal sign-off for the",
+        "offset": 308840,
+        "duration": 2600
+      },
+      {
+        "lang": "en",
+        "text": "results.",
+        "offset": 310320,
+        "duration": 2840
+      },
+      {
+        "lang": "en",
+        "text": "And then they say, wait for 2 weeks",
+        "offset": 311440,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "because we're quarter end, it's change",
+        "offset": 313160,
+        "duration": 3080
+      },
+      {
+        "lang": "en",
+        "text": "freeze.",
+        "offset": 314920,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "That is how AI in enterprise delivery",
+        "offset": 316240,
+        "duration": 5280
+      },
+      {
+        "lang": "en",
+        "text": "today.",
+        "offset": 319120,
+        "duration": 2400
+      },
+      {
+        "lang": "en",
+        "text": "So, how do you go faster? I guess you",
+        "offset": 322400,
+        "duration": 5400
+      },
+      {
+        "lang": "en",
+        "text": "hand an AI coding agent to your",
+        "offset": 325240,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "developers and the next thing that you",
+        "offset": 327800,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "find is a massive bottleneck at the code",
+        "offset": 329480,
+        "duration": 4840
+      },
+      {
+        "lang": "en",
+        "text": "review and the deployment stage, right?",
+        "offset": 332080,
+        "duration": 4600
+      },
+      {
+        "lang": "en",
+        "text": "And this is going to get worse because",
+        "offset": 334320,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "these coding agents are turning everyone",
+        "offset": 336680,
+        "duration": 4920
+      },
+      {
+        "lang": "en",
+        "text": "into a builder, PMs, designers, domain",
+        "offset": 338640,
+        "duration": 6200
+      },
+      {
+        "lang": "en",
+        "text": "experts. And so, the the supply of",
+        "offset": 341600,
+        "duration": 6080
+      },
+      {
+        "lang": "en",
+        "text": "deployable code is exploding. Some of",
+        "offset": 344840,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "you might have seen the GitHub stats. In",
+        "offset": 347680,
+        "duration": 6000
+      },
+      {
+        "lang": "en",
+        "text": "2025, they reported 1 billion commits.",
+        "offset": 349560,
+        "duration": 6480
+      },
+      {
+        "lang": "en",
+        "text": "So far this year we're averaging 275",
+        "offset": 353680,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "million per week, which means we're on",
+        "offset": 356040,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "track for 14 billion by the end of the",
+        "offset": 358120,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "year.",
+        "offset": 360520,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "And this is super exciting, but approval",
+        "offset": 362760,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "infrastructure deployment",
+        "offset": 365080,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "infrastructure hasn't changed because",
+        "offset": 366400,
+        "duration": 4160
+      },
+      {
+        "lang": "en",
+        "text": "these processes were ultimately designed",
+        "offset": 368520,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "for human speed. The real tech debt here",
+        "offset": 370560,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "goes beyond the legacy code that exists",
+        "offset": 373480,
+        "duration": 5440
+      },
+      {
+        "lang": "en",
+        "text": "within applications. And it's the years",
+        "offset": 375800,
+        "duration": 4880
+      },
+      {
+        "lang": "en",
+        "text": "of underinvestment in the engineering",
+        "offset": 378920,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "automation, CI/CD, et cetera that allows",
+        "offset": 380680,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "companies to move faster while",
+        "offset": 383560,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "maintaining control.",
+        "offset": 384920,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "So, what's the pathway? Every single",
+        "offset": 386960,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "human process needs to become adaptable,",
+        "offset": 388840,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "executable code.",
+        "offset": 391280,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "Not another meeting,",
+        "offset": 393400,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "not a sign-off chain, code.",
+        "offset": 394960,
+        "duration": 5120
+      },
+      {
+        "lang": "en",
+        "text": "And the good news here is that AI can",
+        "offset": 398120,
+        "duration": 3720
+      },
+      {
+        "lang": "en",
+        "text": "help you build this faster and cheaper,",
+        "offset": 400080,
+        "duration": 2920
+      },
+      {
+        "lang": "en",
+        "text": "right? Like these aren't new",
+        "offset": 401840,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "capabilities, but it does represent a",
+        "offset": 403000,
+        "duration": 5320
+      },
+      {
+        "lang": "en",
+        "text": "fundamental mindset shift for a lot of",
+        "offset": 406200,
+        "duration": 6080
+      },
+      {
+        "lang": "en",
+        "text": "the organizations that we work with.",
+        "offset": 408320,
+        "duration": 5960
+      },
+      {
+        "lang": "en",
+        "text": "Okay, next up.",
+        "offset": 412280,
+        "duration": 3720
+      },
+      {
+        "lang": "en",
+        "text": "Who here has had to start a project with",
+        "offset": 414280,
+        "duration": 3520
+      },
+      {
+        "lang": "en",
+        "text": "a business case to unlock internal",
+        "offset": 416000,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "funding?",
+        "offset": 417800,
+        "duration": 5480
+      },
+      {
+        "lang": "en",
+        "text": "Cool. Welcome to our world. Um now,",
+        "offset": 420240,
+        "duration": 5920
+      },
+      {
+        "lang": "en",
+        "text": "business cases aren't wrong per se.",
+        "offset": 423280,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "They, you know, they raise a lot of the",
+        "offset": 426160,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "right questions, they create oversight,",
+        "offset": 427560,
+        "duration": 3520
+      },
+      {
+        "lang": "en",
+        "text": "they ensure that someone has thought",
+        "offset": 429560,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "about ROI. All of these are really good",
+        "offset": 431080,
+        "duration": 3280
+      },
+      {
+        "lang": "en",
+        "text": "things.",
+        "offset": 433360,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "But they assume that three things are",
+        "offset": 434360,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "knowable up front.",
+        "offset": 436760,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "The scope and the solution, the expected",
+        "offset": 438600,
+        "duration": 5320
+      },
+      {
+        "lang": "en",
+        "text": "value, and the cost and time to deliver.",
+        "offset": 440720,
+        "duration": 5680
+      },
+      {
+        "lang": "en",
+        "text": "Now, with AI, this is often backwards,",
+        "offset": 443920,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "right? You learn the solution and the",
+        "offset": 446400,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "business case by doing the work.",
+        "offset": 448400,
+        "duration": 4920
+      },
+      {
+        "lang": "en",
+        "text": "And more importantly,",
+        "offset": 450880,
+        "duration": 4800
+      },
+      {
+        "lang": "en",
+        "text": "when the execution cost for prototyping,",
+        "offset": 453320,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "experimentation, building, et cetera",
+        "offset": 455680,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "drops down to near zero, this is no",
+        "offset": 458320,
+        "duration": 4880
+      },
+      {
+        "lang": "en",
+        "text": "longer just about efficiency. This is",
+        "offset": 460680,
+        "duration": 5800
+      },
+      {
+        "lang": "en",
+        "text": "now unlocking capabilities, entire new",
+        "offset": 463200,
+        "duration": 5480
+      },
+      {
+        "lang": "en",
+        "text": "categories of things that weren't",
+        "offset": 466480,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "possible previously. It means you can",
+        "offset": 468680,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "now attempt things that were previously",
+        "offset": 470960,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "economically impossible for the",
+        "offset": 472720,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "organization.",
+        "offset": 474440,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "And that means things like new products,",
+        "offset": 476080,
+        "duration": 4880
+      },
+      {
+        "lang": "en",
+        "text": "new services, customer experiences, they",
+        "offset": 478000,
+        "duration": 5960
+      },
+      {
+        "lang": "en",
+        "text": "are just waiting to be reinvented.",
+        "offset": 480960,
+        "duration": 4840
+      },
+      {
+        "lang": "en",
+        "text": "Um and we see this born out in the",
+        "offset": 483960,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "stats. So, in terms of the AI achievers",
+        "offset": 485800,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "that we mentioned earlier, we see them",
+        "offset": 487920,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "achieving about 50% higher revenue",
+        "offset": 490120,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "growth than their peers. And that's not",
+        "offset": 492400,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "from cost cutting, that's from doing",
+        "offset": 494120,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "entirely new things.",
+        "offset": 495840,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "If you think about as well recent AI",
+        "offset": 498520,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "product successes, often they've been",
+        "offset": 499960,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "emergent. So, you think about Cursor's",
+        "offset": 501880,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "user base of live coders, they didn't",
+        "offset": 504240,
+        "duration": 3520
+      },
+      {
+        "lang": "en",
+        "text": "exist when they started building the",
+        "offset": 506280,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "product or when they released it. Cloud",
+        "offset": 507760,
+        "duration": 4160
+      },
+      {
+        "lang": "en",
+        "text": "code wasn't something that was planned",
+        "offset": 510080,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "out on a product roadmap months and",
+        "offset": 511920,
+        "duration": 3679
+      },
+      {
+        "lang": "en",
+        "text": "months in advance. And on the enterprise",
+        "offset": 513640,
+        "duration": 3839
+      },
+      {
+        "lang": "en",
+        "text": "side, you have examples like Walmart for",
+        "offset": 515599,
+        "duration": 3521
+      },
+      {
+        "lang": "en",
+        "text": "example who",
+        "offset": 517479,
+        "duration": 5161
+      },
+      {
+        "lang": "en",
+        "text": "built out a social media trend scanner",
+        "offset": 519120,
+        "duration": 5039
+      },
+      {
+        "lang": "en",
+        "text": "and generative designer that's now",
+        "offset": 522640,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "allowing them to compete in entirely new",
+        "offset": 524159,
+        "duration": 5401
+      },
+      {
+        "lang": "en",
+        "text": "ways with the likes of Shein and Temu.",
+        "offset": 527080,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "Um or JP Morgan who started building",
+        "offset": 529560,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "something as an internal productivity",
+        "offset": 531760,
+        "duration": 3240
+      },
+      {
+        "lang": "en",
+        "text": "tool that they've now been able to",
+        "offset": 533520,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "productize and generate entirely new",
+        "offset": 535000,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "revenue stream.",
+        "offset": 537280,
+        "duration": 3880
+      },
+      {
+        "lang": "en",
+        "text": "Now, currently the enterprise finance is",
+        "offset": 539040,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "wired for certainty, which means that",
+        "offset": 541160,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "generally your project starts life",
+        "offset": 543160,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "justifying itself in terms of committed",
+        "offset": 545080,
+        "duration": 5360
+      },
+      {
+        "lang": "en",
+        "text": "benefits and predictable cost phasing.",
+        "offset": 547560,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "And that framing can kill projects",
+        "offset": 550440,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "before you even begin because it's",
+        "offset": 552560,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "asking a question based on can we",
+        "offset": 554440,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "justify this specific thing based on",
+        "offset": 556040,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "predictability, rather than asking about",
+        "offset": 558080,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "what now becomes possible.",
+        "offset": 560520,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "And so, the right question to be asking",
+        "offset": 562440,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "is, what is the impact of not doing",
+        "offset": 564080,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "this? What is the cost of not doing",
+        "offset": 566800,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "this?",
+        "offset": 568520,
+        "duration": 2360
+      },
+      {
+        "lang": "en",
+        "text": "So, your CFO needs to think like a VC.",
+        "offset": 571400,
+        "duration": 5680
+      },
+      {
+        "lang": "en",
+        "text": "At least when it comes to agentic",
+        "offset": 575360,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "transformation.",
+        "offset": 577080,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "Um a VC doesn't bet on one project and",
+        "offset": 579000,
+        "duration": 5760
+      },
+      {
+        "lang": "en",
+        "text": "demand like 3 years fixed guaranteed",
+        "offset": 581440,
+        "duration": 5720
+      },
+      {
+        "lang": "en",
+        "text": "payback because they know the certainty",
+        "offset": 584760,
+        "duration": 5920
+      },
+      {
+        "lang": "en",
+        "text": "from a business case is a fantasy.",
+        "offset": 587160,
+        "duration": 5440
+      },
+      {
+        "lang": "en",
+        "text": "Rather, they back a portfolio, they're",
+        "offset": 590680,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "knowing most of the bets may not pay",
+        "offset": 592600,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "off, but they will basically looking for",
+        "offset": 594480,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "those ones that compound.",
+        "offset": 596960,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "They knows that where the true value",
+        "offset": 599160,
+        "duration": 5280
+      },
+      {
+        "lang": "en",
+        "text": "really lies is in that beyond certainty",
+        "offset": 601240,
+        "duration": 6160
+      },
+      {
+        "lang": "en",
+        "text": "and that power law exponential growth.",
+        "offset": 604440,
+        "duration": 5840
+      },
+      {
+        "lang": "en",
+        "text": "Enterprise investment works the same way",
+        "offset": 607400,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "for AI. The question is not can we",
+        "offset": 610280,
+        "duration": 3600
+      },
+      {
+        "lang": "en",
+        "text": "justified",
+        "offset": 612400,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "this project, but are we placing enough",
+        "offset": 613880,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "bets across the portfolio that we going",
+        "offset": 615840,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "to hit the right ones that's going to",
+        "offset": 618080,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "change everything for us.",
+        "offset": 619760,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "So if your finance function cannot think",
+        "offset": 621760,
+        "duration": 3600
+      },
+      {
+        "lang": "en",
+        "text": "like that, that is where your",
+        "offset": 623720,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "transformation should start and because",
+        "offset": 625360,
+        "duration": 6120
+      },
+      {
+        "lang": "en",
+        "text": "everything else is downstream.",
+        "offset": 627920,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "Cool. Next one.",
+        "offset": 631880,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "Um do we have any data scientist or",
+        "offset": 633640,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "machine learning engineers here?",
+        "offset": 635320,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "Brilliant.",
+        "offset": 637680,
+        "duration": 2320
+      },
+      {
+        "lang": "en",
+        "text": "I think hopefully you guys going to like",
+        "offset": 638760,
+        "duration": 2680
+      },
+      {
+        "lang": "en",
+        "text": "this part.",
+        "offset": 640000,
+        "duration": 3080
+      },
+      {
+        "lang": "en",
+        "text": "You guys been doing something different",
+        "offset": 641440,
+        "duration": 4800
+      },
+      {
+        "lang": "en",
+        "text": "everyone else, I hope. Um hypothesize",
+        "offset": 643080,
+        "duration": 5320
+      },
+      {
+        "lang": "en",
+        "text": "and and experiment, statistical",
+        "offset": 646240,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "confidence.",
+        "offset": 648400,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "Um most of enterprises probably treated",
+        "offset": 649720,
+        "duration": 5960
+      },
+      {
+        "lang": "en",
+        "text": "you guys like the modern IT crowd.",
+        "offset": 651840,
+        "duration": 6880
+      },
+      {
+        "lang": "en",
+        "text": "Brilliant, quietly right and just very",
+        "offset": 655680,
+        "duration": 5960
+      },
+      {
+        "lang": "en",
+        "text": "kindly ignored. Um kept you guys in the",
+        "offset": 658720,
+        "duration": 4800
+      },
+      {
+        "lang": "en",
+        "text": "basement while the upstairs doing the",
+        "offset": 661640,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "real work through the Jira board at PI",
+        "offset": 663520,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "planning.",
+        "offset": 665760,
+        "duration": 3280
+      },
+      {
+        "lang": "en",
+        "text": "However, I think this is your",
+        "offset": 667200,
+        "duration": 3160
+      },
+      {
+        "lang": "en",
+        "text": "opportunity.",
+        "offset": 669040,
+        "duration": 3799
+      },
+      {
+        "lang": "en",
+        "text": "Agentic delivery is your world, not",
+        "offset": 670360,
+        "duration": 5680
+      },
+      {
+        "lang": "en",
+        "text": "theirs. Models are non-deterministic.",
+        "offset": 672839,
+        "duration": 6161
+      },
+      {
+        "lang": "en",
+        "text": "Agent behavior is emergent. And you",
+        "offset": 676040,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "should not scope it like just a feature",
+        "offset": 679000,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "build like software traditionally.",
+        "offset": 681040,
+        "duration": 4799
+      },
+      {
+        "lang": "en",
+        "text": "And you cannot milestone it like a fixed",
+        "offset": 683200,
+        "duration": 5800
+      },
+      {
+        "lang": "en",
+        "text": "program. And yet that's what entire",
+        "offset": 685839,
+        "duration": 6000
+      },
+      {
+        "lang": "en",
+        "text": "enterprises are trying to do.",
+        "offset": 689000,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "When you are in that delivery trench,",
+        "offset": 691839,
+        "duration": 4441
+      },
+      {
+        "lang": "en",
+        "text": "what we see is that the more enormous",
+        "offset": 693720,
+        "duration": 6160
+      },
+      {
+        "lang": "en",
+        "text": "effort we have to spend to really not",
+        "offset": 696280,
+        "duration": 5559
+      },
+      {
+        "lang": "en",
+        "text": "about building the things, but to really",
+        "offset": 699880,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "try to bridge that gap between and how",
+        "offset": 701839,
+        "duration": 5481
+      },
+      {
+        "lang": "en",
+        "text": "any system actually work versus what our",
+        "offset": 704520,
+        "duration": 5319
+      },
+      {
+        "lang": "en",
+        "text": "stakeholders actually expect.",
+        "offset": 707320,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "You know, the",
+        "offset": 709839,
+        "duration": 4601
+      },
+      {
+        "lang": "en",
+        "text": "um the never-ending utopian design up",
+        "offset": 711800,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "front",
+        "offset": 714440,
+        "duration": 3040
+      },
+      {
+        "lang": "en",
+        "text": "and the",
+        "offset": 715880,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "constant conversation you have to talk",
+        "offset": 717480,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "about guaranteed performance",
+        "offset": 719320,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "and those kind of endless status updates",
+        "offset": 721480,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "to for those decisions that never gets",
+        "offset": 724000,
+        "duration": 3240
+      },
+      {
+        "lang": "en",
+        "text": "made.",
+        "offset": 726160,
+        "duration": 3600
+      },
+      {
+        "lang": "en",
+        "text": "And those are the things that is",
+        "offset": 727240,
+        "duration": 4760
+      },
+      {
+        "lang": "en",
+        "text": "currently consumed the energy when we",
+        "offset": 729760,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "come to delivery this the agentic",
+        "offset": 732000,
+        "duration": 5480
+      },
+      {
+        "lang": "en",
+        "text": "systems.",
+        "offset": 735000,
+        "duration": 2480
+      },
+      {
+        "lang": "en",
+        "text": "The IT crowd is never the problem,",
+        "offset": 739920,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "right? The organization just need to",
+        "offset": 742000,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "learn your language. And it's the only",
+        "offset": 743680,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "language we think is matter for agentic",
+        "offset": 746280,
+        "duration": 3160
+      },
+      {
+        "lang": "en",
+        "text": "delivery.",
+        "offset": 748320,
+        "duration": 3240
+      },
+      {
+        "lang": "en",
+        "text": "Um the team needs to upskill themselves",
+        "offset": 749440,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "to learn hypothesis driven delivery. You",
+        "offset": 751560,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "need to reshape your program around one",
+        "offset": 754120,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "goal, which is building that statistical",
+        "offset": 755960,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "confidence. Small loops of build,",
+        "offset": 758080,
+        "duration": 6400
+      },
+      {
+        "lang": "en",
+        "text": "evaluate, iterate, fast evidence.",
+        "offset": 760640,
+        "duration": 6360
+      },
+      {
+        "lang": "en",
+        "text": "And then and and actually your delivery",
+        "offset": 764480,
+        "duration": 5040
+      },
+      {
+        "lang": "en",
+        "text": "team needs to look quite different, too.",
+        "offset": 767000,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "People who are comfortable with",
+        "offset": 769520,
+        "duration": 4600
+      },
+      {
+        "lang": "en",
+        "text": "ambiguity who can articulate what they",
+        "offset": 771000,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "have learned, not just what they have",
+        "offset": 774120,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "delivered. And most importantly, they",
+        "offset": 775720,
+        "duration": 4600
+      },
+      {
+        "lang": "en",
+        "text": "can translate those statistical number",
+        "offset": 778360,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "into stakeholder confidence. And those",
+        "offset": 780320,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "are different kind of skill set. You",
+        "offset": 782760,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "need hire for it, you need train for it,",
+        "offset": 784520,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "and you probably need to value that as",
+        "offset": 787240,
+        "duration": 3480
+      },
+      {
+        "lang": "en",
+        "text": "well.",
+        "offset": 788920,
+        "duration": 5200
+      },
+      {
+        "lang": "en",
+        "text": "All right, next one.",
+        "offset": 790720,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "Now, as a society, we are collectively",
+        "offset": 794280,
+        "duration": 5200
+      },
+      {
+        "lang": "en",
+        "text": "learning to trust AI. I mean, no one",
+        "offset": 797080,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "cross-checks their Google results",
+        "offset": 799480,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "anymore, right? And we in this room are",
+        "offset": 800720,
+        "duration": 5119
+      },
+      {
+        "lang": "en",
+        "text": "probably quite comfortable with using AI",
+        "offset": 803040,
+        "duration": 5400
+      },
+      {
+        "lang": "en",
+        "text": "tools. Um probably all of us don't",
+        "offset": 805839,
+        "duration": 4561
+      },
+      {
+        "lang": "en",
+        "text": "review every single code output that we",
+        "offset": 808440,
+        "duration": 3240
+      },
+      {
+        "lang": "en",
+        "text": "generate.",
+        "offset": 810400,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "Um now, AI is on that same trajectory,",
+        "offset": 811680,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "right? But it's not there yet, and it's",
+        "offset": 813760,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "our job as AI engineers to bridge that",
+        "offset": 815360,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "gap. And for large enterprises, that",
+        "offset": 818120,
+        "duration": 5040
+      },
+      {
+        "lang": "en",
+        "text": "trust gap is not small. Um and what we",
+        "offset": 820360,
+        "duration": 4479
+      },
+      {
+        "lang": "en",
+        "text": "have learned is that the completion of",
+        "offset": 823160,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "individual features is not necessarily",
+        "offset": 824839,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "the most valuable thing that you ship.",
+        "offset": 826960,
+        "duration": 5400
+      },
+      {
+        "lang": "en",
+        "text": "Um the trust in the outputs and the AI",
+        "offset": 829839,
+        "duration": 4481
+      },
+      {
+        "lang": "en",
+        "text": "that you build over time is the more",
+        "offset": 832360,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "valuable thing. And and when I say",
+        "offset": 834320,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "trust, I mean in the broader sense, you",
+        "offset": 836120,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "know, in the content, in the accuracy,",
+        "offset": 838240,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "responsible use, privacy, all of those",
+        "offset": 840560,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "things that collectively allow end users",
+        "offset": 842560,
+        "duration": 5880
+      },
+      {
+        "lang": "en",
+        "text": "to trust an AI system.",
+        "offset": 845080,
+        "duration": 5400
+      },
+      {
+        "lang": "en",
+        "text": "You can think about agentic delivery in",
+        "offset": 848440,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "some ways as a deposit or a withdrawal",
+        "offset": 850480,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "into a trust account with your",
+        "offset": 853000,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "stakeholders, your leadership, with your",
+        "offset": 854920,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "end customers.",
+        "offset": 857360,
+        "duration": 4479
+      },
+      {
+        "lang": "en",
+        "text": "And what survives over time isn't",
+        "offset": 859040,
+        "duration": 5200
+      },
+      {
+        "lang": "en",
+        "text": "necessarily a specific feature. It's",
+        "offset": 861839,
+        "duration": 4361
+      },
+      {
+        "lang": "en",
+        "text": "that trust that you've built as things",
+        "offset": 864240,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "evolve and things change.",
+        "offset": 866200,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "And so the question we ask is, how do",
+        "offset": 868600,
+        "duration": 5280
+      },
+      {
+        "lang": "en",
+        "text": "you build trust at speed, deliberately,",
+        "offset": 870720,
+        "duration": 5160
+      },
+      {
+        "lang": "en",
+        "text": "and with evidence?",
+        "offset": 873880,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "So we spend a lot of time talking to",
+        "offset": 875880,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "companies about progressive autonomy.",
+        "offset": 877240,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "Many companies still see agents as",
+        "offset": 880200,
+        "duration": 3720
+      },
+      {
+        "lang": "en",
+        "text": "basically the same as traditional",
+        "offset": 882480,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "automation where you complete some",
+        "offset": 883920,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "tasks, you run them, you deploy them,",
+        "offset": 886440,
+        "duration": 4480
+      },
+      {
+        "lang": "en",
+        "text": "and they run, and that's that. But",
+        "offset": 888640,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "agents aren't just built and then turned",
+        "offset": 890920,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "on, right? Like you can't foresee every",
+        "offset": 892720,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "single response or behavior up front and",
+        "offset": 895000,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "test for it. Um their behavior is",
+        "offset": 897400,
+        "duration": 4760
+      },
+      {
+        "lang": "en",
+        "text": "emergent. And this is particularly",
+        "offset": 899720,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "relevant in the context of autonomous",
+        "offset": 902160,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "processes, which is something we do with",
+        "offset": 904000,
+        "duration": 4280
+      },
+      {
+        "lang": "en",
+        "text": "quite a lot of our clients.",
+        "offset": 906200,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "Um and so the eval suite, we've heard a",
+        "offset": 908280,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "lot about it over the last few days,",
+        "offset": 910760,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "that's super important, um and you have",
+        "offset": 912360,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "to evaluate the right things, but we",
+        "offset": 914800,
+        "duration": 4159
+      },
+      {
+        "lang": "en",
+        "text": "also talk about how you actually deploy",
+        "offset": 916920,
+        "duration": 5360
+      },
+      {
+        "lang": "en",
+        "text": "into production and increase autonomy",
+        "offset": 918959,
+        "duration": 5241
+      },
+      {
+        "lang": "en",
+        "text": "over time. So you follow this exposure",
+        "offset": 922280,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "ladder.",
+        "offset": 924200,
+        "duration": 3759
+      },
+      {
+        "lang": "en",
+        "text": "So you start with a shadow mode where an",
+        "offset": 926040,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "agent might run alongside human",
+        "offset": 927959,
+        "duration": 3281
+      },
+      {
+        "lang": "en",
+        "text": "processes, but it can't actually affect",
+        "offset": 929400,
+        "duration": 3120
+      },
+      {
+        "lang": "en",
+        "text": "outcomes.",
+        "offset": 931240,
+        "duration": 3000
+      },
+      {
+        "lang": "en",
+        "text": "Um you compare the human decisions that",
+        "offset": 932520,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "are made to what the agent is saying,",
+        "offset": 934240,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "and you use that as a signal to iterate",
+        "offset": 935920,
+        "duration": 5080
+      },
+      {
+        "lang": "en",
+        "text": "um and build up confidence in the",
+        "offset": 938680,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "specific behaviors that you're you're",
+        "offset": 941000,
+        "duration": 3400
+      },
+      {
+        "lang": "en",
+        "text": "trying to achieve.",
+        "offset": 942720,
+        "duration": 2680
+      },
+      {
+        "lang": "en",
+        "text": "Um",
+        "offset": 944400,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "you keep iterating, you then move up to",
+        "offset": 945400,
+        "duration": 4439
+      },
+      {
+        "lang": "en",
+        "text": "more of an advisory mode where the agent",
+        "offset": 947760,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "runs live,",
+        "offset": 949839,
+        "duration": 3521
+      },
+      {
+        "lang": "en",
+        "text": "um but it only recommends. So the humans",
+        "offset": 951200,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "are still playing an active role in the",
+        "offset": 953360,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "workflow. They can approve or reject the",
+        "offset": 955320,
+        "duration": 3759
+      },
+      {
+        "lang": "en",
+        "text": "outcome.",
+        "offset": 957880,
+        "duration": 2440
+      },
+      {
+        "lang": "en",
+        "text": "And again, this provides you with",
+        "offset": 959079,
+        "duration": 3801
+      },
+      {
+        "lang": "en",
+        "text": "another signal that you can incorporate",
+        "offset": 960320,
+        "duration": 4920
+      },
+      {
+        "lang": "en",
+        "text": "and you iterate again.",
+        "offset": 962880,
+        "duration": 4120
+      },
+      {
+        "lang": "en",
+        "text": "Then you shift up to controlled autonomy",
+        "offset": 965240,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "where the agent is able to run and",
+        "offset": 967000,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "trigger actions, but in a narrow,",
+        "offset": 968800,
+        "duration": 5800
+      },
+      {
+        "lang": "en",
+        "text": "low-risk uh scenarios.",
+        "offset": 971440,
+        "duration": 5040
+      },
+      {
+        "lang": "en",
+        "text": "Um and it has clear limits, kill",
+        "offset": 974600,
+        "duration": 4359
+      },
+      {
+        "lang": "en",
+        "text": "switches. And over time, you can extend",
+        "offset": 976480,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "that up to um",
+        "offset": 978959,
+        "duration": 5961
+      },
+      {
+        "lang": "en",
+        "text": "to to wider autonomy based on achieving",
+        "offset": 981200,
+        "duration": 5200
+      },
+      {
+        "lang": "en",
+        "text": "the right level of confidence in the",
+        "offset": 984920,
+        "duration": 3280
+      },
+      {
+        "lang": "en",
+        "text": "target behaviors that you're trying to",
+        "offset": 986400,
+        "duration": 3080
+      },
+      {
+        "lang": "en",
+        "text": "drive.",
+        "offset": 988200,
+        "duration": 3639
+      },
+      {
+        "lang": "en",
+        "text": "And the key here is that each step is",
+        "offset": 989480,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "gated by evidence in outcomes. It's not",
+        "offset": 991839,
+        "duration": 4521
+      },
+      {
+        "lang": "en",
+        "text": "based on completion of activities in a",
+        "offset": 994000,
+        "duration": 5200
+      },
+      {
+        "lang": "en",
+        "text": "project plan or pass-fail testing. It's",
+        "offset": 996360,
+        "duration": 5520
+      },
+      {
+        "lang": "en",
+        "text": "entirely about the confidence, the trust",
+        "offset": 999200,
+        "duration": 4360
+      },
+      {
+        "lang": "en",
+        "text": "in those outcomes.",
+        "offset": 1001880,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "So, engineer for trust, not just for",
+        "offset": 1003560,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "completion.",
+        "offset": 1005920,
+        "duration": 3919
+      },
+      {
+        "lang": "en",
+        "text": "Right, last one.",
+        "offset": 1008280,
+        "duration": 4920
+      },
+      {
+        "lang": "en",
+        "text": "Um we mentioned our moat earlier. Now,",
+        "offset": 1009839,
+        "duration": 5081
+      },
+      {
+        "lang": "en",
+        "text": "what is yours?",
+        "offset": 1013200,
+        "duration": 5400
+      },
+      {
+        "lang": "en",
+        "text": "In a recursive world where AI codes AI,",
+        "offset": 1014920,
+        "duration": 5840
+      },
+      {
+        "lang": "en",
+        "text": "anything you ship can be cloned a minute",
+        "offset": 1018600,
+        "duration": 3880
+      },
+      {
+        "lang": "en",
+        "text": "it goes viral.",
+        "offset": 1020760,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "So ask this,",
+        "offset": 1022480,
+        "duration": 5080
+      },
+      {
+        "lang": "en",
+        "text": "what is unique only to you?",
+        "offset": 1024120,
+        "duration": 5079
+      },
+      {
+        "lang": "en",
+        "text": "I think your existing enterprise",
+        "offset": 1027560,
+        "duration": 5080
+      },
+      {
+        "lang": "en",
+        "text": "knowledge, the CRM, the ERP, the SOPs,",
+        "offset": 1029199,
+        "duration": 5480
+      },
+      {
+        "lang": "en",
+        "text": "they got you to the table.",
+        "offset": 1032640,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "We call it the your transaction your",
+        "offset": 1034679,
+        "duration": 3641
+      },
+      {
+        "lang": "en",
+        "text": "transactional memory.",
+        "offset": 1036560,
+        "duration": 3639
+      },
+      {
+        "lang": "en",
+        "text": "However, every competitor has one",
+        "offset": 1038320,
+        "duration": 4359
+      },
+      {
+        "lang": "en",
+        "text": "version of that. It's a floor, not a",
+        "offset": 1040199,
+        "duration": 4000
+      },
+      {
+        "lang": "en",
+        "text": "fortress.",
+        "offset": 1042679,
+        "duration": 3561
+      },
+      {
+        "lang": "en",
+        "text": "The real moat is in the moment when your",
+        "offset": 1044199,
+        "duration": 4081
+      },
+      {
+        "lang": "en",
+        "text": "customer touches your product.",
+        "offset": 1046240,
+        "duration": 4920
+      },
+      {
+        "lang": "en",
+        "text": "Edge cases, corrections, emotional",
+        "offset": 1048280,
+        "duration": 5399
+      },
+      {
+        "lang": "en",
+        "text": "intent, and actual behavior at your",
+        "offset": 1051160,
+        "duration": 5760
+      },
+      {
+        "lang": "en",
+        "text": "specific scale in your specific context.",
+        "offset": 1053679,
+        "duration": 5961
+      },
+      {
+        "lang": "en",
+        "text": "Those signals belong to you.",
+        "offset": 1056920,
+        "duration": 6759
+      },
+      {
+        "lang": "en",
+        "text": "And we call it your living memory.",
+        "offset": 1059640,
+        "duration": 4039
+      },
+      {
+        "lang": "en",
+        "text": "The day the day you ship is not the",
+        "offset": 1064679,
+        "duration": 4881
+      },
+      {
+        "lang": "en",
+        "text": "finish line. Far from it. It is when the",
+        "offset": 1066720,
+        "duration": 4760
+      },
+      {
+        "lang": "en",
+        "text": "race actually begins.",
+        "offset": 1069560,
+        "duration": 3440
+      },
+      {
+        "lang": "en",
+        "text": "How quickly you can compound and",
+        "offset": 1071480,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "iterate. How fast you can turn a signal",
+        "offset": 1073000,
+        "duration": 3920
+      },
+      {
+        "lang": "en",
+        "text": "into value.",
+        "offset": 1075560,
+        "duration": 3240
+      },
+      {
+        "lang": "en",
+        "text": "It is a race against yourself to",
+        "offset": 1076920,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "engineering your own competitive edge",
+        "offset": 1078800,
+        "duration": 5879
+      },
+      {
+        "lang": "en",
+        "text": "recursively and constantly.",
+        "offset": 1081560,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "The pathway requires a fundamental shift",
+        "offset": 1084679,
+        "duration": 3761
+      },
+      {
+        "lang": "en",
+        "text": "in your engineering vision.",
+        "offset": 1086560,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "Every feature you ship should either",
+        "offset": 1088440,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "generate that feedback signal or deliver",
+        "offset": 1090600,
+        "duration": 4440
+      },
+      {
+        "lang": "en",
+        "text": "on what the signal has already taught",
+        "offset": 1093400,
+        "duration": 2800
+      },
+      {
+        "lang": "en",
+        "text": "you.",
+        "offset": 1095040,
+        "duration": 3160
+      },
+      {
+        "lang": "en",
+        "text": "Um because if it does neither, you're",
+        "offset": 1096200,
+        "duration": 4840
+      },
+      {
+        "lang": "en",
+        "text": "building something anyone can copy.",
+        "offset": 1098200,
+        "duration": 5120
+      },
+      {
+        "lang": "en",
+        "text": "Feedback is not the option.",
+        "offset": 1101040,
+        "duration": 5960
+      },
+      {
+        "lang": "en",
+        "text": "Feedback is the only moat.",
+        "offset": 1103320,
+        "duration": 3680
+      },
+      {
+        "lang": "en",
+        "text": "So,",
+        "offset": 1107360,
+        "duration": 4600
+      },
+      {
+        "lang": "en",
+        "text": "five enterprise tensions, speed, value,",
+        "offset": 1108520,
+        "duration": 7120
+      },
+      {
+        "lang": "en",
+        "text": "delivery trust moat.",
+        "offset": 1111960,
+        "duration": 6240
+      },
+      {
+        "lang": "en",
+        "text": "How do you then apply what we've learned",
+        "offset": 1115640,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "here to make sure that your next agentic",
+        "offset": 1118200,
+        "duration": 4560
+      },
+      {
+        "lang": "en",
+        "text": "project is a success?",
+        "offset": 1120320,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "So first, we say start now. Deliver",
+        "offset": 1122760,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "differently, measure in terms of",
+        "offset": 1125560,
+        "duration": 5560
+      },
+      {
+        "lang": "en",
+        "text": "confidence, uh shape the project around",
+        "offset": 1127480,
+        "duration": 5560
+      },
+      {
+        "lang": "en",
+        "text": "hypotheses rather than requirements or",
+        "offset": 1131120,
+        "duration": 4240
+      },
+      {
+        "lang": "en",
+        "text": "specific features, and run delivery in",
+        "offset": 1133040,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "small loops of experimentation,",
+        "offset": 1135360,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "iteration, and evaluation.",
+        "offset": 1137360,
+        "duration": 5000
+      },
+      {
+        "lang": "en",
+        "text": "Second, make finance a transformation",
+        "offset": 1140360,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "partner, not just a gatekeeper.",
+        "offset": 1142360,
+        "duration": 4720
+      },
+      {
+        "lang": "en",
+        "text": "Um create a portfolio of different AI",
+        "offset": 1145000,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "bets across the organization rather than",
+        "offset": 1147080,
+        "duration": 4640
+      },
+      {
+        "lang": "en",
+        "text": "justifying each project in isolation.",
+        "offset": 1149080,
+        "duration": 4520
+      },
+      {
+        "lang": "en",
+        "text": "And see value beyond the certainty of",
+        "offset": 1151720,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "cost out.",
+        "offset": 1153600,
+        "duration": 4880
+      },
+      {
+        "lang": "en",
+        "text": "And third, um make the governance speed",
+        "offset": 1155280,
+        "duration": 6320
+      },
+      {
+        "lang": "en",
+        "text": "your CTO's top engineering problem. The",
+        "offset": 1158480,
+        "duration": 4960
+      },
+      {
+        "lang": "en",
+        "text": "ultimate technical debt you want to",
+        "offset": 1161600,
+        "duration": 3640
+      },
+      {
+        "lang": "en",
+        "text": "rectify.",
+        "offset": 1163440,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "And the not last one,",
+        "offset": 1165240,
+        "duration": 5240
+      },
+      {
+        "lang": "en",
+        "text": "um that's for CEOs. Your moat is not in",
+        "offset": 1167400,
+        "duration": 5800
+      },
+      {
+        "lang": "en",
+        "text": "what you hold from yesterday. It is what",
+        "offset": 1170480,
+        "duration": 4199
+      },
+      {
+        "lang": "en",
+        "text": "it is in what you are learning and",
+        "offset": 1173200,
+        "duration": 3560
+      },
+      {
+        "lang": "en",
+        "text": "compounding every day.",
+        "offset": 1174679,
+        "duration": 4561
+      },
+      {
+        "lang": "en",
+        "text": "The technology will accelerating.",
+        "offset": 1176760,
+        "duration": 5600
+      },
+      {
+        "lang": "en",
+        "text": "Those who will survive won't be the ones",
+        "offset": 1179240,
+        "duration": 4080
+      },
+      {
+        "lang": "en",
+        "text": "that",
+        "offset": 1182360,
+        "duration": 3360
+      },
+      {
+        "lang": "en",
+        "text": "has to be the earliest adopter, but they",
+        "offset": 1183320,
+        "duration": 4680
+      },
+      {
+        "lang": "en",
+        "text": "will be the ones that learn to learn.",
+        "offset": 1185720,
+        "duration": 4199
+      },
+      {
+        "lang": "en",
+        "text": "They'll be ones that living and building",
+        "offset": 1188000,
+        "duration": 3520
+      },
+      {
+        "lang": "en",
+        "text": "the the memories through the feedback",
+        "offset": 1189919,
+        "duration": 3361
+      },
+      {
+        "lang": "en",
+        "text": "loops. They will be the ones to",
+        "offset": 1191520,
+        "duration": 3960
+      },
+      {
+        "lang": "en",
+        "text": "cultivate the trust for their people and",
+        "offset": 1193280,
+        "duration": 3800
+      },
+      {
+        "lang": "en",
+        "text": "their customer.",
+        "offset": 1195480,
+        "duration": 3760
+      },
+      {
+        "lang": "en",
+        "text": "And you cannot buy that. And you can you",
+        "offset": 1197080,
+        "duration": 4200
+      },
+      {
+        "lang": "en",
+        "text": "cannot copy that. You can only start",
+        "offset": 1199240,
+        "duration": 4800
+      },
+      {
+        "lang": "en",
+        "text": "building that by now. And by never",
+        "offset": 1201280,
+        "duration": 6280
+      },
+      {
+        "lang": "en",
+        "text": "treating the journey as finished.",
+        "offset": 1204040,
+        "duration": 5600
+      },
+      {
+        "lang": "en",
+        "text": "So, prescription is simple.",
+        "offset": 1207560,
+        "duration": 4040
+      },
+      {
+        "lang": "en",
+        "text": "Bet like a VC, upgrade for machine",
+        "offset": 1209640,
+        "duration": 4320
+      },
+      {
+        "lang": "en",
+        "text": "speed, and engineer for trust with the",
+        "offset": 1211600,
+        "duration": 4400
+      },
+      {
+        "lang": "en",
+        "text": "feedback loop from day one.",
+        "offset": 1213960,
+        "duration": 3698
+      },
+      {
+        "lang": "en",
+        "text": "Thank you. Thank you.",
+        "offset": 1216000,
+        "duration": 3679
+      },
+      {
+        "lang": "en",
+        "text": ">> [applause]",
+        "offset": 1217658,
+        "duration": 2021
+      },
+      {
+        "lang": "en",
+        "text": "[music]",
+        "offset": 1224209,
+        "duration": 2020
+      }
+    ]
+  },
+  "transcript": "[music] >> All right. Hi everyone. I'm Jess. This is Jack. And we're very excited to be here today. So, let us tell you about our world. So, we work in the world of enormous enterprises. So, telecoms, utilities, serving entire nations, government, healthcare that you just heard a little bit about, consumer products in your home right now. And when you operate at that scale, actions have consequences. So, bad deployment for example can take down critical national infrastructure. And so, over time these organizations have built structures for this reality. Control process repeatability governance, layers and layers of it. And this has worked really well, right? Like for years these companies have seen massive successes and growth. But always at human pace. Human pace. That is what shifted. We're entering a world at a machine speed and transforming everything we know. Our work, our clients, and ultimately the societies these enterprises underpinning. Our research show that 12% of companies reach what we called AI achiever. It means that most of the company are still stuck piloting and spending millions and perhaps not getting too much in their return. 80% The tragedy is not just wasted spend. It's about falling behind in a world that accelerating beyond what they can compute. Many of you here may ship here on Fridays and then rollbacks on Saturdays. A decision you take an afternoon could easily take an enterprise 6 months or more. Octopus, Klarna, Shein, they think that's insane. And then they go on and redefine the games themselves. Others studied the games, crafted the playbooks, and then ran the workshop. But they went home. We stayed. We shipped through the reality. And that is our mode. When you stay, you learn things that the slide decks don't warn you about. So, for example, it's not just about data availability or API availability that impacts AI success. It's the entire enterprise scaffold itself. The very thing that has made these companies so successful, which is increasingly becoming the drag, the thing that is holding them back from capturing AI value at scale. So, we're going to share with you today five enterprise tensions, learning from our experience deploying AI at large enterprises over the last couple of years. And if you understand these five, we think you can probably predict the success of your next AI project before you get started. Cool. Let's get into it. Um 18 months ago, you were probably still needed to explain why AI mattered, why speed mattered. But that battle's gone. The C-levels are convinced. You know, the CEOs are terrified of being left behind now. But yet, the enterprise speed has not really shifted. It's not because AI cannot write good code. It is not because our engineers can't solve the context problem. I think it's something a lot more deeper. It is the actual enterprise scaffolding itself. A human operating system that designed for human and running at a human speed. The automation behind every delivery and that Jess mentioned about. Think about data access, security reviews, you know, deployment process. Most of the enterprises never needed to invest like a tech company. Corporate process balanced with minimal engineering investment with the complementary of stakeholder meetings. And that is how enterprise runs today. Fit for enterprise, fit for human. We had the pleasure of delivering agentic solution in a large corp and integrating their centralized AI gateway. You know, we've been given the essentially testing configuration templated to us. Every single configuration change required a manual review before you can actually hit the test to run. And we eventually have to automate it at and the whole application we built took about 2 weeks. It then took another 12 months to get that into production. And because their infrastructure team, their security team, their AI gateway team, their data governance team, their application teams, they all needed to align. Um the best way I can describe this is think about Google search. Before you see the results come out, they're going to be three teams review the results first. Need to be a legal sign-off for the results. And then they say, wait for 2 weeks because we're quarter end, it's change freeze. That is how AI in enterprise delivery today. So, how do you go faster? I guess you hand an AI coding agent to your developers and the next thing that you find is a massive bottleneck at the code review and the deployment stage, right? And this is going to get worse because these coding agents are turning everyone into a builder, PMs, designers, domain experts. And so, the the supply of deployable code is exploding. Some of you might have seen the GitHub stats. In 2025, they reported 1 billion commits. So far this year we're averaging 275 million per week, which means we're on track for 14 billion by the end of the year. And this is super exciting, but approval infrastructure deployment infrastructure hasn't changed because these processes were ultimately designed for human speed. The real tech debt here goes beyond the legacy code that exists within applications. And it's the years of underinvestment in the engineering automation, CI/CD, et cetera that allows companies to move faster while maintaining control. So, what's the pathway? Every single human process needs to become adaptable, executable code. Not another meeting, not a sign-off chain, code. And the good news here is that AI can help you build this faster and cheaper, right? Like these aren't new capabilities, but it does represent a fundamental mindset shift for a lot of the organizations that we work with. Okay, next up. Who here has had to start a project with a business case to unlock internal funding? Cool. Welcome to our world. Um now, business cases aren't wrong per se. They, you know, they raise a lot of the right questions, they create oversight, they ensure that someone has thought about ROI. All of these are really good things. But they assume that three things are knowable up front. The scope and the solution, the expected value, and the cost and time to deliver. Now, with AI, this is often backwards, right? You learn the solution and the business case by doing the work. And more importantly, when the execution cost for prototyping, experimentation, building, et cetera drops down to near zero, this is no longer just about efficiency. This is now unlocking capabilities, entire new categories of things that weren't possible previously. It means you can now attempt things that were previously economically impossible for the organization. And that means things like new products, new services, customer experiences, they are just waiting to be reinvented. Um and we see this born out in the stats. So, in terms of the AI achievers that we mentioned earlier, we see them achieving about 50% higher revenue growth than their peers. And that's not from cost cutting, that's from doing entirely new things. If you think about as well recent AI product successes, often they've been emergent. So, you think about Cursor's user base of live coders, they didn't exist when they started building the product or when they released it. Cloud code wasn't something that was planned out on a product roadmap months and months in advance. And on the enterprise side, you have examples like Walmart for example who built out a social media trend scanner and generative designer that's now allowing them to compete in entirely new ways with the likes of Shein and Temu. Um or JP Morgan who started building something as an internal productivity tool that they've now been able to productize and generate entirely new revenue stream. Now, currently the enterprise finance is wired for certainty, which means that generally your project starts life justifying itself in terms of committed benefits and predictable cost phasing. And that framing can kill projects before you even begin because it's asking a question based on can we justify this specific thing based on predictability, rather than asking about what now becomes possible. And so, the right question to be asking is, what is the impact of not doing this? What is the cost of not doing this? So, your CFO needs to think like a VC. At least when it comes to agentic transformation. Um a VC doesn't bet on one project and demand like 3 years fixed guaranteed payback because they know the certainty from a business case is a fantasy. Rather, they back a portfolio, they're knowing most of the bets may not pay off, but they will basically looking for those ones that compound. They knows that where the true value really lies is in that beyond certainty and that power law exponential growth. Enterprise investment works the same way for AI. The question is not can we justified this project, but are we placing enough bets across the portfolio that we going to hit the right ones that's going to change everything for us. So if your finance function cannot think like that, that is where your transformation should start and because everything else is downstream. Cool. Next one. Um do we have any data scientist or machine learning engineers here? Brilliant. I think hopefully you guys going to like this part. You guys been doing something different everyone else, I hope. Um hypothesize and and experiment, statistical confidence. Um most of enterprises probably treated you guys like the modern IT crowd. Brilliant, quietly right and just very kindly ignored. Um kept you guys in the basement while the upstairs doing the real work through the Jira board at PI planning. However, I think this is your opportunity. Agentic delivery is your world, not theirs. Models are non-deterministic. Agent behavior is emergent. And you should not scope it like just a feature build like software traditionally. And you cannot milestone it like a fixed program. And yet that's what entire enterprises are trying to do. When you are in that delivery trench, what we see is that the more enormous effort we have to spend to really not about building the things, but to really try to bridge that gap between and how any system actually work versus what our stakeholders actually expect. You know, the um the never-ending utopian design up front and the constant conversation you have to talk about guaranteed performance and those kind of endless status updates to for those decisions that never gets made. And those are the things that is currently consumed the energy when we come to delivery this the agentic systems. The IT crowd is never the problem, right? The organization just need to learn your language. And it's the only language we think is matter for agentic delivery. Um the team needs to upskill themselves to learn hypothesis driven delivery. You need to reshape your program around one goal, which is building that statistical confidence. Small loops of build, evaluate, iterate, fast evidence. And then and and actually your delivery team needs to look quite different, too. People who are comfortable with ambiguity who can articulate what they have learned, not just what they have delivered. And most importantly, they can translate those statistical number into stakeholder confidence. And those are different kind of skill set. You need hire for it, you need train for it, and you probably need to value that as well. All right, next one. Now, as a society, we are collectively learning to trust AI. I mean, no one cross-checks their Google results anymore, right? And we in this room are probably quite comfortable with using AI tools. Um probably all of us don't review every single code output that we generate. Um now, AI is on that same trajectory, right? But it's not there yet, and it's our job as AI engineers to bridge that gap. And for large enterprises, that trust gap is not small. Um and what we have learned is that the completion of individual features is not necessarily the most valuable thing that you ship. Um the trust in the outputs and the AI that you build over time is the more valuable thing. And and when I say trust, I mean in the broader sense, you know, in the content, in the accuracy, responsible use, privacy, all of those things that collectively allow end users to trust an AI system. You can think about agentic delivery in some ways as a deposit or a withdrawal into a trust account with your stakeholders, your leadership, with your end customers. And what survives over time isn't necessarily a specific feature. It's that trust that you've built as things evolve and things change. And so the question we ask is, how do you build trust at speed, deliberately, and with evidence? So we spend a lot of time talking to companies about progressive autonomy. Many companies still see agents as basically the same as traditional automation where you complete some tasks, you run them, you deploy them, and they run, and that's that. But agents aren't just built and then turned on, right? Like you can't foresee every single response or behavior up front and test for it. Um their behavior is emergent. And this is particularly relevant in the context of autonomous processes, which is something we do with quite a lot of our clients. Um and so the eval suite, we've heard a lot about it over the last few days, that's super important, um and you have to evaluate the right things, but we also talk about how you actually deploy into production and increase autonomy over time. So you follow this exposure ladder. So you start with a shadow mode where an agent might run alongside human processes, but it can't actually affect outcomes. Um you compare the human decisions that are made to what the agent is saying, and you use that as a signal to iterate um and build up confidence in the specific behaviors that you're you're trying to achieve. Um you keep iterating, you then move up to more of an advisory mode where the agent runs live, um but it only recommends. So the humans are still playing an active role in the workflow. They can approve or reject the outcome. And again, this provides you with another signal that you can incorporate and you iterate again. Then you shift up to controlled autonomy where the agent is able to run and trigger actions, but in a narrow, low-risk uh scenarios. Um and it has clear limits, kill switches. And over time, you can extend that up to um to to wider autonomy based on achieving the right level of confidence in the target behaviors that you're trying to drive. And the key here is that each step is gated by evidence in outcomes. It's not based on completion of activities in a project plan or pass-fail testing. It's entirely about the confidence, the trust in those outcomes. So, engineer for trust, not just for completion. Right, last one. Um we mentioned our moat earlier. Now, what is yours? In a recursive world where AI codes AI, anything you ship can be cloned a minute it goes viral. So ask this, what is unique only to you? I think your existing enterprise knowledge, the CRM, the ERP, the SOPs, they got you to the table. We call it the your transaction your transactional memory. However, every competitor has one version of that. It's a floor, not a fortress. The real moat is in the moment when your customer touches your product. Edge cases, corrections, emotional intent, and actual behavior at your specific scale in your specific context. Those signals belong to you. And we call it your living memory. The day the day you ship is not the finish line. Far from it. It is when the race actually begins. How quickly you can compound and iterate. How fast you can turn a signal into value. It is a race against yourself to engineering your own competitive edge recursively and constantly. The pathway requires a fundamental shift in your engineering vision. Every feature you ship should either generate that feedback signal or deliver on what the signal has already taught you. Um because if it does neither, you're building something anyone can copy. Feedback is not the option. Feedback is the only moat. So, five enterprise tensions, speed, value, delivery trust moat. How do you then apply what we've learned here to make sure that your next agentic project is a success? So first, we say start now. Deliver differently, measure in terms of confidence, uh shape the project around hypotheses rather than requirements or specific features, and run delivery in small loops of experimentation, iteration, and evaluation. Second, make finance a transformation partner, not just a gatekeeper. Um create a portfolio of different AI bets across the organization rather than justifying each project in isolation. And see value beyond the certainty of cost out. And third, um make the governance speed your CTO's top engineering problem. The ultimate technical debt you want to rectify. And the not last one, um that's for CEOs. Your moat is not in what you hold from yesterday. It is what it is in what you are learning and compounding every day. The technology will accelerating. Those who will survive won't be the ones that has to be the earliest adopter, but they will be the ones that learn to learn. They'll be ones that living and building the the memories through the feedback loops. They will be the ones to cultivate the trust for their people and their customer. And you cannot buy that. And you can you cannot copy that. You can only start building that by now. And by never treating the journey as finished. So, prescription is simple. Bet like a VC, upgrade for machine speed, and engineer for trust with the feedback loop from day one. Thank you. Thank you. >> [applause] [music]"
+}

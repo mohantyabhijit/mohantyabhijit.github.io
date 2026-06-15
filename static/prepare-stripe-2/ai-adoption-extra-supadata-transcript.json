@@ -1,0 +1,5399 @@
+{
+  "video_id": "ih2eFFiJTe8",
+  "url": "https://www.youtube.com/watch?v=ih2eFFiJTe8",
+  "title": "How to drive AI adoption across your marketing team",
+  "author": "Asana",
+  "status": "available",
+  "chars": 33765,
+  "supadata": {
+    "lang": "en",
+    "availableLangs": [
+      "en"
+    ],
+    "content": [
+      {
+        "text": "It is incredible to be here at the Work",
+        "offset": 0,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "Innovation Summit in New York. Thank you",
+        "offset": 2080,
+        "duration": 3199,
+        "lang": "en"
+      },
+      {
+        "text": "so much for joining us for our CMO panel",
+        "offset": 3360,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "today and I'm personally really excited",
+        "offset": 5279,
+        "duration": 4081,
+        "lang": "en"
+      },
+      {
+        "text": "for this conversation because I feel",
+        "offset": 7839,
+        "duration": 3281,
+        "lang": "en"
+      },
+      {
+        "text": "like as marketing leaders, we're always",
+        "offset": 9360,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "pushed every so often to become modern",
+        "offset": 11120,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "marketers again. And I remember this",
+        "offset": 13280,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "really cut acutely a dozen or so years",
+        "offset": 15519,
+        "duration": 4321,
+        "lang": "en"
+      },
+      {
+        "text": "ago when social mobile really came onto",
+        "offset": 17359,
+        "duration": 4561,
+        "lang": "en"
+      },
+      {
+        "text": "the scene and we were really forced to",
+        "offset": 19840,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "have to reook um at the channels and our",
+        "offset": 21920,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "marketing mix. And this time I feel like",
+        "offset": 24160,
+        "duration": 5279,
+        "lang": "en"
+      },
+      {
+        "text": "it's exponentially even um more of a",
+        "offset": 26400,
+        "duration": 5199,
+        "lang": "en"
+      },
+      {
+        "text": "transformation with the onset of AI",
+        "offset": 29439,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "because not only are we having to",
+        "offset": 31599,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "revisit our channels again in our",
+        "offset": 33280,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "marketing mix, but we're also having to",
+        "offset": 34800,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "really revisit the way that we work and",
+        "offset": 36559,
+        "duration": 4241,
+        "lang": "en"
+      },
+      {
+        "text": "and with our teams. And so I'm just",
+        "offset": 38719,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "really excited to, you know, have this",
+        "offset": 40800,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "panel here with me today to not just",
+        "offset": 42879,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "talk about AI experimentation because",
+        "offset": 44800,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "that's what we talked about last year.",
+        "offset": 46719,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "This year it's all about how do we",
+        "offset": 48480,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "actually make AI stick and drive that",
+        "offset": 50320,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "transformation. And so without further",
+        "offset": 52879,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "ado, let's just go down the line and I",
+        "offset": 54800,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "would love for my panelists to introduce",
+        "offset": 56480,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "themselves. Can you tell us who you are,",
+        "offset": 58079,
+        "duration": 3041,
+        "lang": "en"
+      },
+      {
+        "text": "what you do, and what company you're",
+        "offset": 59840,
+        "duration": 1680,
+        "lang": "en"
+      },
+      {
+        "text": "with?",
+        "offset": 61120,
+        "duration": 2160,
+        "lang": "en"
+      },
+      {
+        "text": ">> Okay, sure. Happy to be here. I'm Kim",
+        "offset": 61520,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "Rosen Bloom. I'm uh the CMO at",
+        "offset": 63280,
+        "duration": 5839,
+        "lang": "en"
+      },
+      {
+        "text": "Betterment. Better is an automated",
+        "offset": 65600,
+        "duration": 6080,
+        "lang": "en"
+      },
+      {
+        "text": "savings and investing platform. It's",
+        "offset": 69119,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "really the pioneer in a category called",
+        "offset": 71680,
+        "duration": 5119,
+        "lang": "en"
+      },
+      {
+        "text": "robo advising. And we have since",
+        "offset": 74159,
+        "duration": 5121,
+        "lang": "en"
+      },
+      {
+        "text": "expanded our offering. We now have uh",
+        "offset": 76799,
+        "duration": 4561,
+        "lang": "en"
+      },
+      {
+        "text": "self-directed investing, high yield",
+        "offset": 79280,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "cash, tax-saving tech, and while we were",
+        "offset": 81360,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "founded as a retail or a direct to",
+        "offset": 84080,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "consumer investing platform, we also now",
+        "offset": 85840,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "have a pretty robust 401k business. So,",
+        "offset": 87680,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "we've expanded pretty substantially. We",
+        "offset": 90640,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "now have over a million customers and",
+        "offset": 92720,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "manage 65 plus billion dollars.",
+        "offset": 94720,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": ">> Great. Thank you, Kim. Kristen.",
+        "offset": 97360,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": ">> Hi, everybody. Good morning. I'm Kristen",
+        "offset": 99119,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "Broofphy. I lead marketing at Thread Up.",
+        "offset": 100720,
+        "duration": 3359,
+        "lang": "en"
+      },
+      {
+        "text": "And for those of you who have never",
+        "offset": 102799,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "heard of it, um, now you have, but we",
+        "offset": 104079,
+        "duration": 4561,
+        "lang": "en"
+      },
+      {
+        "text": "are an online consignment marketplace to",
+        "offset": 106560,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "buy and sell secondhand goods. Uh, we",
+        "offset": 108640,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "like to call ourselves the world's the",
+        "offset": 110880,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "world's largest online thrift store.",
+        "offset": 112560,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "And, uh, I'm really excited to be here",
+        "offset": 114799,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "today. I'm I'm like anticipating you all",
+        "offset": 116159,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "standing up and starting to dance in a",
+        "offset": 118000,
+        "duration": 3119,
+        "lang": "en"
+      },
+      {
+        "text": "moment. I don't know if you've all been",
+        "offset": 119680,
+        "duration": 3119,
+        "lang": "en"
+      },
+      {
+        "text": "to a silent disco, but it's very fun to",
+        "offset": 121119,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "be on this side of it.",
+        "offset": 122799,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": ">> Hey, good morning. I'm Jim Lur. I'm one",
+        "offset": 124320,
+        "duration": 3999,
+        "lang": "en"
+      },
+      {
+        "text": "of the founders and partners of O2K",
+        "offset": 126079,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "Advertising. We're based here in New",
+        "offset": 128319,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "York, Fiercely Independent. um actually",
+        "offset": 129920,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "going through this process with with AI",
+        "offset": 132080,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "and implementate implementing AI across",
+        "offset": 134160,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "the board. We focus on what we call",
+        "offset": 136720,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "considered purchase finance, insurance,",
+        "offset": 139200,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "healthcare, those types of of products",
+        "offset": 142000,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "and and services. Glad to be here.",
+        "offset": 144000,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": ">> Awesome. Thanks so much, Jim. All right.",
+        "offset": 146400,
+        "duration": 3199,
+        "lang": "en"
+      },
+      {
+        "text": "Well, let's get right to it. I want to",
+        "offset": 148000,
+        "duration": 4239,
+        "lang": "en"
+      },
+      {
+        "text": "start in talking about um setting the",
+        "offset": 149599,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "foundation, right? Because it's really",
+        "offset": 152239,
+        "duration": 4881,
+        "lang": "en"
+      },
+      {
+        "text": "easy to get distracted by new shiny",
+        "offset": 153760,
+        "duration": 5520,
+        "lang": "en"
+      },
+      {
+        "text": "tech, right? But really when we were",
+        "offset": 157120,
+        "duration": 3759,
+        "lang": "en"
+      },
+      {
+        "text": "talking about um this panel and",
+        "offset": 159280,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "preparing for it, we really started",
+        "offset": 160879,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "talking about anchoring around a",
+        "offset": 162480,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "critical business problem that would",
+        "offset": 164640,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "drive the most impact. And so I would",
+        "offset": 166160,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "actually just like to start by talking a",
+        "offset": 168560,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "little bit about the northstar that you",
+        "offset": 170480,
+        "duration": 3759,
+        "lang": "en"
+      },
+      {
+        "text": "guys have anchored yourselves to. So",
+        "offset": 172400,
+        "duration": 3040,
+        "lang": "en"
+      },
+      {
+        "text": "Kim, why don't we start with you?",
+        "offset": 174239,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah, great. Thank you. Um it it's",
+        "offset": 175440,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "definitely shiny new tech and so people",
+        "offset": 178640,
+        "duration": 6400,
+        "lang": "en"
+      },
+      {
+        "text": "are excited, but we did see an actual uh",
+        "offset": 180640,
+        "duration": 7120,
+        "lang": "en"
+      },
+      {
+        "text": "business problem. Not a huge one, but a",
+        "offset": 185040,
+        "duration": 6080,
+        "lang": "en"
+      },
+      {
+        "text": "growing one. We noticed declining",
+        "offset": 187760,
+        "duration": 6080,
+        "lang": "en"
+      },
+      {
+        "text": "referral to the website via SEO, month",
+        "offset": 191120,
+        "duration": 6560,
+        "lang": "en"
+      },
+      {
+        "text": "overmonth decline. One, two, 3%, but",
+        "offset": 193840,
+        "duration": 6800,
+        "lang": "en"
+      },
+      {
+        "text": "growing every month. And it kind of made",
+        "offset": 197680,
+        "duration": 5600,
+        "lang": "en"
+      },
+      {
+        "text": "sense because as AI and the LLMs were",
+        "offset": 200640,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "starting to become much more",
+        "offset": 203280,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "commonplace, people were going to the",
+        "offset": 204800,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "LLMs to ask about financial services",
+        "offset": 207120,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "versus a keyword search. Um, when you",
+        "offset": 209440,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "have a highly considered product, that",
+        "offset": 211920,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "makes a ton of sense, right? It's not",
+        "offset": 213760,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "really like you can, you know, ask",
+        "offset": 215519,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "automated investing, but maybe you're",
+        "offset": 217120,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "going to ask much more likely like",
+        "offset": 218959,
+        "duration": 3441,
+        "lang": "en"
+      },
+      {
+        "text": "what's a fiduciary, where can I find",
+        "offset": 220560,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "this, what are the costs, you know, a",
+        "offset": 222400,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "real inquiry based search. So, we did an",
+        "offset": 224400,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "audit. The very first thing we did after",
+        "offset": 227680,
+        "duration": 3040,
+        "lang": "en"
+      },
+      {
+        "text": "we saw the decline was an audit. And if",
+        "offset": 229120,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "you have not done an audit and",
+        "offset": 230720,
+        "duration": 2640,
+        "lang": "en"
+      },
+      {
+        "text": "especially if you have a high",
+        "offset": 232400,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "consideration product and you website is",
+        "offset": 233360,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "your is your front door, you should do",
+        "offset": 235280,
+        "duration": 4879,
+        "lang": "en"
+      },
+      {
+        "text": "that immediately. Um, and we saw in our",
+        "offset": 237280,
+        "duration": 6159,
+        "lang": "en"
+      },
+      {
+        "text": "audit good news and bad news. We saw the",
+        "offset": 240159,
+        "duration": 5121,
+        "lang": "en"
+      },
+      {
+        "text": "good news was we were showing up for",
+        "offset": 243439,
+        "duration": 3681,
+        "lang": "en"
+      },
+      {
+        "text": "things that we had like core value",
+        "offset": 245280,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "propositions. We had very, you know,",
+        "offset": 247120,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "strong across all the LMS by the way.",
+        "offset": 249200,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "Some we perform better in than others.",
+        "offset": 251680,
+        "duration": 5600,
+        "lang": "en"
+      },
+      {
+        "text": "Um really good on like ease of use, low",
+        "offset": 253840,
+        "duration": 5840,
+        "lang": "en"
+      },
+      {
+        "text": "cost, like some of our core value props,",
+        "offset": 257280,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "but really poorly for things like",
+        "offset": 259680,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "security. Um and you think, okay, well,",
+        "offset": 262240,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "we are a secure platform, but it's not",
+        "offset": 265040,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "like we advertise that. It's not like",
+        "offset": 267199,
+        "duration": 2481,
+        "lang": "en"
+      },
+      {
+        "text": "we're out there doing a campaign, you",
+        "offset": 268400,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "know, 25 days since our last hack. like",
+        "offset": 269680,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "you know we don't talk about that like",
+        "offset": 271840,
+        "duration": 2480,
+        "lang": "en"
+      },
+      {
+        "text": "you don't talk about what's not you know",
+        "offset": 273120,
+        "duration": 3040,
+        "lang": "en"
+      },
+      {
+        "text": "when it's working but of course",
+        "offset": 274320,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "customers potential customers want to",
+        "offset": 276160,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "know what's a secure platform. So that",
+        "offset": 277919,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "was sort of like a big insight that",
+        "offset": 279759,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "maybe we weren't actually producing the",
+        "offset": 281199,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "content that was query based. So that",
+        "offset": 283280,
+        "duration": 5199,
+        "lang": "en"
+      },
+      {
+        "text": "was like insight number one. And then",
+        "offset": 286479,
+        "duration": 3681,
+        "lang": "en"
+      },
+      {
+        "text": "the other piece that we did in addition",
+        "offset": 288479,
+        "duration": 3121,
+        "lang": "en"
+      },
+      {
+        "text": "to like the same way everyone is always",
+        "offset": 290160,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "optimizing their website for SEO is",
+        "offset": 291600,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "we've started optimizing for AEO. Um,",
+        "offset": 293680,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "and we're mobile. So, a lot of our smart",
+        "offset": 296400,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "brevity, you know, and our copywriters",
+        "offset": 298960,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "who've been, you know, pounded into the",
+        "offset": 300720,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "idea is like say it fascinate concise.",
+        "offset": 302160,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "It's like actually expand it a little",
+        "offset": 304160,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "bit because the LLM wants like a little",
+        "offset": 305680,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "more context. Um, all of our content now",
+        "offset": 307520,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "we're byelining. We used to have",
+        "offset": 310639,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "Betterman editors. Now we're byelining",
+        "offset": 311919,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "everything with multiple um,",
+        "offset": 313759,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "accreditations because you want to be an",
+        "offset": 316400,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "authoritative source. So we took out",
+        "offset": 318479,
+        "duration": 4881,
+        "lang": "en"
+      },
+      {
+        "text": "Betterment editors and now our CFPs by",
+        "offset": 320800,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "name with their you know with their",
+        "offset": 323360,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "credentials. Um so that was you know",
+        "offset": 325360,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "these are things are all I'm not kidding",
+        "offset": 327680,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "last eight weeks this is like very new",
+        "offset": 329600,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "for us. Um but in terms of like solving",
+        "offset": 331520,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "a business problem that was like where",
+        "offset": 334240,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "we started. The next piece we're going",
+        "offset": 336800,
+        "duration": 3679,
+        "lang": "en"
+      },
+      {
+        "text": "to move to is working with our paid",
+        "offset": 338800,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "partners like Investipedia and Nerd",
+        "offset": 340479,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "Wallet and how to make sure that their",
+        "offset": 342400,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "content is actually optimized for LM",
+        "offset": 344479,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "because that's a big source for us as",
+        "offset": 346960,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "well. Yeah. I feel like we can have a",
+        "offset": 348400,
+        "duration": 3359,
+        "lang": "en"
+      },
+      {
+        "text": "whole therapy session on how like SEO",
+        "offset": 349840,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "has been totally disrupted. We should",
+        "offset": 351759,
+        "duration": 3361,
+        "lang": "en"
+      },
+      {
+        "text": "parking lot this and if you guys are",
+        "offset": 353840,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "interested in digging deeper into this",
+        "offset": 355120,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "let's follow up after the session but",
+        "offset": 356960,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "for sure and some of the things that",
+        "offset": 358800,
+        "duration": 2800,
+        "lang": "en"
+      },
+      {
+        "text": "we're doing at ASA very similar",
+        "offset": 359840,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "reformatting our content to optimize for",
+        "offset": 361600,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "the LLM leaning into our community um",
+        "offset": 363680,
+        "duration": 5840,
+        "lang": "en"
+      },
+      {
+        "text": "and forums and things like Reddit um and",
+        "offset": 366880,
+        "duration": 4879,
+        "lang": "en"
+      },
+      {
+        "text": "also you know leaning into things like",
+        "offset": 369520,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "YouTube and we're changing up the the",
+        "offset": 371759,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "content mix right and also having our",
+        "offset": 373840,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "amazing community create some of that",
+        "offset": 375680,
+        "duration": 3359,
+        "lang": "en"
+      },
+      {
+        "text": "content for us. So,",
+        "offset": 377360,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": ">> uh, therapy session coming soon. Um, and",
+        "offset": 379039,
+        "duration": 4801,
+        "lang": "en"
+      },
+      {
+        "text": "so, Kristen, you I know that you guys",
+        "offset": 382080,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "took a bit more of an offensive approach",
+        "offset": 383840,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "and a more customer- ccentric approach",
+        "offset": 386160,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "when it comes to how you are anchoring",
+        "offset": 387840,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "your AI um, strategy. So, I would love",
+        "offset": 390080,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "to hear a little bit about what you guys",
+        "offset": 392400,
+        "duration": 4239,
+        "lang": "en"
+      },
+      {
+        "text": "are doing. Yeah, so the really unique",
+        "offset": 394160,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "thing about Thread Up is that we have 4",
+        "offset": 396639,
+        "duration": 4321,
+        "lang": "en"
+      },
+      {
+        "text": "million items on our mic on our",
+        "offset": 399120,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "marketplace at any given time. So, it's",
+        "offset": 400960,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "a staggering volume. We add about 60,000",
+        "offset": 402560,
+        "duration": 5759,
+        "lang": "en"
+      },
+      {
+        "text": "new items to our site every single day.",
+        "offset": 405600,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "So from an e-commerce perspective, from",
+        "offset": 408319,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "a customer perspective, that's an",
+        "offset": 410240,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "enormous amount of choice and it's",
+        "offset": 411840,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "great. You know, if you can imagine",
+        "offset": 413440,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "something even super niche, you can",
+        "offset": 414960,
+        "duration": 4799,
+        "lang": "en"
+      },
+      {
+        "text": "probably find it on Thread Up. The",
+        "offset": 417360,
+        "duration": 3679,
+        "lang": "en"
+      },
+      {
+        "text": "challenge that we heard from a lot of",
+        "offset": 419759,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "customers um before we started to invest",
+        "offset": 421039,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "in AI tooling and features is that that",
+        "offset": 423280,
+        "duration": 3759,
+        "lang": "en"
+      },
+      {
+        "text": "can also be like the paradox of choice.",
+        "offset": 425440,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "It can feel super overwhelming to try to",
+        "offset": 427039,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "shop 4 million items. Shopping the",
+        "offset": 429360,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "internet is overwhelming. So, what we've",
+        "offset": 431039,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "really tried to do is think about how do",
+        "offset": 433120,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "AI tools help our customers find what",
+        "offset": 434960,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "they're looking for faster? How do we",
+        "offset": 437599,
+        "duration": 3281,
+        "lang": "en"
+      },
+      {
+        "text": "help you match with something relevant",
+        "offset": 439280,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "to you? So, I'll give you two examples.",
+        "offset": 440880,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "One of the things we just launched",
+        "offset": 443680,
+        "duration": 2959,
+        "lang": "en"
+      },
+      {
+        "text": "recently, we're calling the daily edit.",
+        "offset": 444800,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "We used AI tooling that we built inhouse",
+        "offset": 446639,
+        "duration": 5601,
+        "lang": "en"
+      },
+      {
+        "text": "to recommend 100 items for you every",
+        "offset": 449199,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "single day based on your preferences,",
+        "offset": 452240,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "your shopping behavior, your purchases,",
+        "offset": 454319,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "etc. So, really trying to personalize",
+        "offset": 456319,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "the site. Um, another thing that we've",
+        "offset": 458240,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "done is introduced what we call a weekly",
+        "offset": 460240,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "trend report. So, uh, we built an",
+        "offset": 462080,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "internal AI tooling system that scrapes",
+        "offset": 464240,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "the internet, analyzes millions of",
+        "offset": 466400,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "weekly searches to identify the biggest",
+        "offset": 468240,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "emerging trends across the internet.",
+        "offset": 470880,
+        "duration": 4719,
+        "lang": "en"
+      },
+      {
+        "text": "Then we dynamically generate AI images",
+        "offset": 472880,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "based on those trends that you can shop",
+        "offset": 475599,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "all of our related inventory to that",
+        "offset": 478000,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "trend. I don't know how many people in",
+        "offset": 479759,
+        "duration": 3361,
+        "lang": "en"
+      },
+      {
+        "text": "this room have heard of this, but I",
+        "offset": 481919,
+        "duration": 2481,
+        "lang": "en"
+      },
+      {
+        "text": "learn something new from the trend",
+        "offset": 483120,
+        "duration": 2720,
+        "lang": "en"
+      },
+      {
+        "text": "report every day. Like for example, this",
+        "offset": 484400,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "week fairy core is trending. So, is",
+        "offset": 485840,
+        "duration": 5359,
+        "lang": "en"
+      },
+      {
+        "text": "anybody wearing fairy core here? No. No.",
+        "offset": 488160,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "Okay. Well, if you are, please come find",
+        "offset": 491199,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "me after. I'd like to know how",
+        "offset": 492720,
+        "duration": 3199,
+        "lang": "en"
+      },
+      {
+        "text": "somebody's uh wearing it in real life.",
+        "offset": 494400,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "But yeah, so I'd say the um the main",
+        "offset": 495919,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "thing that we think about is when we",
+        "offset": 498720,
+        "duration": 2960,
+        "lang": "en"
+      },
+      {
+        "text": "invest in these tools, how are we",
+        "offset": 500319,
+        "duration": 3121,
+        "lang": "en"
+      },
+      {
+        "text": "solving real customer problems that",
+        "offset": 501680,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "generate revenue and that generate",
+        "offset": 503440,
+        "duration": 4159,
+        "lang": "en"
+      },
+      {
+        "text": "bottom line. Um and what we've seen is",
+        "offset": 505440,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "that our our conversion rates have",
+        "offset": 507599,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "increased like double digits from these",
+        "offset": 509440,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "investments. So, we talk a lot about",
+        "offset": 511360,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "using AI as a productivity tool, but you",
+        "offset": 513200,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "know, one of the things we've tried to",
+        "offset": 515760,
+        "duration": 2560,
+        "lang": "en"
+      },
+      {
+        "text": "talk about is how do we use it as an",
+        "offset": 516880,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "efficacy tool? How do we use it as a a",
+        "offset": 518320,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "topline revenue generator for us? Um,",
+        "offset": 520320,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "and so that's one of the ways we've",
+        "offset": 522560,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "we've tried to be offensive about our",
+        "offset": 523680,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "approach.",
+        "offset": 525440,
+        "duration": 1920,
+        "lang": "en"
+      },
+      {
+        "text": ">> I love it.",
+        "offset": 526560,
+        "duration": 2640,
+        "lang": "en"
+      },
+      {
+        "text": ">> And then from we're a little bit",
+        "offset": 527360,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "different. So, we're we're in a service",
+        "offset": 529200,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "business. So, our clients are always",
+        "offset": 530880,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "looking for better, faster, cheaper. So,",
+        "offset": 532480,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "how do we do that? So, you have to",
+        "offset": 534720,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "implement implement AI currently. So",
+        "offset": 536480,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "we're using it for everything from",
+        "offset": 539120,
+        "duration": 5279,
+        "lang": "en"
+      },
+      {
+        "text": "strategy to media to developing creative",
+        "offset": 540959,
+        "duration": 5761,
+        "lang": "en"
+      },
+      {
+        "text": "and it allows us to understand what's",
+        "offset": 544399,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "working, what's not working, how do we",
+        "offset": 546720,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "make things better each and every time",
+        "offset": 548880,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "as well as much quicker, much more",
+        "offset": 550800,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "relevant. So we we are using it from the",
+        "offset": 552560,
+        "duration": 4719,
+        "lang": "en"
+      },
+      {
+        "text": "very beginning from from the start",
+        "offset": 555200,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "figuring out strategy helping our",
+        "offset": 557279,
+        "duration": 4641,
+        "lang": "en"
+      },
+      {
+        "text": "clients do better work but also the way",
+        "offset": 559279,
+        "duration": 4641,
+        "lang": "en"
+      },
+      {
+        "text": "we're using it is is different too. So,",
+        "offset": 561920,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "for example, when we present ideas,",
+        "offset": 563920,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "remember you used to present a board or",
+        "offset": 566160,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "something for for a video. We're",
+        "offset": 567920,
+        "duration": 3039,
+        "lang": "en"
+      },
+      {
+        "text": "actually presenting the video in real",
+        "offset": 569360,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "time. It's not perfect. It's not done,",
+        "offset": 570959,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "but it gives people a really great sense",
+        "offset": 572959,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "of what it's going to look like. So,",
+        "offset": 574800,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "they're more part of the process. The",
+        "offset": 576399,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "ideas are stronger. They're faster. It's",
+        "offset": 578080,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "not the all and endall because we have",
+        "offset": 580560,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "to create, you know, combine the",
+        "offset": 582240,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "humanity with it and bring our",
+        "offset": 583680,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "experience to the solutions. But it is",
+        "offset": 585519,
+        "duration": 5041,
+        "lang": "en"
+      },
+      {
+        "text": "helping us get better, faster, cheaper,",
+        "offset": 588080,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "more ideas, bigger ideas. And especially",
+        "offset": 590560,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "with the world the way it is now, the",
+        "offset": 593040,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "ideas have to come to to life so much",
+        "offset": 595440,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "quicker. You never have the two weeks,",
+        "offset": 597360,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "you have two days now. You're doing",
+        "offset": 598880,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "things, you know, overnight to get",
+        "offset": 600560,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "things done, especially to address",
+        "offset": 602240,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "social media and address things that are",
+        "offset": 604080,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "in the news. So, we are working across",
+        "offset": 605920,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "the whole whole organization. One of the",
+        "offset": 608320,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "keys is how to get all your people",
+        "offset": 610800,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "working on it too. So, that that's one",
+        "offset": 612880,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "of the bigger challenges to have",
+        "offset": 614800,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "everyone embrace it. Yeah, that really",
+        "offset": 616000,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "resonates with me, Jim, because I think",
+        "offset": 618160,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "before we would do like a whole annual",
+        "offset": 620079,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "planning process, right? And you would",
+        "offset": 622480,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "think about, okay, what are the",
+        "offset": 624000,
+        "duration": 2720,
+        "lang": "en"
+      },
+      {
+        "text": "quarterly themes? How are we going to",
+        "offset": 625360,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "align all of our campaigns and our",
+        "offset": 626720,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "editorial calendars? But now I I really",
+        "offset": 628560,
+        "duration": 5279,
+        "lang": "en"
+      },
+      {
+        "text": "like we're not doing that this year.",
+        "offset": 631200,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "What I'm working with the team on is a",
+        "offset": 633839,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "tactical plan for Q4 and Q1 and let's",
+        "offset": 635760,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "get to beta and get some stuff into the",
+        "offset": 638240,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "market and just like and continue to",
+        "offset": 639839,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "iterate. Right. So,",
+        "offset": 641519,
+        "duration": 3121,
+        "lang": "en"
+      },
+      {
+        "text": ">> that's that's right. You're not doing",
+        "offset": 643360,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "one campaign. You're putting multiple",
+        "offset": 644640,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "pieces in in the market, seeing what",
+        "offset": 646720,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "worked, seeing how to optimize them. Not",
+        "offset": 648800,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "only not only from a creative",
+        "offset": 650880,
+        "duration": 3519,
+        "lang": "en"
+      },
+      {
+        "text": "perspective or strategic perspective,",
+        "offset": 652240,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "but media media does it, you know, so",
+        "offset": 654399,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "quickly too, so you understand what's",
+        "offset": 656640,
+        "duration": 2720,
+        "lang": "en"
+      },
+      {
+        "text": "working, what's not.",
+        "offset": 658399,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah. Cool. Um, so you talked a little",
+        "offset": 659360,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "bit about structure and we just talked",
+        "offset": 662160,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "about the what, right? the main business",
+        "offset": 663680,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "problems that we're solving for. But",
+        "offset": 665680,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "let's talk a little bit about the how",
+        "offset": 667440,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "and how you're approaching the structure",
+        "offset": 668959,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "of your teams and evolving the culture",
+        "offset": 671040,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "of your teams to really meet this moment",
+        "offset": 673120,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "of AI transformation. I think for me",
+        "offset": 674720,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "personally at ASA it is a little bit of",
+        "offset": 676880,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "a blend of some tops down and bottoms up",
+        "offset": 679040,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "um from the team as well. And so why",
+        "offset": 682240,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "don't we start with you Kristen on how",
+        "offset": 684160,
+        "duration": 2720,
+        "lang": "en"
+      },
+      {
+        "text": "you guys are approaching it.",
+        "offset": 685519,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah, I think that's exactly right. uh",
+        "offset": 686880,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "from a tops down perspective when we",
+        "offset": 688720,
+        "duration": 4239,
+        "lang": "en"
+      },
+      {
+        "text": "think about how do we introduce AI into",
+        "offset": 690959,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "our workforce one of the questions that",
+        "offset": 692959,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "I think leaders have to ask themselves",
+        "offset": 694959,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "is am I do I have the skill set",
+        "offset": 696560,
+        "duration": 5440,
+        "lang": "en"
+      },
+      {
+        "text": "internally to deploy this AI tool I'm",
+        "offset": 699839,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "sure you're all getting a lot of inbound",
+        "offset": 702000,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "from from lots of AI vendors and one of",
+        "offset": 703760,
+        "duration": 3759,
+        "lang": "en"
+      },
+      {
+        "text": "the things that I'm always asking myself",
+        "offset": 705920,
+        "duration": 2800,
+        "lang": "en"
+      },
+      {
+        "text": "and what leaders I think should be",
+        "offset": 707519,
+        "duration": 2961,
+        "lang": "en"
+      },
+      {
+        "text": "asking themselves is do I have the skill",
+        "offset": 708720,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "set internally to manage and deploy and",
+        "offset": 710480,
+        "duration": 4799,
+        "lang": "en"
+      },
+      {
+        "text": "implement this tool um do I have the",
+        "offset": 712640,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "data infrastructure necessary to",
+        "offset": 715279,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "implement and deploy deploy this tool.",
+        "offset": 717360,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "Do my teams have that connection? Like",
+        "offset": 718800,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "one of the things I'm always making sure",
+        "offset": 720720,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "we're doing weekly, some of our",
+        "offset": 722800,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "marketing teams in my org are meeting",
+        "offset": 724480,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "with our data engineering teams weekly",
+        "offset": 726560,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "and saying, \"This is our new customer.",
+        "offset": 728079,
+        "duration": 2641,
+        "lang": "en"
+      },
+      {
+        "text": "This is our new problem for our",
+        "offset": 729680,
+        "duration": 2719,
+        "lang": "en"
+      },
+      {
+        "text": "customers, for our team. How do we",
+        "offset": 730720,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "implement this?\" And and trying to work",
+        "offset": 732399,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "together with that team. But if you're",
+        "offset": 734160,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "evaluating AI tools and you don't have",
+        "offset": 736000,
+        "duration": 3839,
+        "lang": "en"
+      },
+      {
+        "text": "the data infrastructure, you don't have",
+        "offset": 738240,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "the data engineering teams in place to",
+        "offset": 739839,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "implement them, they're not going to be",
+        "offset": 742000,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "successful. So that's really like making",
+        "offset": 743360,
+        "duration": 2960,
+        "lang": "en"
+      },
+      {
+        "text": "sure that you're equipped and you're",
+        "offset": 745279,
+        "duration": 2961,
+        "lang": "en"
+      },
+      {
+        "text": "staffed appropriately. And then the",
+        "offset": 746320,
+        "duration": 3519,
+        "lang": "en"
+      },
+      {
+        "text": "second is bottoms up. One of the things",
+        "offset": 748240,
+        "duration": 3039,
+        "lang": "en"
+      },
+      {
+        "text": "at Thread Up that I love is that we",
+        "offset": 749839,
+        "duration": 2641,
+        "lang": "en"
+      },
+      {
+        "text": "really want to create a culture of",
+        "offset": 751279,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "innovation. And so we just launched our",
+        "offset": 752480,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "first ever AI marketing summit because",
+        "offset": 754639,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "what we heard from um our employees is",
+        "offset": 756800,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "that it's really hard to keep up with",
+        "offset": 758800,
+        "duration": 5279,
+        "lang": "en"
+      },
+      {
+        "text": "the rate of change of AI and learning.",
+        "offset": 761200,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "And so we wanted to carve out work space",
+        "offset": 764079,
+        "duration": 4641,
+        "lang": "en"
+      },
+      {
+        "text": "and time not not having you have to",
+        "offset": 766240,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "learn on the weekends like at work how",
+        "offset": 768720,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "do we carve out space for you to learn",
+        "offset": 770480,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "and educate yourself around AI. We we",
+        "offset": 772000,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "had a whole day where teams async as",
+        "offset": 774800,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "individuals learned and then the second",
+        "offset": 776959,
+        "duration": 4641,
+        "lang": "en"
+      },
+      {
+        "text": "day people came back and pitched their",
+        "offset": 779120,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "ideas for how they wanted to use AI to",
+        "offset": 781600,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "either solve a customer problem or a",
+        "offset": 783519,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "business problem. And that's what I",
+        "offset": 785440,
+        "duration": 2639,
+        "lang": "en"
+      },
+      {
+        "text": "would say like start with the business",
+        "offset": 786720,
+        "duration": 2799,
+        "lang": "en"
+      },
+      {
+        "text": "problem because if you start with the",
+        "offset": 788079,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "tool, you're going to implement a tool",
+        "offset": 789519,
+        "duration": 2161,
+        "lang": "en"
+      },
+      {
+        "text": "and then you're not going to be like how",
+        "offset": 790959,
+        "duration": 2401,
+        "lang": "en"
+      },
+      {
+        "text": "do we measure if this was working? So",
+        "offset": 791680,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "the team started with the business",
+        "offset": 793360,
+        "duration": 3039,
+        "lang": "en"
+      },
+      {
+        "text": "problem or the customer problem. They",
+        "offset": 794560,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "pitched these tools and what I think is",
+        "offset": 796399,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "really great about that is when you're",
+        "offset": 798639,
+        "duration": 2801,
+        "lang": "en"
+      },
+      {
+        "text": "thinking about the future, you're not",
+        "offset": 800160,
+        "duration": 3119,
+        "lang": "en"
+      },
+      {
+        "text": "telling your teams what's due. you're",
+        "offset": 801440,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "telling them what's next and you want",
+        "offset": 803279,
+        "duration": 2961,
+        "lang": "en"
+      },
+      {
+        "text": "them to be thinking about what's next",
+        "offset": 805040,
+        "duration": 3039,
+        "lang": "en"
+      },
+      {
+        "text": "and how they think about changing their",
+        "offset": 806240,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "world and then carving out space and",
+        "offset": 808079,
+        "duration": 3281,
+        "lang": "en"
+      },
+      {
+        "text": "time for them to do that and the",
+        "offset": 809920,
+        "duration": 2800,
+        "lang": "en"
+      },
+      {
+        "text": "creating the culture of that. So it's",
+        "offset": 811360,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "not a mandate per se but it is um a",
+        "offset": 812720,
+        "duration": 5520,
+        "lang": "en"
+      },
+      {
+        "text": "healthy encouragement and structure to",
+        "offset": 815680,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "uh to create innovation. So that's what",
+        "offset": 818240,
+        "duration": 4159,
+        "lang": "en"
+      },
+      {
+        "text": "I would say both tops down and bottoms",
+        "offset": 820240,
+        "duration": 2480,
+        "lang": "en"
+      },
+      {
+        "text": "up.",
+        "offset": 822399,
+        "duration": 2240,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah, I love that.",
+        "offset": 822720,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": ">> And Kim, what about you? What are you",
+        "offset": 824639,
+        "duration": 4081,
+        "lang": "en"
+      },
+      {
+        "text": "seeing? Um, well, I really resonate with",
+        "offset": 826000,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "the like what's its purpose, you know,",
+        "offset": 828720,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "like starting with the objective versus",
+        "offset": 830959,
+        "duration": 4801,
+        "lang": "en"
+      },
+      {
+        "text": "like the tool. And it's just like any",
+        "offset": 833680,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "marketing, every you every good",
+        "offset": 835760,
+        "duration": 4639,
+        "lang": "en"
+      },
+      {
+        "text": "campaign, every good piece of work I've",
+        "offset": 838560,
+        "duration": 3839,
+        "lang": "en"
+      },
+      {
+        "text": "ever done had a clear objective, had a",
+        "offset": 840399,
+        "duration": 5281,
+        "lang": "en"
+      },
+      {
+        "text": "clear like sense of purpose. So, we were",
+        "offset": 842399,
+        "duration": 5601,
+        "lang": "en"
+      },
+      {
+        "text": "looking at how like what what would be",
+        "offset": 845680,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "most effective for us? What's the",
+        "offset": 848000,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "purpose of an AI tool in terms of",
+        "offset": 849600,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "achieving marketing? And you know, we",
+        "offset": 851279,
+        "duration": 4721,
+        "lang": "en"
+      },
+      {
+        "text": "send out multiple emails every day with",
+        "offset": 853519,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "a very robust customer marketing",
+        "offset": 856000,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "program. We're always on in terms of uh",
+        "offset": 857920,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "display ads and digital media and then",
+        "offset": 860959,
+        "duration": 5201,
+        "lang": "en"
+      },
+      {
+        "text": "sprinkle in, you know, campaigns with in",
+        "offset": 862880,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "you know, all platforms. So to me, the",
+        "offset": 866160,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "best use of AI would be how do I know if",
+        "offset": 868240,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "that campaign if that work is resonating",
+        "offset": 871040,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "in real time? Uh you know, we were doing",
+        "offset": 873199,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "hold out groups like we would do CRM,",
+        "offset": 875440,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "we'd send and then we'd hold out and see",
+        "offset": 877199,
+        "duration": 4561,
+        "lang": "en"
+      },
+      {
+        "text": "which headline. Well, now we're actually",
+        "offset": 878800,
+        "duration": 5680,
+        "lang": "en"
+      },
+      {
+        "text": "um testing our creative before with",
+        "offset": 881760,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "personas that we've made. So, we went",
+        "offset": 884480,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "into chat GPT, which with a persona",
+        "offset": 887040,
+        "duration": 5680,
+        "lang": "en"
+      },
+      {
+        "text": "maker. Anyone can do it. We've created",
+        "offset": 889760,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "five different personas based on our",
+        "offset": 892720,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "targeting. We took like sort of our our",
+        "offset": 895040,
+        "duration": 5919,
+        "lang": "en"
+      },
+      {
+        "text": "our um our MRI data on who our who our",
+        "offset": 896880,
+        "duration": 6399,
+        "lang": "en"
+      },
+      {
+        "text": "target audiences are, our media plan.",
+        "offset": 900959,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "We've taken past campaigns that were",
+        "offset": 903279,
+        "duration": 2721,
+        "lang": "en"
+      },
+      {
+        "text": "successful. We took our brand",
+        "offset": 904800,
+        "duration": 2800,
+        "lang": "en"
+      },
+      {
+        "text": "guidelines, we took our compliance",
+        "offset": 906000,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "guidelines, we fed it all to the persona",
+        "offset": 907600,
+        "duration": 5440,
+        "lang": "en"
+      },
+      {
+        "text": "maker. And the persona can both be a",
+        "offset": 910079,
+        "duration": 7120,
+        "lang": "en"
+      },
+      {
+        "text": "reactor or a creator. So we will um",
+        "offset": 913040,
+        "duration": 6400,
+        "lang": "en"
+      },
+      {
+        "text": "create maybe an an email and put a",
+        "offset": 917199,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "couple headlines and ask the persona",
+        "offset": 919440,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "which headline do they prefer or flip",
+        "offset": 921040,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "side is you can ask the persona to",
+        "offset": 923360,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "generate the headline and then you know",
+        "offset": 924959,
+        "duration": 4721,
+        "lang": "en"
+      },
+      {
+        "text": "you can sort of make the call. Um so",
+        "offset": 927040,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "that's one of the things is that to me",
+        "offset": 929680,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "it's not like we're using that tool.",
+        "offset": 931360,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "We're using the tool to like solve a",
+        "offset": 933120,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "problem we had which is like how do we",
+        "offset": 935279,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "know that we're resonating um in real",
+        "offset": 937680,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "time and then the way we're implementing",
+        "offset": 939839,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "it we actually have our workshop next",
+        "offset": 941760,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "week where everyone uh got the persona",
+        "offset": 943600,
+        "duration": 4239,
+        "lang": "en"
+      },
+      {
+        "text": "the whole marketing department not just",
+        "offset": 946480,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "copywriters but everybody um all",
+        "offset": 947839,
+        "duration": 5440,
+        "lang": "en"
+      },
+      {
+        "text": "divisions uh and we're going to do",
+        "offset": 950399,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "breakout groups where you come back um",
+        "offset": 953279,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "you do work with a project you create a",
+        "offset": 955759,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "a campaign you come back you present it",
+        "offset": 958399,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "to the team so trying to get everyone to",
+        "offset": 960160,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "feel comfortable and confident um about",
+        "offset": 962639,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "like you know just using it as a tool.",
+        "offset": 965360,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "It's kind of like I think of it as like",
+        "offset": 967839,
+        "duration": 3041,
+        "lang": "en"
+      },
+      {
+        "text": "a sue chef. You're still the you're",
+        "offset": 969120,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "still cooking but the sue chef is doing",
+        "offset": 970880,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "all the chopping and prepping.",
+        "offset": 973519,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": ">> That's great. Right.",
+        "offset": 974959,
+        "duration": 3281,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah. Yeah.",
+        "offset": 977120,
+        "duration": 2000,
+        "lang": "en"
+      },
+      {
+        "text": ">> And what about",
+        "offset": 978240,
+        "duration": 2560,
+        "lang": "en"
+      },
+      {
+        "text": ">> So So we're we're a much smaller",
+        "offset": 979120,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "organization so the implementation is a",
+        "offset": 980800,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "little more difficult because we don't",
+        "offset": 983920,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "have people dedicated to it. And what",
+        "offset": 985279,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "we're finding is we were trying to do it",
+        "offset": 986800,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "off the side of our desk,",
+        "offset": 988880,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": ">> but now we've had to get people actively",
+        "offset": 990480,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "involved, right? So we have to give",
+        "offset": 992160,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "people a focus to do that. And we found",
+        "offset": 993920,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "it it comes a bit top down because it",
+        "offset": 996240,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "has to to to achieve your business",
+        "offset": 999120,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "objectives. But there's also people who",
+        "offset": 1001120,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "are curious, just naturally curious, who",
+        "offset": 1003360,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "come up and say, \"Oh, what about this?",
+        "offset": 1006000,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "What about this?\" So it's it's top down,",
+        "offset": 1008000,
+        "duration": 3839,
+        "lang": "en"
+      },
+      {
+        "text": "but it's also bottom up for those who",
+        "offset": 1009920,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "are curious and want to improve. And",
+        "offset": 1011839,
+        "duration": 5041,
+        "lang": "en"
+      },
+      {
+        "text": "then we we do have training sessions. We",
+        "offset": 1014000,
+        "duration": 5519,
+        "lang": "en"
+      },
+      {
+        "text": "have uh bimonthly training sessions",
+        "offset": 1016880,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "bringing groups of people together",
+        "offset": 1019519,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "having experts come in and teaching and",
+        "offset": 1021279,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "teaching the different tools to help",
+        "offset": 1024000,
+        "duration": 3439,
+        "lang": "en"
+      },
+      {
+        "text": "people implement it. One of the things",
+        "offset": 1025760,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "we found is if you just give someone the",
+        "offset": 1027439,
+        "duration": 3041,
+        "lang": "en"
+      },
+      {
+        "text": "tool and I think you were alluding to",
+        "offset": 1029280,
+        "duration": 2480,
+        "lang": "en"
+      },
+      {
+        "text": "this, if you just give someone the",
+        "offset": 1030480,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "tools, they're not necessarily going to",
+        "offset": 1031760,
+        "duration": 2960,
+        "lang": "en"
+      },
+      {
+        "text": "embrace it because then you have to go",
+        "offset": 1033360,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "home on the weekends, you got to learn",
+        "offset": 1034720,
+        "duration": 4319,
+        "lang": "en"
+      },
+      {
+        "text": "it, and some may and and some may not.",
+        "offset": 1036480,
+        "duration": 5920,
+        "lang": "en"
+      },
+      {
+        "text": "So it it is a it is a process to to",
+        "offset": 1039039,
+        "duration": 5601,
+        "lang": "en"
+      },
+      {
+        "text": "engage with it. We're also doing since",
+        "offset": 1042400,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "we have multiple clients, we're doing",
+        "offset": 1044640,
+        "duration": 2960,
+        "lang": "en"
+      },
+      {
+        "text": "the same thing for different clients,",
+        "offset": 1046160,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "right? Entering their guidelines,",
+        "offset": 1047600,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "entering past work, entering the",
+        "offset": 1049440,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "personas for different clients and then",
+        "offset": 1051520,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "we have different groups. One of the",
+        "offset": 1053440,
+        "duration": 2800,
+        "lang": "en"
+      },
+      {
+        "text": "things that we're really trying to do is",
+        "offset": 1054880,
+        "duration": 2560,
+        "lang": "en"
+      },
+      {
+        "text": "separate, you know, make sure it's",
+        "offset": 1056240,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "separated so all the information isn't",
+        "offset": 1057440,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "getting put together in our in our",
+        "offset": 1060160,
+        "duration": 7040,
+        "lang": "en"
+      },
+      {
+        "text": "platforms. Um it it's hard sometimes",
+        "offset": 1062240,
+        "duration": 8080,
+        "lang": "en"
+      },
+      {
+        "text": "because people are busy and how do you",
+        "offset": 1067200,
+        "duration": 6160,
+        "lang": "en"
+      },
+      {
+        "text": "get people to shift perceptions? Um and",
+        "offset": 1070320,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "describing it as a tool to support their",
+        "offset": 1073360,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "goals is important because there are",
+        "offset": 1075440,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "groups of people who who are afraid of",
+        "offset": 1077120,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "it, right? And and and it's giving them",
+        "offset": 1078720,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "the confidence to take it and make their",
+        "offset": 1081760,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "work better. It's a tool, but they have",
+        "offset": 1083760,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "to be involved too and sharing in",
+        "offset": 1086000,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "sharing that. We've also put in in",
+        "offset": 1087760,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "reviews, right? For for reviews, how are",
+        "offset": 1089600,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "they doing? what are they doing with it?",
+        "offset": 1092320,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "So they know it's a real objective that",
+        "offset": 1094160,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "we're trying to work with to make our",
+        "offset": 1096400,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "work better.",
+        "offset": 1098000,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah, that actually is like so aligned.",
+        "offset": 1099280,
+        "duration": 3519,
+        "lang": "en"
+      },
+      {
+        "text": "And one of my favorite examples within",
+        "offset": 1101280,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "my own team, um it starts with bottoms",
+        "offset": 1102799,
+        "duration": 5681,
+        "lang": "en"
+      },
+      {
+        "text": "up because I I feel like the the IC's",
+        "offset": 1105760,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "and the individuals are mired in the",
+        "offset": 1108480,
+        "duration": 3199,
+        "lang": "en"
+      },
+      {
+        "text": "work, right? And so I think some of the",
+        "offset": 1110000,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "best use cases definitely come from",
+        "offset": 1111679,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "them. So I'll give you a great example.",
+        "offset": 1113360,
+        "duration": 3199,
+        "lang": "en"
+      },
+      {
+        "text": "Asana, you know, we're a global company.",
+        "offset": 1115200,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "I have a global team, especially when we",
+        "offset": 1116559,
+        "duration": 3681,
+        "lang": "en"
+      },
+      {
+        "text": "go into a region, that is when we're",
+        "offset": 1118799,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "really, really resource constrained. And",
+        "offset": 1120240,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "I have this woman on my team, Leona. She",
+        "offset": 1122000,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "sits out of Singapore. She's a marketing",
+        "offset": 1123760,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "manager, the only one for the entire AP",
+        "offset": 1125760,
+        "duration": 5279,
+        "lang": "en"
+      },
+      {
+        "text": "pack region. And there was a huge um uh",
+        "offset": 1127600,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "pressure to just turn out a bunch of",
+        "offset": 1131039,
+        "duration": 3041,
+        "lang": "en"
+      },
+      {
+        "text": "partner marketing stories at the",
+        "offset": 1132720,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "beginning of this year. And so what she",
+        "offset": 1134080,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "did was she built an AI teammate um and",
+        "offset": 1135840,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "she's not she's not technical, by the",
+        "offset": 1138240,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "way. She's a marketer. Um, and it was an",
+        "offset": 1140080,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "agent that helped her, you know, ingest",
+        "offset": 1142160,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "call notes and we uploaded all the um,",
+        "offset": 1144400,
+        "duration": 5279,
+        "lang": "en"
+      },
+      {
+        "text": "creative guidelines and voice and tone",
+        "offset": 1147520,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "and it would turn out a word doc. And it",
+        "offset": 1149679,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "wasn't perfect, right? Maybe 80% of the",
+        "offset": 1151760,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "way there, she definitely would have to",
+        "offset": 1153520,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "go in and make edits. Um, and it would",
+        "offset": 1154960,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "also kick off um, the workflows to get",
+        "offset": 1156880,
+        "duration": 5520,
+        "lang": "en"
+      },
+      {
+        "text": "them back to HQ for approvals, etc. But",
+        "offset": 1159440,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "it ended up, you know, saving her saving",
+        "offset": 1162400,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "her a ton of time. It was faster time to",
+        "offset": 1164320,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "market in all of our campaigns. Um, and",
+        "offset": 1166400,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "what was even better was she was then",
+        "offset": 1169520,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "able to really focus on things that were",
+        "offset": 1171520,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "more innately human that agents couldn't",
+        "offset": 1173280,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "do. So, building relationships with the",
+        "offset": 1175280,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "partners and um and also being more of a",
+        "offset": 1177360,
+        "duration": 6080,
+        "lang": "en"
+      },
+      {
+        "text": "strategic um, you know, a strategic",
+        "offset": 1180480,
+        "duration": 5760,
+        "lang": "en"
+      },
+      {
+        "text": "partner to her internal customers. And",
+        "offset": 1183440,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "so that was like the bottoms up part.",
+        "offset": 1186240,
+        "duration": 3439,
+        "lang": "en"
+      },
+      {
+        "text": "But what I what where I really started",
+        "offset": 1187840,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "to see things multiply was she then",
+        "offset": 1189679,
+        "duration": 4721,
+        "lang": "en"
+      },
+      {
+        "text": "plugged into our AI council. So this is",
+        "offset": 1191840,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "like more the tops down bit, right? And",
+        "offset": 1194400,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "so I want everyone on my team using AI.",
+        "offset": 1196720,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "And so we've but a lot of folks just",
+        "offset": 1199280,
+        "duration": 3200,
+        "lang": "en"
+      },
+      {
+        "text": "don't know where to start. So we have a",
+        "offset": 1200720,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "monthly council that comes together and",
+        "offset": 1202480,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "we have a lot of these AI influencers",
+        "offset": 1204240,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "internally that are part of this council",
+        "offset": 1206720,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "that come in, they share their stories",
+        "offset": 1208880,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "and just inspire um you know new use",
+        "offset": 1210880,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "cases and help their peers around them",
+        "offset": 1213360,
+        "duration": 4319,
+        "lang": "en"
+      },
+      {
+        "text": "um to really elevate and scale and and",
+        "offset": 1215600,
+        "duration": 4079,
+        "lang": "en"
+      },
+      {
+        "text": "bring even more use cases to life. And",
+        "offset": 1217679,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "so I've seen that work really really",
+        "offset": 1219679,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "well. Um but what's really interesting",
+        "offset": 1221200,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "is like in this moment and we talked a",
+        "offset": 1223919,
+        "duration": 5361,
+        "lang": "en"
+      },
+      {
+        "text": "little bit about it is there is training",
+        "offset": 1225840,
+        "duration": 6800,
+        "lang": "en"
+      },
+      {
+        "text": "not just for the AI tools but there's I",
+        "offset": 1229280,
+        "duration": 5680,
+        "lang": "en"
+      },
+      {
+        "text": "think training on the skills that our",
+        "offset": 1232640,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "teams need to have that are maybe more",
+        "offset": 1234960,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "on the soft side on the soft skills side",
+        "offset": 1236480,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "um because now that they have you know",
+        "offset": 1239360,
+        "duration": 5439,
+        "lang": "en"
+      },
+      {
+        "text": "more the ankle biter mundane work um",
+        "offset": 1241280,
+        "duration": 6000,
+        "lang": "en"
+      },
+      {
+        "text": "automated with AI agents this is a",
+        "offset": 1244799,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "moment where our teams really need to",
+        "offset": 1247280,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "lean into things that are more uniquely",
+        "offset": 1248960,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "human right? Building relationships um",
+        "offset": 1250720,
+        "duration": 5680,
+        "lang": "en"
+      },
+      {
+        "text": "as an example. And so um I would love to",
+        "offset": 1253360,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "to understand from you all a little bit",
+        "offset": 1256400,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "about what you're doing in terms of",
+        "offset": 1258480,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "training your teams to really meet this",
+        "offset": 1260480,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "moment.",
+        "offset": 1262080,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": ">> Um so Kristen, do we want to start with",
+        "offset": 1264080,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "you? I'm sure. Yeah. I mean, I'd say",
+        "offset": 1265840,
+        "duration": 6400,
+        "lang": "en"
+      },
+      {
+        "text": "really it starts with um it starts with",
+        "offset": 1268320,
+        "duration": 6080,
+        "lang": "en"
+      },
+      {
+        "text": "understanding what you want as as a",
+        "offset": 1272240,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "leader and what your when your",
+        "offset": 1274400,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "organization needs um and how those",
+        "offset": 1275840,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "skills are really shifting and what",
+        "offset": 1278000,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "skills need to be true. One of the",
+        "offset": 1279440,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "things that um I think is really",
+        "offset": 1281280,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "changing as as you mentioned Jess is a",
+        "offset": 1283200,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "lot of the mundane repetitive tasks can",
+        "offset": 1285360,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "be done by AI now and I think that's",
+        "offset": 1287360,
+        "duration": 5199,
+        "lang": "en"
+      },
+      {
+        "text": "only increasing and so what the way I",
+        "offset": 1290080,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "think about it now is how do we become",
+        "offset": 1292559,
+        "duration": 4881,
+        "lang": "en"
+      },
+      {
+        "text": "great communicators and great managers",
+        "offset": 1294880,
+        "duration": 4560,
+        "lang": "en"
+      },
+      {
+        "text": "of AI. So we're going to get to a place",
+        "offset": 1297440,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "where your teams aren't maybe doing that",
+        "offset": 1299440,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "work anymore but they're managing the AI",
+        "offset": 1301440,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "um who is and that requires great great",
+        "offset": 1303919,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "communication skills. It also requires",
+        "offset": 1305919,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "the ability to be a systems architect",
+        "offset": 1308080,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "and start to think about how do you",
+        "offset": 1310080,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "build scalable systems and I'll tell you",
+        "offset": 1311440,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "that is really changing in life cycle",
+        "offset": 1313760,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "marketing. So, you know, gone are the",
+        "offset": 1315520,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "days probably pretty soon where you're",
+        "offset": 1317280,
+        "duration": 2879,
+        "lang": "en"
+      },
+      {
+        "text": "going to build these static journeys",
+        "offset": 1318960,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "that are rulebased. You're going to",
+        "offset": 1320159,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "probably need to have a a new person",
+        "offset": 1322080,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "who's thinking about how do I build a",
+        "offset": 1323760,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "scalable system to build agentic",
+        "offset": 1325440,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "journeys. And that's just a very",
+        "offset": 1327360,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "different thing that um that I'm",
+        "offset": 1329280,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "starting to look for in teams. I think",
+        "offset": 1330720,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "the same thing is true of creative. You",
+        "offset": 1332400,
+        "duration": 4639,
+        "lang": "en"
+      },
+      {
+        "text": "know, today and and and that's changing",
+        "offset": 1334080,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "really quickly. People are pushing",
+        "offset": 1337039,
+        "duration": 3681,
+        "lang": "en"
+      },
+      {
+        "text": "pixels and Figma. Instead, they're going",
+        "offset": 1338559,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "to have to be great communicators. How",
+        "offset": 1340720,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "do I tell this um this chat, this agent,",
+        "offset": 1342480,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "what do I want this image to look like?",
+        "offset": 1345679,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "What do I want this asset to look like?",
+        "offset": 1347520,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "And then start to tweak it like that",
+        "offset": 1349440,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "versus necessarily being in Photoshop or",
+        "offset": 1350799,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "Adobe. Although those tools are",
+        "offset": 1352880,
+        "duration": 4159,
+        "lang": "en"
+      },
+      {
+        "text": "introducing great AI, great AI tools as",
+        "offset": 1354559,
+        "duration": 4081,
+        "lang": "en"
+      },
+      {
+        "text": "well. So I think I'm starting to look",
+        "offset": 1357039,
+        "duration": 4241,
+        "lang": "en"
+      },
+      {
+        "text": "for that change um both training but",
+        "offset": 1358640,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "also looking for those types of thinkers",
+        "offset": 1361280,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "and bringing them into the organization",
+        "offset": 1362720,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "and then growing it internally. Yeah. I",
+        "offset": 1364880,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "like to think of it as it's not just",
+        "offset": 1366880,
+        "duration": 4159,
+        "lang": "en"
+      },
+      {
+        "text": "about like the doers anymore but it's",
+        "offset": 1368320,
+        "duration": 4239,
+        "lang": "en"
+      },
+      {
+        "text": "folks that know how to conduct and",
+        "offset": 1371039,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "orchestrate work across people and",
+        "offset": 1372559,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "agents alike.",
+        "offset": 1375520,
+        "duration": 1279,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah.",
+        "offset": 1376480,
+        "duration": 1679,
+        "lang": "en"
+      },
+      {
+        "text": ">> So well said.",
+        "offset": 1376799,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah. One one of the things we're doing",
+        "offset": 1378159,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "we started everyone everyone received",
+        "offset": 1379679,
+        "duration": 3681,
+        "lang": "en"
+      },
+      {
+        "text": "prompt classes. How do you start to",
+        "offset": 1381360,
+        "duration": 3679,
+        "lang": "en"
+      },
+      {
+        "text": "talk? How do you get the results you",
+        "offset": 1383360,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "want from AI? So that was sort of our",
+        "offset": 1385039,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "basic front line but then we are having",
+        "offset": 1387120,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "people experts come into the office do",
+        "offset": 1389440,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "it personally and then and then we have",
+        "offset": 1391840,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "the videos that people can catch up as",
+        "offset": 1393760,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "refreshers after. Um but it is opening",
+        "offset": 1395600,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "the door. We've had people we we did an",
+        "offset": 1398720,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "AI commercial and and it's things that",
+        "offset": 1400720,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "you just wouldn't be able to do where we",
+        "offset": 1403200,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "had exploding cars and different things",
+        "offset": 1405520,
+        "duration": 3519,
+        "lang": "en"
+      },
+      {
+        "text": "that we the reality is we wouldn't have",
+        "offset": 1407280,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "been able to do it but how it took an",
+        "offset": 1409039,
+        "duration": 5041,
+        "lang": "en"
+      },
+      {
+        "text": "idea to get us there. So, how do you",
+        "offset": 1411520,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "take those ideas? But it is",
+        "offset": 1414080,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "understanding the tools, what's access,",
+        "offset": 1416000,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "and I think training is just real real",
+        "offset": 1418240,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "important. But you you brought up a",
+        "offset": 1420080,
+        "duration": 3599,
+        "lang": "en"
+      },
+      {
+        "text": "point that I think is just really smart.",
+        "offset": 1421760,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "It's you need the people who want to",
+        "offset": 1423679,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "engage. Hire those people who are",
+        "offset": 1425440,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "curious, want to continue to learn. Um",
+        "offset": 1427200,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "because those are the people that are",
+        "offset": 1429600,
+        "duration": 3600,
+        "lang": "en"
+      },
+      {
+        "text": "going to make things better and better",
+        "offset": 1431280,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "and embrace it, get things done faster.",
+        "offset": 1433200,
+        "duration": 5599,
+        "lang": "en"
+      },
+      {
+        "text": "The reality is businesses want better,",
+        "offset": 1435600,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "faster, cheaper. That's what our clients",
+        "offset": 1438799,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "want. I mean, there was a stat in the",
+        "offset": 1440400,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "first session that said, I don't",
+        "offset": 1442320,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "remember what company, but reduced their",
+        "offset": 1444320,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "consultancy by 80%. Right? That's what",
+        "offset": 1446480,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "they're looking for. And we're those",
+        "offset": 1449280,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "consultancies that they're trying to",
+        "offset": 1451120,
+        "duration": 2799,
+        "lang": "en"
+      },
+      {
+        "text": "make more efficient. And that's what",
+        "offset": 1452559,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "we're doing. Um, by embracing AI, we've",
+        "offset": 1453919,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "had a number of clients that have gone",
+        "offset": 1456960,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "through reviews and they've kept us",
+        "offset": 1458400,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "because we have been embracing and are",
+        "offset": 1460400,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "doing things quicker, understand their",
+        "offset": 1462720,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "business through through AI. But it it",
+        "offset": 1464320,
+        "duration": 4479,
+        "lang": "en"
+      },
+      {
+        "text": "really is just giving people like the",
+        "offset": 1466480,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "prompt thing. It's a simple thing, but",
+        "offset": 1468799,
+        "duration": 4401,
+        "lang": "en"
+      },
+      {
+        "text": "people have to understand how to do that",
+        "offset": 1471520,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "well as a place to start.",
+        "offset": 1473200,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah. Well, for us, I think it depends",
+        "offset": 1475919,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "on your culture. Um, so I don't know",
+        "offset": 1478480,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "that there's one sizefits-all, but",
+        "offset": 1481279,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "Betterment is a very missiondriven",
+        "offset": 1483120,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "company. Um, our mission is to empower",
+        "offset": 1485279,
+        "duration": 4721,
+        "lang": "en"
+      },
+      {
+        "text": "people to build wealth with confidence",
+        "offset": 1488240,
+        "duration": 4319,
+        "lang": "en"
+      },
+      {
+        "text": "and ease. So, every time people are",
+        "offset": 1490000,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "using AI, we're like applying it to the",
+        "offset": 1492559,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "mission. Does this provide customers the",
+        "offset": 1494320,
+        "duration": 4880,
+        "lang": "en"
+      },
+      {
+        "text": "ability to do something with more",
+        "offset": 1497679,
+        "duration": 4321,
+        "lang": "en"
+      },
+      {
+        "text": "confidence or more ease? And in the",
+        "offset": 1499200,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "beginning, everyone was sort of, you",
+        "offset": 1502000,
+        "duration": 2799,
+        "lang": "en"
+      },
+      {
+        "text": "know, our board was like, how are you",
+        "offset": 1503440,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "being more efficient? And we're also",
+        "offset": 1504799,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "fiduciary. So, by law, we have to do",
+        "offset": 1506320,
+        "duration": 4239,
+        "lang": "en"
+      },
+      {
+        "text": "what's best for the customer, which by",
+        "offset": 1508559,
+        "duration": 3281,
+        "lang": "en"
+      },
+      {
+        "text": "the way, you should all make sure your",
+        "offset": 1510559,
+        "duration": 4081,
+        "lang": "en"
+      },
+      {
+        "text": "investment platform is a fiduciary. Um,",
+        "offset": 1511840,
+        "duration": 4719,
+        "lang": "en"
+      },
+      {
+        "text": "just just saying good tip.",
+        "offset": 1514640,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": ">> Quick tip, quick search. Um, not of",
+        "offset": 1516559,
+        "duration": 4081,
+        "lang": "en"
+      },
+      {
+        "text": "them, many of them are not, but so we're",
+        "offset": 1518720,
+        "duration": 3439,
+        "lang": "en"
+      },
+      {
+        "text": "fiduciary, so we have to do what's",
+        "offset": 1520640,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "right. So you also can't just leave it",
+        "offset": 1522159,
+        "duration": 3921,
+        "lang": "en"
+      },
+      {
+        "text": "to Agentic. It has to be, you know, has",
+        "offset": 1523919,
+        "duration": 4481,
+        "lang": "en"
+      },
+      {
+        "text": "to meet a compliance standard,",
+        "offset": 1526080,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "missiondriven. So what we're doing now",
+        "offset": 1528400,
+        "duration": 5840,
+        "lang": "en"
+      },
+      {
+        "text": "is we actually had our CFP team train an",
+        "offset": 1531200,
+        "duration": 6640,
+        "lang": "en"
+      },
+      {
+        "text": "agent. So it's trained by internally and",
+        "offset": 1534240,
+        "duration": 6400,
+        "lang": "en"
+      },
+      {
+        "text": "it's always with back to the mission. So",
+        "offset": 1537840,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "the questions, the prompts that a",
+        "offset": 1540640,
+        "duration": 5360,
+        "lang": "en"
+      },
+      {
+        "text": "customer can ask um will lead you to the",
+        "offset": 1542640,
+        "duration": 6000,
+        "lang": "en"
+      },
+      {
+        "text": "best outcome possible for you. So it's",
+        "offset": 1546000,
+        "duration": 5679,
+        "lang": "en"
+      },
+      {
+        "text": "very personalized. Um, but I do think",
+        "offset": 1548640,
+        "duration": 4639,
+        "lang": "en"
+      },
+      {
+        "text": "that like if you were a mandate company",
+        "offset": 1551679,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "and somebody said you have to reduce the",
+        "offset": 1553279,
+        "duration": 4961,
+        "lang": "en"
+      },
+      {
+        "text": "x amount of hours on code and AI is a",
+        "offset": 1555440,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "tool to do it. I think that's fine too.",
+        "offset": 1558240,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "It just depends, you know, it just",
+        "offset": 1559760,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "depends what's like driving your your",
+        "offset": 1561360,
+        "duration": 3439,
+        "lang": "en"
+      },
+      {
+        "text": "decisions.",
+        "offset": 1563440,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": ">> Okay. Thank you. Okay. To close us out,",
+        "offset": 1564799,
+        "duration": 4641,
+        "lang": "en"
+      },
+      {
+        "text": "I want to do a quick lightning round",
+        "offset": 1567760,
+        "duration": 4159,
+        "lang": "en"
+      },
+      {
+        "text": "here and I want to hear what your bold",
+        "offset": 1569440,
+        "duration": 6719,
+        "lang": "en"
+      },
+      {
+        "text": "prediction is for the future in 2027.",
+        "offset": 1571919,
+        "duration": 7841,
+        "lang": "en"
+      },
+      {
+        "text": ">> Oh, my bold prediction is not that bold.",
+        "offset": 1576159,
+        "duration": 6161,
+        "lang": "en"
+      },
+      {
+        "text": "But I really believe we will all be",
+        "offset": 1579760,
+        "duration": 5200,
+        "lang": "en"
+      },
+      {
+        "text": "better at our jobs because of AI. I know",
+        "offset": 1582320,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "there's a lot of like, oh, AI is going",
+        "offset": 1584960,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "to replace me or there's less jobs or",
+        "offset": 1586640,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "especially for people coming into the",
+        "offset": 1588480,
+        "duration": 3439,
+        "lang": "en"
+      },
+      {
+        "text": "job market, they're sort of like those",
+        "offset": 1590559,
+        "duration": 3761,
+        "lang": "en"
+      },
+      {
+        "text": "entry level jobs don't exist. I do not",
+        "offset": 1591919,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "believe that. I actually think that it's",
+        "offset": 1594320,
+        "duration": 5040,
+        "lang": "en"
+      },
+      {
+        "text": "a force multiplier and that back to my",
+        "offset": 1596080,
+        "duration": 6800,
+        "lang": "en"
+      },
+      {
+        "text": "AEO story, it will force us to create",
+        "offset": 1599360,
+        "duration": 5760,
+        "lang": "en"
+      },
+      {
+        "text": "marketing campaigns that meet customers",
+        "offset": 1602880,
+        "duration": 4720,
+        "lang": "en"
+      },
+      {
+        "text": "needs versus maybe like the product we",
+        "offset": 1605120,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "want to sell. So, I actually believe",
+        "offset": 1607600,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "it's going to make us much better at our",
+        "offset": 1609520,
+        "duration": 2480,
+        "lang": "en"
+      },
+      {
+        "text": "jobs.",
+        "offset": 1611600,
+        "duration": 2559,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah. Making us more customer centric.",
+        "offset": 1612000,
+        "duration": 4559,
+        "lang": "en"
+      },
+      {
+        "text": ">> Um, and I I I would say like for us,",
+        "offset": 1614159,
+        "duration": 3601,
+        "lang": "en"
+      },
+      {
+        "text": "it's making sure that we don't go to",
+        "offset": 1616559,
+        "duration": 2321,
+        "lang": "en"
+      },
+      {
+        "text": "market by our orc chart.",
+        "offset": 1617760,
+        "duration": 3039,
+        "lang": "en"
+      },
+      {
+        "text": ">> That's right. Yep. And you got our",
+        "offset": 1618880,
+        "duration": 3279,
+        "lang": "en"
+      },
+      {
+        "text": "customers first. I love it.",
+        "offset": 1620799,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": ">> Okay. So optimistic and nice. Uh",
+        "offset": 1622159,
+        "duration": 5841,
+        "lang": "en"
+      },
+      {
+        "text": ">> oh.",
+        "offset": 1625919,
+        "duration": 5201,
+        "lang": "en"
+      },
+      {
+        "text": "No, maybe I I appreciate that on that on",
+        "offset": 1628000,
+        "duration": 7200,
+        "lang": "en"
+      },
+      {
+        "text": "that note. Um I I think what's really",
+        "offset": 1631120,
+        "duration": 5679,
+        "lang": "en"
+      },
+      {
+        "text": "interesting about where we're going from",
+        "offset": 1635200,
+        "duration": 4959,
+        "lang": "en"
+      },
+      {
+        "text": "a marketing perspective is uh this idea",
+        "offset": 1636799,
+        "duration": 6081,
+        "lang": "en"
+      },
+      {
+        "text": "that um things will become agentic and",
+        "offset": 1640159,
+        "duration": 4321,
+        "lang": "en"
+      },
+      {
+        "text": "onetoone. So like if you think about the",
+        "offset": 1642880,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "last 30 years of marketing as if I think",
+        "offset": 1644480,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "you're all marketers maybe sitting here",
+        "offset": 1647279,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "we've been through a lot y'all. We have",
+        "offset": 1648880,
+        "duration": 4399,
+        "lang": "en"
+      },
+      {
+        "text": "you know 30 years ago you put a",
+        "offset": 1651679,
+        "duration": 3041,
+        "lang": "en"
+      },
+      {
+        "text": "billboard up and then everybody saw that",
+        "offset": 1653279,
+        "duration": 2801,
+        "lang": "en"
+      },
+      {
+        "text": "billboard. It was very one to many",
+        "offset": 1654720,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "people sat around their living rooms.",
+        "offset": 1656080,
+        "duration": 2880,
+        "lang": "en"
+      },
+      {
+        "text": "They watched TV. They watched the same",
+        "offset": 1657600,
+        "duration": 3679,
+        "lang": "en"
+      },
+      {
+        "text": "commercials. And then, you know, fast",
+        "offset": 1658960,
+        "duration": 4800,
+        "lang": "en"
+      },
+      {
+        "text": "forward to five, 10 years ago, paid",
+        "offset": 1661279,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "social, you can target people based on",
+        "offset": 1663760,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "personas, based on what they probably",
+        "offset": 1665919,
+        "duration": 3521,
+        "lang": "en"
+      },
+      {
+        "text": "like, their preferences. We're getting",
+        "offset": 1667520,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "to a place where a brand can literally",
+        "offset": 1669440,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "have a singular relationship with",
+        "offset": 1672000,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "individual customers. So, it's really",
+        "offset": 1673760,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "really getting to a place where it's",
+        "offset": 1676000,
+        "duration": 3679,
+        "lang": "en"
+      },
+      {
+        "text": "onetoone. That's a pretty bold thing",
+        "offset": 1677200,
+        "duration": 4320,
+        "lang": "en"
+      },
+      {
+        "text": "because that really changes so so many",
+        "offset": 1679679,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "things. So, I'm I'm speaking about this",
+        "offset": 1681520,
+        "duration": 2960,
+        "lang": "en"
+      },
+      {
+        "text": "from an e-commerce perspective, from a",
+        "offset": 1682799,
+        "duration": 3281,
+        "lang": "en"
+      },
+      {
+        "text": "consumer perspective, but like are",
+        "offset": 1684480,
+        "duration": 3040,
+        "lang": "en"
+      },
+      {
+        "text": "landing pages going to die? I don't",
+        "offset": 1686080,
+        "duration": 2479,
+        "lang": "en"
+      },
+      {
+        "text": "know. you know, are are you going to",
+        "offset": 1687520,
+        "duration": 2240,
+        "lang": "en"
+      },
+      {
+        "text": "have somebody who's going to shop on",
+        "offset": 1688559,
+        "duration": 3441,
+        "lang": "en"
+      },
+      {
+        "text": "your behalf or who's going to curate the",
+        "offset": 1689760,
+        "duration": 3519,
+        "lang": "en"
+      },
+      {
+        "text": "world on your behalf and then you shop",
+        "offset": 1692000,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "that agent's recommendations? And so,",
+        "offset": 1693279,
+        "duration": 4801,
+        "lang": "en"
+      },
+      {
+        "text": "we're starting to try to think about",
+        "offset": 1695919,
+        "duration": 4081,
+        "lang": "en"
+      },
+      {
+        "text": "what's going to happen in a gentic",
+        "offset": 1698080,
+        "duration": 3839,
+        "lang": "en"
+      },
+      {
+        "text": "personalized future and how does that",
+        "offset": 1700000,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "change the way we as marketers need to",
+        "offset": 1701919,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "operate and the surfaces that we create",
+        "offset": 1704240,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "to engage with our customers probably",
+        "offset": 1706159,
+        "duration": 4161,
+        "lang": "en"
+      },
+      {
+        "text": "will look pretty different in 2027, but",
+        "offset": 1708240,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "in a cool way. in a way that doesn't",
+        "offset": 1710320,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "necessarily mean to to your point uh",
+        "offset": 1712159,
+        "duration": 4321,
+        "lang": "en"
+      },
+      {
+        "text": "remove jobs just makes us think about",
+        "offset": 1714720,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "our jobs in a new way. So that's my bold",
+        "offset": 1716480,
+        "duration": 2559,
+        "lang": "en"
+      },
+      {
+        "text": "prediction.",
+        "offset": 1718640,
+        "duration": 1680,
+        "lang": "en"
+      },
+      {
+        "text": ">> Yeah. And we were talking a little bit",
+        "offset": 1719039,
+        "duration": 2961,
+        "lang": "en"
+      },
+      {
+        "text": "about this last night at dinner and I",
+        "offset": 1720320,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "think in this world where it is like",
+        "offset": 1722000,
+        "duration": 4080,
+        "lang": "en"
+      },
+      {
+        "text": "more AI and agents this is where I think",
+        "offset": 1723600,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "brand and relationship building is like",
+        "offset": 1726080,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "more important than ever. And so we're",
+        "offset": 1728080,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "that's and it's harder to measure,",
+        "offset": 1730240,
+        "duration": 3039,
+        "lang": "en"
+      },
+      {
+        "text": "right? So it's not like my CFO doesn't",
+        "offset": 1731600,
+        "duration": 3679,
+        "lang": "en"
+      },
+      {
+        "text": "love to hear that part of it, right? But",
+        "offset": 1733279,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "we are think rethinking like our",
+        "offset": 1735279,
+        "duration": 3120,
+        "lang": "en"
+      },
+      {
+        "text": "marketing mix going into next year with",
+        "offset": 1737039,
+        "duration": 3041,
+        "lang": "en"
+      },
+      {
+        "text": "that in mind. And and I think",
+        "offset": 1738399,
+        "duration": 3841,
+        "lang": "en"
+      },
+      {
+        "text": "measurement is so important because the",
+        "offset": 1740080,
+        "duration": 4640,
+        "lang": "en"
+      },
+      {
+        "text": "brand is is almost gone away, right?",
+        "offset": 1742240,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "Building the brand, those big brand",
+        "offset": 1744720,
+        "duration": 3040,
+        "lang": "en"
+      },
+      {
+        "text": "spots almost gone away. Everything's",
+        "offset": 1746080,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "about KPIs. How am I going to hit my",
+        "offset": 1747760,
+        "duration": 3760,
+        "lang": "en"
+      },
+      {
+        "text": "numbers? At least to the clients we have",
+        "offset": 1749600,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "it, that's the most important thing. And",
+        "offset": 1751520,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "I think what you're finding is with AI,",
+        "offset": 1753520,
+        "duration": 4879,
+        "lang": "en"
+      },
+      {
+        "text": "it's changing the conversation. Kind of",
+        "offset": 1756480,
+        "duration": 3280,
+        "lang": "en"
+      },
+      {
+        "text": "like what you were saying. It's not",
+        "offset": 1758399,
+        "duration": 3201,
+        "lang": "en"
+      },
+      {
+        "text": "about what we want to say anymore. It's",
+        "offset": 1759760,
+        "duration": 3519,
+        "lang": "en"
+      },
+      {
+        "text": "about what people want to hear because",
+        "offset": 1761600,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "you find those are much more engaging.",
+        "offset": 1763279,
+        "duration": 4241,
+        "lang": "en"
+      },
+      {
+        "text": "Those get the clicks. Those get the",
+        "offset": 1765760,
+        "duration": 4480,
+        "lang": "en"
+      },
+      {
+        "text": "buys. they get into your sales funnel.",
+        "offset": 1767520,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "Um, and it's really what do they want to",
+        "offset": 1770240,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "hear? And I think that's helping",
+        "offset": 1772480,
+        "duration": 4559,
+        "lang": "en"
+      },
+      {
+        "text": "expedite that immensely. And that's the",
+        "offset": 1774240,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "most important thing we've seen is sort",
+        "offset": 1777039,
+        "duration": 3441,
+        "lang": "en"
+      },
+      {
+        "text": "of flipping the equation. We want we",
+        "offset": 1778480,
+        "duration": 3360,
+        "lang": "en"
+      },
+      {
+        "text": "want to go on the market and tell people",
+        "offset": 1780480,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "this. Nobody cares about that anymore.",
+        "offset": 1781840,
+        "duration": 3920,
+        "lang": "en"
+      },
+      {
+        "text": "Tell me what I want to I want to know",
+        "offset": 1784000,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "about and tell me when I want to know",
+        "offset": 1785760,
+        "duration": 4159,
+        "lang": "en"
+      },
+      {
+        "text": "about it. So you have those one-to-one",
+        "offset": 1788000,
+        "duration": 3919,
+        "lang": "en"
+      },
+      {
+        "text": "conversations based on where where they",
+        "offset": 1789919,
+        "duration": 4721,
+        "lang": "en"
+      },
+      {
+        "text": "are with in the in the sales funnel um",
+        "offset": 1791919,
+        "duration": 4561,
+        "lang": "en"
+      },
+      {
+        "text": "using Salesforce or other other",
+        "offset": 1794640,
+        "duration": 4240,
+        "lang": "en"
+      },
+      {
+        "text": "platforms too to get the message out. I",
+        "offset": 1796480,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "think that's going to be the biggest",
+        "offset": 1798880,
+        "duration": 3440,
+        "lang": "en"
+      },
+      {
+        "text": "change is focusing the messaging.",
+        "offset": 1800320,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": ">> Great. Well, thank you very much. I'm",
+        "offset": 1802320,
+        "duration": 2800,
+        "lang": "en"
+      },
+      {
+        "text": "going to leave everyone with a stat",
+        "offset": 1803840,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "here. Um our work innovation lab just",
+        "offset": 1805120,
+        "duration": 4400,
+        "lang": "en"
+      },
+      {
+        "text": "they were supposed to golf clap. Now",
+        "offset": 1808000,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "it's like bleeding into your headphones.",
+        "offset": 1809520,
+        "duration": 4879,
+        "lang": "en"
+      },
+      {
+        "text": "Um, our work innovation lab just",
+        "offset": 1811520,
+        "duration": 5840,
+        "lang": "en"
+      },
+      {
+        "text": "released our state of work in AI report",
+        "offset": 1814399,
+        "duration": 5280,
+        "lang": "en"
+      },
+      {
+        "text": "and my favorite stat was that marketers",
+        "offset": 1817360,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "are two times more likely to adopt AI",
+        "offset": 1819679,
+        "duration": 5521,
+        "lang": "en"
+      },
+      {
+        "text": "and so we're usually at the forefront of",
+        "offset": 1822480,
+        "duration": 5120,
+        "lang": "en"
+      },
+      {
+        "text": "innovation and driving change and I just",
+        "offset": 1825200,
+        "duration": 4000,
+        "lang": "en"
+      },
+      {
+        "text": "think we are just really well positioned",
+        "offset": 1827600,
+        "duration": 3840,
+        "lang": "en"
+      },
+      {
+        "text": "to lead from the front in this moment",
+        "offset": 1829200,
+        "duration": 4160,
+        "lang": "en"
+      },
+      {
+        "text": "across our entire organization. So I'm",
+        "offset": 1831440,
+        "duration": 3680,
+        "lang": "en"
+      },
+      {
+        "text": "really excited to be doing that with all",
+        "offset": 1833360,
+        "duration": 3520,
+        "lang": "en"
+      },
+      {
+        "text": "of you. So thank you so much for being a",
+        "offset": 1835120,
+        "duration": 4960,
+        "lang": "en"
+      },
+      {
+        "text": "part um of our session today and have a",
+        "offset": 1836880,
+        "duration": 7640,
+        "lang": "en"
+      },
+      {
+        "text": "great rest of the day. Talk to you soon.",
+        "offset": 1840080,
+        "duration": 4440,
+        "lang": "en"
+      }
+    ]
+  },
+  "transcript": "It is incredible to be here at the Work Innovation Summit in New York. Thank you so much for joining us for our CMO panel today and I'm personally really excited for this conversation because I feel like as marketing leaders, we're always pushed every so often to become modern marketers again. And I remember this really cut acutely a dozen or so years ago when social mobile really came onto the scene and we were really forced to have to reook um at the channels and our marketing mix. And this time I feel like it's exponentially even um more of a transformation with the onset of AI because not only are we having to revisit our channels again in our marketing mix, but we're also having to really revisit the way that we work and and with our teams. And so I'm just really excited to, you know, have this panel here with me today to not just talk about AI experimentation because that's what we talked about last year. This year it's all about how do we actually make AI stick and drive that transformation. And so without further ado, let's just go down the line and I would love for my panelists to introduce themselves. Can you tell us who you are, what you do, and what company you're with? >> Okay, sure. Happy to be here. I'm Kim Rosen Bloom. I'm uh the CMO at Betterment. Better is an automated savings and investing platform. It's really the pioneer in a category called robo advising. And we have since expanded our offering. We now have uh self-directed investing, high yield cash, tax-saving tech, and while we were founded as a retail or a direct to consumer investing platform, we also now have a pretty robust 401k business. So, we've expanded pretty substantially. We now have over a million customers and manage 65 plus billion dollars. >> Great. Thank you, Kim. Kristen. >> Hi, everybody. Good morning. I'm Kristen Broofphy. I lead marketing at Thread Up. And for those of you who have never heard of it, um, now you have, but we are an online consignment marketplace to buy and sell secondhand goods. Uh, we like to call ourselves the world's the world's largest online thrift store. And, uh, I'm really excited to be here today. I'm I'm like anticipating you all standing up and starting to dance in a moment. I don't know if you've all been to a silent disco, but it's very fun to be on this side of it. >> Hey, good morning. I'm Jim Lur. I'm one of the founders and partners of O2K Advertising. We're based here in New York, Fiercely Independent. um actually going through this process with with AI and implementate implementing AI across the board. We focus on what we call considered purchase finance, insurance, healthcare, those types of of products and and services. Glad to be here. >> Awesome. Thanks so much, Jim. All right. Well, let's get right to it. I want to start in talking about um setting the foundation, right? Because it's really easy to get distracted by new shiny tech, right? But really when we were talking about um this panel and preparing for it, we really started talking about anchoring around a critical business problem that would drive the most impact. And so I would actually just like to start by talking a little bit about the northstar that you guys have anchored yourselves to. So Kim, why don't we start with you? >> Yeah, great. Thank you. Um it it's definitely shiny new tech and so people are excited, but we did see an actual uh business problem. Not a huge one, but a growing one. We noticed declining referral to the website via SEO, month overmonth decline. One, two, 3%, but growing every month. And it kind of made sense because as AI and the LLMs were starting to become much more commonplace, people were going to the LLMs to ask about financial services versus a keyword search. Um, when you have a highly considered product, that makes a ton of sense, right? It's not really like you can, you know, ask automated investing, but maybe you're going to ask much more likely like what's a fiduciary, where can I find this, what are the costs, you know, a real inquiry based search. So, we did an audit. The very first thing we did after we saw the decline was an audit. And if you have not done an audit and especially if you have a high consideration product and you website is your is your front door, you should do that immediately. Um, and we saw in our audit good news and bad news. We saw the good news was we were showing up for things that we had like core value propositions. We had very, you know, strong across all the LMS by the way. Some we perform better in than others. Um really good on like ease of use, low cost, like some of our core value props, but really poorly for things like security. Um and you think, okay, well, we are a secure platform, but it's not like we advertise that. It's not like we're out there doing a campaign, you know, 25 days since our last hack. like you know we don't talk about that like you don't talk about what's not you know when it's working but of course customers potential customers want to know what's a secure platform. So that was sort of like a big insight that maybe we weren't actually producing the content that was query based. So that was like insight number one. And then the other piece that we did in addition to like the same way everyone is always optimizing their website for SEO is we've started optimizing for AEO. Um, and we're mobile. So, a lot of our smart brevity, you know, and our copywriters who've been, you know, pounded into the idea is like say it fascinate concise. It's like actually expand it a little bit because the LLM wants like a little more context. Um, all of our content now we're byelining. We used to have Betterman editors. Now we're byelining everything with multiple um, accreditations because you want to be an authoritative source. So we took out Betterment editors and now our CFPs by name with their you know with their credentials. Um so that was you know these are things are all I'm not kidding last eight weeks this is like very new for us. Um but in terms of like solving a business problem that was like where we started. The next piece we're going to move to is working with our paid partners like Investipedia and Nerd Wallet and how to make sure that their content is actually optimized for LM because that's a big source for us as well. Yeah. I feel like we can have a whole therapy session on how like SEO has been totally disrupted. We should parking lot this and if you guys are interested in digging deeper into this let's follow up after the session but for sure and some of the things that we're doing at ASA very similar reformatting our content to optimize for the LLM leaning into our community um and forums and things like Reddit um and also you know leaning into things like YouTube and we're changing up the the content mix right and also having our amazing community create some of that content for us. So, >> uh, therapy session coming soon. Um, and so, Kristen, you I know that you guys took a bit more of an offensive approach and a more customer- ccentric approach when it comes to how you are anchoring your AI um, strategy. So, I would love to hear a little bit about what you guys are doing. Yeah, so the really unique thing about Thread Up is that we have 4 million items on our mic on our marketplace at any given time. So, it's a staggering volume. We add about 60,000 new items to our site every single day. So from an e-commerce perspective, from a customer perspective, that's an enormous amount of choice and it's great. You know, if you can imagine something even super niche, you can probably find it on Thread Up. The challenge that we heard from a lot of customers um before we started to invest in AI tooling and features is that that can also be like the paradox of choice. It can feel super overwhelming to try to shop 4 million items. Shopping the internet is overwhelming. So, what we've really tried to do is think about how do AI tools help our customers find what they're looking for faster? How do we help you match with something relevant to you? So, I'll give you two examples. One of the things we just launched recently, we're calling the daily edit. We used AI tooling that we built inhouse to recommend 100 items for you every single day based on your preferences, your shopping behavior, your purchases, etc. So, really trying to personalize the site. Um, another thing that we've done is introduced what we call a weekly trend report. So, uh, we built an internal AI tooling system that scrapes the internet, analyzes millions of weekly searches to identify the biggest emerging trends across the internet. Then we dynamically generate AI images based on those trends that you can shop all of our related inventory to that trend. I don't know how many people in this room have heard of this, but I learn something new from the trend report every day. Like for example, this week fairy core is trending. So, is anybody wearing fairy core here? No. No. Okay. Well, if you are, please come find me after. I'd like to know how somebody's uh wearing it in real life. But yeah, so I'd say the um the main thing that we think about is when we invest in these tools, how are we solving real customer problems that generate revenue and that generate bottom line. Um and what we've seen is that our our conversion rates have increased like double digits from these investments. So, we talk a lot about using AI as a productivity tool, but you know, one of the things we've tried to talk about is how do we use it as an efficacy tool? How do we use it as a a topline revenue generator for us? Um, and so that's one of the ways we've we've tried to be offensive about our approach. >> I love it. >> And then from we're a little bit different. So, we're we're in a service business. So, our clients are always looking for better, faster, cheaper. So, how do we do that? So, you have to implement implement AI currently. So we're using it for everything from strategy to media to developing creative and it allows us to understand what's working, what's not working, how do we make things better each and every time as well as much quicker, much more relevant. So we we are using it from the very beginning from from the start figuring out strategy helping our clients do better work but also the way we're using it is is different too. So, for example, when we present ideas, remember you used to present a board or something for for a video. We're actually presenting the video in real time. It's not perfect. It's not done, but it gives people a really great sense of what it's going to look like. So, they're more part of the process. The ideas are stronger. They're faster. It's not the all and endall because we have to create, you know, combine the humanity with it and bring our experience to the solutions. But it is helping us get better, faster, cheaper, more ideas, bigger ideas. And especially with the world the way it is now, the ideas have to come to to life so much quicker. You never have the two weeks, you have two days now. You're doing things, you know, overnight to get things done, especially to address social media and address things that are in the news. So, we are working across the whole whole organization. One of the keys is how to get all your people working on it too. So, that that's one of the bigger challenges to have everyone embrace it. Yeah, that really resonates with me, Jim, because I think before we would do like a whole annual planning process, right? And you would think about, okay, what are the quarterly themes? How are we going to align all of our campaigns and our editorial calendars? But now I I really like we're not doing that this year. What I'm working with the team on is a tactical plan for Q4 and Q1 and let's get to beta and get some stuff into the market and just like and continue to iterate. Right. So, >> that's that's right. You're not doing one campaign. You're putting multiple pieces in in the market, seeing what worked, seeing how to optimize them. Not only not only from a creative perspective or strategic perspective, but media media does it, you know, so quickly too, so you understand what's working, what's not. >> Yeah. Cool. Um, so you talked a little bit about structure and we just talked about the what, right? the main business problems that we're solving for. But let's talk a little bit about the how and how you're approaching the structure of your teams and evolving the culture of your teams to really meet this moment of AI transformation. I think for me personally at ASA it is a little bit of a blend of some tops down and bottoms up um from the team as well. And so why don't we start with you Kristen on how you guys are approaching it. >> Yeah, I think that's exactly right. uh from a tops down perspective when we think about how do we introduce AI into our workforce one of the questions that I think leaders have to ask themselves is am I do I have the skill set internally to deploy this AI tool I'm sure you're all getting a lot of inbound from from lots of AI vendors and one of the things that I'm always asking myself and what leaders I think should be asking themselves is do I have the skill set internally to manage and deploy and implement this tool um do I have the data infrastructure necessary to implement and deploy deploy this tool. Do my teams have that connection? Like one of the things I'm always making sure we're doing weekly, some of our marketing teams in my org are meeting with our data engineering teams weekly and saying, \"This is our new customer. This is our new problem for our customers, for our team. How do we implement this?\" And and trying to work together with that team. But if you're evaluating AI tools and you don't have the data infrastructure, you don't have the data engineering teams in place to implement them, they're not going to be successful. So that's really like making sure that you're equipped and you're staffed appropriately. And then the second is bottoms up. One of the things at Thread Up that I love is that we really want to create a culture of innovation. And so we just launched our first ever AI marketing summit because what we heard from um our employees is that it's really hard to keep up with the rate of change of AI and learning. And so we wanted to carve out work space and time not not having you have to learn on the weekends like at work how do we carve out space for you to learn and educate yourself around AI. We we had a whole day where teams async as individuals learned and then the second day people came back and pitched their ideas for how they wanted to use AI to either solve a customer problem or a business problem. And that's what I would say like start with the business problem because if you start with the tool, you're going to implement a tool and then you're not going to be like how do we measure if this was working? So the team started with the business problem or the customer problem. They pitched these tools and what I think is really great about that is when you're thinking about the future, you're not telling your teams what's due. you're telling them what's next and you want them to be thinking about what's next and how they think about changing their world and then carving out space and time for them to do that and the creating the culture of that. So it's not a mandate per se but it is um a healthy encouragement and structure to uh to create innovation. So that's what I would say both tops down and bottoms up. >> Yeah, I love that. >> And Kim, what about you? What are you seeing? Um, well, I really resonate with the like what's its purpose, you know, like starting with the objective versus like the tool. And it's just like any marketing, every you every good campaign, every good piece of work I've ever done had a clear objective, had a clear like sense of purpose. So, we were looking at how like what what would be most effective for us? What's the purpose of an AI tool in terms of achieving marketing? And you know, we send out multiple emails every day with a very robust customer marketing program. We're always on in terms of uh display ads and digital media and then sprinkle in, you know, campaigns with in you know, all platforms. So to me, the best use of AI would be how do I know if that campaign if that work is resonating in real time? Uh you know, we were doing hold out groups like we would do CRM, we'd send and then we'd hold out and see which headline. Well, now we're actually um testing our creative before with personas that we've made. So, we went into chat GPT, which with a persona maker. Anyone can do it. We've created five different personas based on our targeting. We took like sort of our our our um our MRI data on who our who our target audiences are, our media plan. We've taken past campaigns that were successful. We took our brand guidelines, we took our compliance guidelines, we fed it all to the persona maker. And the persona can both be a reactor or a creator. So we will um create maybe an an email and put a couple headlines and ask the persona which headline do they prefer or flip side is you can ask the persona to generate the headline and then you know you can sort of make the call. Um so that's one of the things is that to me it's not like we're using that tool. We're using the tool to like solve a problem we had which is like how do we know that we're resonating um in real time and then the way we're implementing it we actually have our workshop next week where everyone uh got the persona the whole marketing department not just copywriters but everybody um all divisions uh and we're going to do breakout groups where you come back um you do work with a project you create a a campaign you come back you present it to the team so trying to get everyone to feel comfortable and confident um about like you know just using it as a tool. It's kind of like I think of it as like a sue chef. You're still the you're still cooking but the sue chef is doing all the chopping and prepping. >> That's great. Right. >> Yeah. Yeah. >> And what about >> So So we're we're a much smaller organization so the implementation is a little more difficult because we don't have people dedicated to it. And what we're finding is we were trying to do it off the side of our desk, >> but now we've had to get people actively involved, right? So we have to give people a focus to do that. And we found it it comes a bit top down because it has to to to achieve your business objectives. But there's also people who are curious, just naturally curious, who come up and say, \"Oh, what about this? What about this?\" So it's it's top down, but it's also bottom up for those who are curious and want to improve. And then we we do have training sessions. We have uh bimonthly training sessions bringing groups of people together having experts come in and teaching and teaching the different tools to help people implement it. One of the things we found is if you just give someone the tool and I think you were alluding to this, if you just give someone the tools, they're not necessarily going to embrace it because then you have to go home on the weekends, you got to learn it, and some may and and some may not. So it it is a it is a process to to engage with it. We're also doing since we have multiple clients, we're doing the same thing for different clients, right? Entering their guidelines, entering past work, entering the personas for different clients and then we have different groups. One of the things that we're really trying to do is separate, you know, make sure it's separated so all the information isn't getting put together in our in our platforms. Um it it's hard sometimes because people are busy and how do you get people to shift perceptions? Um and describing it as a tool to support their goals is important because there are groups of people who who are afraid of it, right? And and and it's giving them the confidence to take it and make their work better. It's a tool, but they have to be involved too and sharing in sharing that. We've also put in in reviews, right? For for reviews, how are they doing? what are they doing with it? So they know it's a real objective that we're trying to work with to make our work better. >> Yeah, that actually is like so aligned. And one of my favorite examples within my own team, um it starts with bottoms up because I I feel like the the IC's and the individuals are mired in the work, right? And so I think some of the best use cases definitely come from them. So I'll give you a great example. Asana, you know, we're a global company. I have a global team, especially when we go into a region, that is when we're really, really resource constrained. And I have this woman on my team, Leona. She sits out of Singapore. She's a marketing manager, the only one for the entire AP pack region. And there was a huge um uh pressure to just turn out a bunch of partner marketing stories at the beginning of this year. And so what she did was she built an AI teammate um and she's not she's not technical, by the way. She's a marketer. Um, and it was an agent that helped her, you know, ingest call notes and we uploaded all the um, creative guidelines and voice and tone and it would turn out a word doc. And it wasn't perfect, right? Maybe 80% of the way there, she definitely would have to go in and make edits. Um, and it would also kick off um, the workflows to get them back to HQ for approvals, etc. But it ended up, you know, saving her saving her a ton of time. It was faster time to market in all of our campaigns. Um, and what was even better was she was then able to really focus on things that were more innately human that agents couldn't do. So, building relationships with the partners and um and also being more of a strategic um, you know, a strategic partner to her internal customers. And so that was like the bottoms up part. But what I what where I really started to see things multiply was she then plugged into our AI council. So this is like more the tops down bit, right? And so I want everyone on my team using AI. And so we've but a lot of folks just don't know where to start. So we have a monthly council that comes together and we have a lot of these AI influencers internally that are part of this council that come in, they share their stories and just inspire um you know new use cases and help their peers around them um to really elevate and scale and and bring even more use cases to life. And so I've seen that work really really well. Um but what's really interesting is like in this moment and we talked a little bit about it is there is training not just for the AI tools but there's I think training on the skills that our teams need to have that are maybe more on the soft side on the soft skills side um because now that they have you know more the ankle biter mundane work um automated with AI agents this is a moment where our teams really need to lean into things that are more uniquely human right? Building relationships um as an example. And so um I would love to to understand from you all a little bit about what you're doing in terms of training your teams to really meet this moment. >> Um so Kristen, do we want to start with you? I'm sure. Yeah. I mean, I'd say really it starts with um it starts with understanding what you want as as a leader and what your when your organization needs um and how those skills are really shifting and what skills need to be true. One of the things that um I think is really changing as as you mentioned Jess is a lot of the mundane repetitive tasks can be done by AI now and I think that's only increasing and so what the way I think about it now is how do we become great communicators and great managers of AI. So we're going to get to a place where your teams aren't maybe doing that work anymore but they're managing the AI um who is and that requires great great communication skills. It also requires the ability to be a systems architect and start to think about how do you build scalable systems and I'll tell you that is really changing in life cycle marketing. So, you know, gone are the days probably pretty soon where you're going to build these static journeys that are rulebased. You're going to probably need to have a a new person who's thinking about how do I build a scalable system to build agentic journeys. And that's just a very different thing that um that I'm starting to look for in teams. I think the same thing is true of creative. You know, today and and and that's changing really quickly. People are pushing pixels and Figma. Instead, they're going to have to be great communicators. How do I tell this um this chat, this agent, what do I want this image to look like? What do I want this asset to look like? And then start to tweak it like that versus necessarily being in Photoshop or Adobe. Although those tools are introducing great AI, great AI tools as well. So I think I'm starting to look for that change um both training but also looking for those types of thinkers and bringing them into the organization and then growing it internally. Yeah. I like to think of it as it's not just about like the doers anymore but it's folks that know how to conduct and orchestrate work across people and agents alike. >> Yeah. >> So well said. >> Yeah. One one of the things we're doing we started everyone everyone received prompt classes. How do you start to talk? How do you get the results you want from AI? So that was sort of our basic front line but then we are having people experts come into the office do it personally and then and then we have the videos that people can catch up as refreshers after. Um but it is opening the door. We've had people we we did an AI commercial and and it's things that you just wouldn't be able to do where we had exploding cars and different things that we the reality is we wouldn't have been able to do it but how it took an idea to get us there. So, how do you take those ideas? But it is understanding the tools, what's access, and I think training is just real real important. But you you brought up a point that I think is just really smart. It's you need the people who want to engage. Hire those people who are curious, want to continue to learn. Um because those are the people that are going to make things better and better and embrace it, get things done faster. The reality is businesses want better, faster, cheaper. That's what our clients want. I mean, there was a stat in the first session that said, I don't remember what company, but reduced their consultancy by 80%. Right? That's what they're looking for. And we're those consultancies that they're trying to make more efficient. And that's what we're doing. Um, by embracing AI, we've had a number of clients that have gone through reviews and they've kept us because we have been embracing and are doing things quicker, understand their business through through AI. But it it really is just giving people like the prompt thing. It's a simple thing, but people have to understand how to do that well as a place to start. >> Yeah. Well, for us, I think it depends on your culture. Um, so I don't know that there's one sizefits-all, but Betterment is a very missiondriven company. Um, our mission is to empower people to build wealth with confidence and ease. So, every time people are using AI, we're like applying it to the mission. Does this provide customers the ability to do something with more confidence or more ease? And in the beginning, everyone was sort of, you know, our board was like, how are you being more efficient? And we're also fiduciary. So, by law, we have to do what's best for the customer, which by the way, you should all make sure your investment platform is a fiduciary. Um, just just saying good tip. >> Quick tip, quick search. Um, not of them, many of them are not, but so we're fiduciary, so we have to do what's right. So you also can't just leave it to Agentic. It has to be, you know, has to meet a compliance standard, missiondriven. So what we're doing now is we actually had our CFP team train an agent. So it's trained by internally and it's always with back to the mission. So the questions, the prompts that a customer can ask um will lead you to the best outcome possible for you. So it's very personalized. Um, but I do think that like if you were a mandate company and somebody said you have to reduce the x amount of hours on code and AI is a tool to do it. I think that's fine too. It just depends, you know, it just depends what's like driving your your decisions. >> Okay. Thank you. Okay. To close us out, I want to do a quick lightning round here and I want to hear what your bold prediction is for the future in 2027. >> Oh, my bold prediction is not that bold. But I really believe we will all be better at our jobs because of AI. I know there's a lot of like, oh, AI is going to replace me or there's less jobs or especially for people coming into the job market, they're sort of like those entry level jobs don't exist. I do not believe that. I actually think that it's a force multiplier and that back to my AEO story, it will force us to create marketing campaigns that meet customers needs versus maybe like the product we want to sell. So, I actually believe it's going to make us much better at our jobs. >> Yeah. Making us more customer centric. >> Um, and I I I would say like for us, it's making sure that we don't go to market by our orc chart. >> That's right. Yep. And you got our customers first. I love it. >> Okay. So optimistic and nice. Uh >> oh. No, maybe I I appreciate that on that on that note. Um I I think what's really interesting about where we're going from a marketing perspective is uh this idea that um things will become agentic and onetoone. So like if you think about the last 30 years of marketing as if I think you're all marketers maybe sitting here we've been through a lot y'all. We have you know 30 years ago you put a billboard up and then everybody saw that billboard. It was very one to many people sat around their living rooms. They watched TV. They watched the same commercials. And then, you know, fast forward to five, 10 years ago, paid social, you can target people based on personas, based on what they probably like, their preferences. We're getting to a place where a brand can literally have a singular relationship with individual customers. So, it's really really getting to a place where it's onetoone. That's a pretty bold thing because that really changes so so many things. So, I'm I'm speaking about this from an e-commerce perspective, from a consumer perspective, but like are landing pages going to die? I don't know. you know, are are you going to have somebody who's going to shop on your behalf or who's going to curate the world on your behalf and then you shop that agent's recommendations? And so, we're starting to try to think about what's going to happen in a gentic personalized future and how does that change the way we as marketers need to operate and the surfaces that we create to engage with our customers probably will look pretty different in 2027, but in a cool way. in a way that doesn't necessarily mean to to your point uh remove jobs just makes us think about our jobs in a new way. So that's my bold prediction. >> Yeah. And we were talking a little bit about this last night at dinner and I think in this world where it is like more AI and agents this is where I think brand and relationship building is like more important than ever. And so we're that's and it's harder to measure, right? So it's not like my CFO doesn't love to hear that part of it, right? But we are think rethinking like our marketing mix going into next year with that in mind. And and I think measurement is so important because the brand is is almost gone away, right? Building the brand, those big brand spots almost gone away. Everything's about KPIs. How am I going to hit my numbers? At least to the clients we have it, that's the most important thing. And I think what you're finding is with AI, it's changing the conversation. Kind of like what you were saying. It's not about what we want to say anymore. It's about what people want to hear because you find those are much more engaging. Those get the clicks. Those get the buys. they get into your sales funnel. Um, and it's really what do they want to hear? And I think that's helping expedite that immensely. And that's the most important thing we've seen is sort of flipping the equation. We want we want to go on the market and tell people this. Nobody cares about that anymore. Tell me what I want to I want to know about and tell me when I want to know about it. So you have those one-to-one conversations based on where where they are with in the in the sales funnel um using Salesforce or other other platforms too to get the message out. I think that's going to be the biggest change is focusing the messaging. >> Great. Well, thank you very much. I'm going to leave everyone with a stat here. Um our work innovation lab just they were supposed to golf clap. Now it's like bleeding into your headphones. Um, our work innovation lab just released our state of work in AI report and my favorite stat was that marketers are two times more likely to adopt AI and so we're usually at the forefront of innovation and driving change and I just think we are just really well positioned to lead from the front in this moment across our entire organization. So I'm really excited to be doing that with all of you. So thank you so much for being a part um of our session today and have a great rest of the day. Talk to you soon."
+}

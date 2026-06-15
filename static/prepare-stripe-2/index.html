@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Adoption Operating System</title>
+    <link rel="icon" href="assets/stripe-favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://i.ytimg.com" />
+    <link rel="stylesheet" href="assets/ai-adoption-os.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#diagnostic" aria-label="AI Adoption Operating System home">
+        <span class="brand-mark">AI</span>
+        <span>AI Adoption Operating System</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a href="#diagnostic" class="active">Diagnostic</a>
+        <a href="#playbook">Playbook</a>
+        <a href="#failure-patterns">Failures</a>
+        <a href="#sources">Sources</a>
+      </nav>
+      <button class="icon-button" id="resetButton" type="button" aria-label="Reset diagnostic">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h10a6 6 0 1 1-5.7 7.8"/><path d="M4 7l4-4"/><path d="M4 7l4 4"/></svg>
+      </button>
+    </header>
+
+    <main>
+      <section class="workspace" id="diagnostic" aria-label="AI adoption diagnostic">
+        <aside class="journey" aria-label="Adoption journey">
+          <p class="section-label">AI Adoption Journey</p>
+          <ol>
+            <li class="selected" data-stage="discover">
+              <span class="stage-dot">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15 9l-4 2-2 4 4-2 2-4z"/></svg>
+              </span>
+              <div>
+                <strong>Discover</strong>
+                <small>Pick value pools and readiness gaps.</small>
+              </div>
+            </li>
+            <li data-stage="trust">
+              <span class="stage-dot">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 7.8-8 9-4.5-1.2-8-4-8-9V6l8-3z"/><path d="M9 12l2 2 4-5"/></svg>
+              </span>
+              <div>
+                <strong>Trust</strong>
+                <small>Make safety, evidence, and boundaries legible.</small>
+              </div>
+            </li>
+            <li data-stage="workflow">
+              <span class="stage-dot">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h6v6H4zM14 4h6v6h-6zM14 14h6v6h-6z"/><path d="M10 10h4M17 10v4"/></svg>
+              </span>
+              <div>
+                <strong>Workflow</strong>
+                <small>Redesign the work, not just the prompt.</small>
+              </div>
+            </li>
+            <li data-stage="scale">
+              <span class="stage-dot">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19V5"/><path d="M4 19h16"/><path d="M8 16l3-4 3 2 5-7"/></svg>
+              </span>
+              <div>
+                <strong>Scale</strong>
+                <small>Turn proof into repeatable adoption loops.</small>
+              </div>
+            </li>
+            <li data-stage="govern">
+              <span class="stage-dot">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 10l8-6 8 6"/><path d="M6 10v8M10 10v8M14 10v8M18 10v8"/><path d="M3 20h18"/></svg>
+              </span>
+              <div>
+                <strong>Govern</strong>
+                <small>Move from committees to usable guardrails.</small>
+              </div>
+            </li>
+          </ol>
+
+          <div class="maturity-card">
+            <span>Your maturity</span>
+            <strong><output id="overallScore">2.4</output><small>/5</small></strong>
+            <div class="progress"><span id="progressFill"></span></div>
+            <p id="maturityLabel">Developing: usable pilots, uneven adoption.</p>
+          </div>
+        </aside>
+
+        <section class="diagnostic-panel" aria-label="Maturity diagnostic controls">
+          <div class="panel-heading">
+            <div>
+              <h1>Maturity Diagnostic</h1>
+              <p>Rate the operating conditions that decide whether AI becomes a durable way of working or another stalled pilot.</p>
+            </div>
+            <div class="toolbar" role="group" aria-label="Scenario controls">
+              <button class="tool active" data-persona="leader" type="button">Leader</button>
+              <button class="tool" data-persona="champion" type="button">Champion</button>
+              <button class="tool" data-persona="enablement" type="button">Enablement</button>
+            </div>
+          </div>
+
+          <div class="dimension-table" id="dimensionTable"></div>
+
+          <div class="distribution" aria-label="Maturity distribution">
+            <div>
+              <span class="section-label">Overall maturity</span>
+              <strong><output id="overallScoreLarge">2.4</output> / 5</strong>
+              <small id="overallNarrative">You have enough motion to learn, but not enough operating discipline to scale.</small>
+            </div>
+            <div class="bars" id="bars" aria-hidden="true"></div>
+            <div>
+              <span class="section-label">Current bottleneck</span>
+              <strong id="bottleneckTitle">Workflow Integration</strong>
+              <small id="bottleneckCopy">The work has not been redesigned around human-plus-AI roles.</small>
+            </div>
+          </div>
+        </section>
+
+        <aside class="next-panel" aria-live="polite">
+          <p class="section-label">Next Best Move</p>
+          <h2 id="recommendationTitle">Run a workflow co-pilot pilot</h2>
+          <p id="recommendationCopy">Pick one painful workflow, put a champion inside it, and measure whether AI changes cycle time, quality, or decision confidence.</p>
+          <button class="primary" id="jumpToPlay" type="button">
+            View recommended play
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14"/><path d="M13 6l6 6-6 6"/></svg>
+          </button>
+          <div class="why">
+            <h3>Why this</h3>
+            <ul id="whyList"></ul>
+          </div>
+          <div class="source-mini">
+            <h3>Signals used</h3>
+            <ol id="signalList"></ol>
+          </div>
+        </aside>
+      </section>
+
+      <section class="operating-model" id="playbook">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Field Playbook</p>
+            <h2>Drive adoption as a behavior-change system</h2>
+          </div>
+          <p>Across the videos and current research, the pattern is consistent: adoption improves when teams see local proof, redesign actual workflows, and graduate autonomy through evidence.</p>
+        </div>
+
+        <div class="play-grid" id="playGrid"></div>
+      </section>
+
+      <section class="failure-section" id="failure-patterns">
+        <div class="section-head">
+          <div>
+            <p class="section-label">What Does Not Work</p>
+            <h2>Common failure patterns to actively design against</h2>
+          </div>
+          <p>Most failures are not model failures. They are unclear value, missing trust, weak workflow redesign, and governance that arrives either too early as bureaucracy or too late as cleanup.</p>
+        </div>
+        <div class="failure-grid" id="failureGrid"></div>
+      </section>
+
+      <section class="source-map" id="sources">
+        <div class="section-head">
+          <div>
+            <p class="section-label">Sources</p>
+            <h2>Source library: transcripts, research, and synthesis</h2>
+          </div>
+          <p>Transcript extraction used Supadata through OneCLI project <code>second-brain</code>. The complete source-by-source synthesis is available as a local markdown artifact.</p>
+        </div>
+        <div class="source-actions">
+          <a href="AI_ADOPTION_SOURCE_SYNTHESIS.md" target="_blank" rel="noreferrer">Open full synthesis</a>
+          <a href="ai-adoption-supadata-transcripts.json" target="_blank" rel="noreferrer">Core transcripts JSON</a>
+          <a href="ai-adoption-extra-supadata-transcript.json" target="_blank" rel="noreferrer">Marketing transcript JSON</a>
+        </div>
+        <div class="source-quick-list" id="sourceQuickList" aria-label="Numbered source list"></div>
+        <div class="source-grid" id="sourceGrid"></div>
+      </section>
+    </main>
+
+    <dialog class="source-dialog" id="sourceDialog" aria-labelledby="dialogTitle">
+      <div class="dialog-shell">
+        <header class="dialog-header">
+          <div>
+            <p class="section-label" id="dialogMeta">Source</p>
+            <h2 id="dialogTitle">Source detail</h2>
+          </div>
+          <button class="icon-button" id="closeSourceDialog" type="button" aria-label="Close source dialog">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6L6 18"/><path d="M6 6l12 12"/></svg>
+          </button>
+        </header>
+        <div class="dialog-insight" id="dialogInsight"></div>
+        <div class="dialog-content" id="dialogContent"></div>
+        <footer class="dialog-footer">
+          <a id="dialogSourceLink" href="#" target="_blank" rel="noreferrer">Open original source</a>
+          <button class="tool" id="closeSourceDialogFooter" type="button">Close</button>
+        </footer>
+      </div>
+    </dialog>
+
+    <script src="assets/ai-adoption-os.js"></script>
+  </body>
+</html>
