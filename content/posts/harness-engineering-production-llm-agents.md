@@ -13,7 +13,7 @@ I spent time reading six agent codebases: Codex, Goose, OpenCode, OpenClaw, Nano
 
 Yet the same pattern kept appearing: the hard part is not the model call. The hard part is the harness around it.
 
-The full source-backed PDF is available here: [Harness Engineering: A Code-First Guide to Production LLM Agents](/harness-engineering-guide/harness-engineering-guide-2026-06-27-rerender.pdf).
+The full source-backed PDF is available here: [Harness Engineering: A Code-First Guide to Production LLM Agents](/harness-engineering-guide/harness-engineering-guide-2026-06-27-llm-data-flow.pdf).
 
 ![Production agent architecture](/harness-engineering-guide/production-agent-architecture.svg)
 
