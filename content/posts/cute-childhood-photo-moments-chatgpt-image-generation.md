@@ -15,6 +15,8 @@ Not a collage. Not a glossy AI fantasy. Just a believable old family photo where
 
 That was the whole idea.
 
+If you just want the reusable prompt, it is at the end of this post: [copy the prompt](#copy-the-prompt).
+
 ## The Original Photos And The Results
 
 These were the three reference photos I used.
