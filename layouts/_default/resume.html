@@ -1,16 +1,33 @@
 {{ define "main" }}
 <section class="resume-page">
 
-  <div class="resume-dl-row">
+  <header class="resume-hero">
+    <div>
+      <h1>Abhijit Mohanty</h1>
+      <p class="resume-subtitle">Senior Software Engineer | Previous Founding Engineer &amp; Software Consultant</p>
+      <div class="resume-contact" aria-label="Resume contact links">
+        <a href="tel:+6588862458">+65 8886 2458</a>
+        <a href="mailto:abhijitmohanty.dev@gmail.com">abhijitmohanty.dev@gmail.com</a>
+        <a href="https://www.linkedin.com/in/mohantyabhijit/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/mohantyabhijit" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://abhijitmohanty.com/" target="_blank" rel="noopener">Website</a>
+      </div>
+    </div>
     <a href="/Abhijit-Mohanty-Resume.pdf" class="resume-dl-btn" download>
       <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-      Download Resume
+      Download CV
     </a>
+  </header>
+
+  <!-- SUMMARY -->
+  <div class="resume-section">
+    <h2>Professional Summary</h2>
+    <p class="resume-summary">Product focussed backend engineer with 10+ years building production payments and AI workflow systems. Owns discovery, scoping, build, rollout, and adoption across ambiguous, high-stakes workflows; shipped LLM-powered tools saving 50+ engineering hours/month and reducing onboarding from 3 days to 30 minutes.</p>
   </div>
 
   <!-- EXPERIENCE -->
   <div class="resume-section">
-    <h2>Experience</h2>
+    <h2>Professional Experience</h2>
     <div class="jobs">
 
       <div class="job">
@@ -22,15 +39,16 @@
           <span class="job__time">Jun 2022 – Present</span>
         </div>
         <div class="job__title">Senior Software Engineer – Backend</div>
-        <div class="job__stack">Golang · MySQL · Apache Kafka · AWS · Claude Code · Codex · MCPs</div>
+        <div class="job__stack">Golang · MySQL · Kafka · AWS · Codex · Claude Code · MCPs</div>
         <ul class="job__bullets">
-          <li>Built Slack and Atlassian MCP automations that removed repetitive on-call workflows, saving engineers ~3 hours per week.</li>
-          <li>Revamped platform onboarding with natural-language input backed by LLMs, cutting a 2-day manual process to a 30-minute guided workflow.</li>
-          <li>Built and shared reusable AI skills for Jira execution, Snowflake analysis, and UAT workflows, freeing 3–5 hours per week for engineers.</li>
-          <li>Ranked in the top 2% at Grab for AI tool usage; selected for Grab's Power AI users group, driving org-wide AI adoption across the Payments division.</li>
-          <li>Architected a centralized reconciliation platform unlocking end-to-end visibility across 50M+ daily transactions.</li>
-          <li>Led real-time cross-organisation integrations with banks and consumer-facing applications, increasing annual revenue by USD 3.5 million.</li>
-          <li>Migrated critical applications from GCP to AWS with zero downtime — 20% cost savings and 4× performance improvement.</li>
+          <li>Proposed, scoped, and built CRP Bot from recurring on-call pain points; demoed to senior leadership and secured executive approval to convert it into a funded team initiative, saving 50+ engineering hours/month.</li>
+          <li>Extended CRP Bot with remote debugging and coding harness, enabling engineers to monitor logs, diagnose production issues, and raise merge requests from mobile devices.</li>
+          <li>Rebuilt internal portal onboarding from dropdown-heavy forms into an AI-powered natural-language flow, reducing onboarding time from 3 days to 30 minutes.</li>
+          <li>Built reusable AI skills for spec creation, code development, and Snowflake data analysis, saving engineers 3–5 hours/week while standardizing repeatable AI-assisted investigation patterns.</li>
+          <li>Selected for Grab's Power AI Users group to evaluate AI inference providers, coding agents, and engineering harnesses, converting practitioner feedback into broader engineering developer tooling decisions.</li>
+          <li>Ranked in the top 2% at Grab for AI tool usage and currently scaling AI-assisted workflows across engineering teams in the Payments org.</li>
+          <li>Built central reconciliation platform with visibility across 50M+ daily transactions, recovering USD 250K in fund loss; led bank and consumer-app integrations unlocking USD 3.5M annual revenue.</li>
+          <li>Migrated critical applications from GCP to AWS with zero downtime, reducing infrastructure cost by 20% ($120K/year) and improving performance 4x.</li>
         </ul>
       </div>
 
@@ -38,16 +56,14 @@
         <div class="time-place">
           <div class="job__company-wrap">
             <span class="job__company">UST Global</span>
-            <span class="job__location">India · (acquired Advalent Corporation)</span>
+            <span class="job__location">India · acquired Advalent Corporation</span>
           </div>
           <span class="job__time">Apr 2020 – Jun 2021</span>
         </div>
         <div class="job__title">Senior Software Engineer – Platform Systems</div>
         <div class="job__stack">Java · Spring Boot · MySQL</div>
         <ul class="job__bullets">
-          <li>Worked directly with the CTO and lead client stakeholder to deliver a healthcare insurance platform end-to-end, scaling to 50K+ users and USD 6 million in annual revenue.</li>
-          <li>Upgraded and migrated the entire monolithic application to Java 11 in one week, ensuring backward compatibility and zero production incidents.</li>
-          <li>Designed a custom file ingestion framework, cutting integration time from 5 days to 1 day via reusable parsing architecture.</li>
+          <li>Partnered with Advalent CEO and client leadership to demo custom features, win deals, and integrate Advalent into client systems; built reusable ingestion cutting integration from 5 days to 1 day; scaled system to 50K+ users and USD 6M revenue.</li>
         </ul>
       </div>
 
@@ -59,12 +75,14 @@
           </div>
           <span class="job__time">Jan 2019 – Apr 2020</span>
         </div>
-        <div class="job__title">Frontend Engineer – E-commerce Platform</div>
+        <div class="job__title">Founding Engineer – E-commerce Platform</div>
         <div class="job__stack">React Native · Redux · AdobeXD</div>
         <ul class="job__bullets">
-          <li>Joined as first engineering hire; designed end-to-end app user journeys.</li>
-          <li>Led UI/UX design and created a reusable internal design library to standardize patterns and accelerate delivery.</li>
-          <li>Developed and tested cross-platform React Native mobile app (iOS/Android) with Redux-based state management.</li>
+          <li>Joined as first employee; handled design, app development, sales, and marketing.</li>
+          <li>Led UI/UX design; created a reusable internal design library to standardize patterns and accelerate delivery.</li>
+          <li>Developed cross-platform consumer-facing e-commerce React Native mobile app.</li>
+          <li>Scouted potential flagship-store locations through field visits and secured permission for one launch site through negotiations with multiple site owners.</li>
+          <li>Story boarded, shot, and edited the flagship-store marketing campaign video end to end.</li>
         </ul>
       </div>
 
@@ -79,12 +97,61 @@
         <div class="job__title">Software Engineer</div>
         <div class="job__stack">Java · Spring Boot · jQuery · Bootstrap · MySQL</div>
         <ul class="job__bullets">
-          <li>Delivered end-to-end web application for finance analysts, reducing manual reporting from 24 hours to 6 hours.</li>
-          <li>Led a team of 6 developers and interfaced directly with clients for requirement gathering.</li>
+          <li>Worked with client CTO and stakeholders to build a custom finance-analyst solution; led 6 engineers from discovery to delivery, reducing reporting time from 24 hrs to 6 hrs.</li>
         </ul>
       </div>
 
     </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div class="resume-section">
+    <h2>Personal Projects</h2>
+
+    <div class="resume-project">
+      <div class="resume-project__header">
+        <span class="resume-project__name"><a href="https://abhijitmohanty.com/second-brain/" target="_blank" rel="noopener">Second Brain</a></span>
+      </div>
+      <p class="resume-project__desc">AI knowledge system that turns saved X/Twitter bookmarks and YouTube videos into a daily newsletter, with Neo4j knowledge graph and RAG chatbot for live Q&amp;A.</p>
+      <div class="resume-project__stack">GPT-5.5/5.4 · Go · Postgres · Neo4j · Exa Search</div>
+      <div class="resume-project__links">
+        <a href="https://abhijitmohanty.com/second-brain/" target="_blank" rel="noopener">Website ↗</a>
+        <a href="https://github.com/mohantyabhijit/second-brain" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="resume-project">
+      <div class="resume-project__header">
+        <span class="resume-project__name"><a href="https://drama-dun.vercel.app/" target="_blank" rel="noopener">DRAMA - Voice AI Council</a></span>
+      </div>
+      <p class="resume-project__desc">Real-time voice AI council that lets users discuss decisions with multiple AI personas, combining live speech, transcription, and persona reasoning.</p>
+      <div class="resume-project__stack">GPT Realtime · GPT-4o Transcribe</div>
+      <div class="resume-project__links">
+        <a href="https://drama-dun.vercel.app/" target="_blank" rel="noopener">Website ↗</a>
+      </div>
+    </div>
+
+    <div class="resume-project">
+      <div class="resume-project__header">
+        <span class="resume-project__name"><a href="http://www.simpledevutils.com" target="_blank" rel="noopener">SimpleDevUtils</a></span>
+      </div>
+      <p class="resume-project__desc">Privacy-first developer toolkit with 9 utilities, including JSON Formatter and JWT Decoder, reaching 120+ monthly active users.</p>
+      <div class="resume-project__links">
+        <a href="http://www.simpledevutils.com" target="_blank" rel="noopener">Website ↗</a>
+        <a href="https://github.com/mohantyabhijit/simpledevutils" target="_blank" rel="noopener">GitHub ↗</a>
+      </div>
+    </div>
+
+    <div class="resume-project">
+      <div class="resume-project__header">
+        <span class="resume-project__name"><a href="https://abhijitmohanty.com/posts/" target="_blank" rel="noopener">abhijitmohanty.com</a></span>
+      </div>
+      <p class="resume-project__desc">Technical blog and portfolio reaching 5.4K monthly unique visitors, used to publish engineering notes, AI projects, and product write-ups.</p>
+      <div class="resume-project__links">
+        <a href="https://abhijitmohanty.com/posts/" target="_blank" rel="noopener">Blog ↗</a>
+      </div>
+    </div>
+
   </div>
 
   <!-- EDUCATION -->
@@ -98,138 +165,11 @@
             <span class="job__company">National University of Singapore</span>
             <span class="job__location">Singapore</span>
           </div>
-          <span class="job__time">2021 – 2022</span>
         </div>
         <div class="job__title">Master of Technology, Software Engineering &nbsp;·&nbsp; CAP 4.41 / 5.00</div>
       </div>
 
     </div>
-  </div>
-
-  <!-- SKILLS -->
-  <div class="resume-section">
-    <h2>Skills</h2>
-    <div class="skillz">
-      <div class="skillz__category">
-        <div class="skillz__category__label">Languages</div>
-        <div class="skillz__category__item">Golang</div>
-        <div class="skillz__category__item">Java</div>
-        <div class="skillz__category__item">JavaScript</div>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Frontend</div>
-        <div class="skillz__category__item">React</div>
-        <div class="skillz__category__item">Redux</div>
-        <div class="skillz__category__item">jQuery · Bootstrap</div>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Cloud</div>
-        <div class="skillz__category__item">AWS (EKS, Redshift)</div>
-        <div class="skillz__category__item">GCP (GKE, BigQuery)</div>
-        <div class="skillz__category__item">Apache Kafka</div>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Databases</div>
-        <div class="skillz__category__item">MySQL · DynamoDB</div>
-        <div class="skillz__category__item">Redshift · BigQuery</div>
-        <div class="skillz__category__item">Snowflake</div>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Backend</div>
-        <div class="skillz__category__item">Spring Boot</div>
-        <div class="skillz__category__item">REST · Hibernate</div>
-        <div class="skillz__category__item">Microservices</div>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">AI / Automation</div>
-        <div class="skillz__category__item">Claude Code · Codex</div>
-        <div class="skillz__category__item">Cursor · MCPs</div>
-        <div class="skillz__category__item">Skills</div>
-      </div>
-      <div class="skillz__category">
-        <div class="skillz__category__label">Tools</div>
-        <div class="skillz__category__item">Git · Docker</div>
-        <div class="skillz__category__item">Maven · Jenkins</div>
-        <div class="skillz__category__item">Kubernetes</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- PROJECTS -->
-  <div class="resume-section">
-    <h2>Projects</h2>
-
-    <div class="resume-project">
-      <div class="resume-project__header">
-        <span class="resume-project__name">Second Brain</span>
-        <span class="resume-project__year">2026</span>
-      </div>
-      <p class="resume-project__desc">Self-hosted personal knowledge app that ingests notes and sources, embeds them with pgvector, and makes them semantically searchable.</p>
-      <ul class="resume-project__bullets">
-        <li>Built end-to-end on self-hosted Postgres and filesystem storage, with edge caching on Cloudflare.</li>
-      </ul>
-      <div class="resume-project__stack">Next.js · Go · Postgres (pgvector) · Cloudflare</div>
-      <div class="resume-project__links">
-        <a href="https://abhijitmohanty.com/second-brain" target="_blank" rel="noopener">Visit ↗</a>
-        <a href="https://github.com/mohantyabhijit/second-brain" target="_blank" rel="noopener">Code ↗</a>
-      </div>
-    </div>
-
-    <div class="resume-project">
-      <div class="resume-project__header">
-        <span class="resume-project__name">Personal ChatGPT</span>
-        <span class="resume-project__year">2024</span>
-      </div>
-      <p class="resume-project__desc">Secure, full-stack personal ChatGPT instance with custom front end and local hosting to bypass commercial limitations.</p>
-      <ul class="resume-project__bullets">
-        <li>Implemented backend and frontend with locally running LLMs.</li>
-      </ul>
-      <div class="resume-project__stack">Ollama · Llama 3.1 · Go · React</div>
-      <div class="resume-project__links">
-        <a href="https://x.com/mohantyabhijit/status/1787160759480291476?s=46" target="_blank" rel="noopener">Demo ↗</a>
-        <a href="https://github.com/mohantyabhijit/mygpt" target="_blank" rel="noopener">Code ↗</a>
-      </div>
-    </div>
-
-    <div class="resume-project">
-      <div class="resume-project__header">
-        <span class="resume-project__name">Centralized Video Gateway</span>
-        <span class="resume-project__year">2022</span>
-      </div>
-      <p class="resume-project__desc">Full-stack web app to onboard and manage IP camera feeds across enterprise zones. Won Best Internship Project among 200+ students at NUS.</p>
-      <ul class="resume-project__bullets">
-        <li>Built low-latency live video gateway managing CCTV feeds at scale, replacing proprietary licensed software and saving $50K+ annually.</li>
-      </ul>
-      <div class="resume-project__stack">React · Java · WebRTC</div>
-      <div class="resume-project__links">
-        <a href="https://docs.google.com/presentation/d/1JQ7QTJnVl2srONV45JFZlyPGCA0x_mxM/mobilepresent?slide=id.p1" target="_blank" rel="noopener">Demo ↗</a>
-      </div>
-    </div>
-
-    <div class="resume-project">
-      <div class="resume-project__header">
-        <span class="resume-project__name">abhijitmohanty.com</span>
-        <span class="resume-project__year">2026</span>
-      </div>
-      <p class="resume-project__desc">This site. A personal blog and portfolio built with Hugo, deployed to production on a DigitalOcean droplet via a two-stage GitHub Actions pipeline with manual approval for production releases.</p>
-      <div class="resume-project__stack">Hugo · GitHub Actions · DigitalOcean · Apache</div>
-      <div class="resume-project__links">
-        <a href="https://abhijitmohanty.com" target="_blank" rel="noopener">Visit ↗</a>
-        <a href="https://github.com/mohantyabhijit/mohantyabhijit.github.io" target="_blank" rel="noopener">Code ↗</a>
-      </div>
-    </div>
-
-    <div class="resume-project">
-      <div class="resume-project__header">
-        <span class="resume-project__name">plugsandsockets.org</span>
-        <span class="resume-project__year"></span>
-      </div>
-      <p class="resume-project__desc">Reference resource for global electrical plug and socket standards — outlet types, voltage, and frequency by country.</p>
-      <div class="resume-project__links">
-        <a href="https://plugsandsockets.org" target="_blank" rel="noopener">Visit ↗</a>
-      </div>
-    </div>
-
   </div>
 
 </section>
