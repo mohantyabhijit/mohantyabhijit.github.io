@@ -12,6 +12,14 @@ A self-hosted personal knowledge app that ingests notes and sources, embeds them
 
 ---
 
+## Spiced Kopi
+
+A Singapore-focused news app that presents stories in a TikTok-style card feed, designed to reduce brainrot while making it easier to stay aware of what is happening.
+
+[Visit →](https://spicedkopi.com/) · [Code →](https://github.com/mohantyabhijit/mango-sg)
+
+---
+
 ## simpledevutils.com
 
 A collection of daily-use utilities for developers — JSON formatters, Base64 converters, password generators, and more.
