@@ -4,6 +4,10 @@ description = "A small corner for naan."
 date = 2026-07-31
 draft = false
 hideMeta = true
+
+[cover]
+image = "/images/naan/butter-naan.jpg"
+hidden = true
 +++
 
 {{< rawhtml >}}
