@@ -240,6 +240,123 @@ body.list {
   border-radius: var(--radius);
 }
 
+/* Naan page */
+.naan-page {
+  margin-top: 10px;
+}
+
+.naan-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 0.86fr) minmax(260px, 0.74fr);
+  align-items: center;
+  gap: clamp(28px, 5vw, 56px);
+  margin: 14px 0 42px;
+}
+
+.naan-kicker {
+  margin: 0 0 12px;
+  color: #9b9487;
+  font-size: 0.82rem;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.post-content .naan-hero h2 {
+  margin: 0 0 18px;
+  color: var(--primary);
+  font-family: "Newsreader", serif;
+  font-size: clamp(2.3rem, 8vw, 4.8rem);
+  font-weight: 500;
+  line-height: 0.98;
+}
+
+.naan-hero-copy p:last-child {
+  max-width: 520px;
+  margin: 0;
+  color: var(--content);
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.naan-hero-photo,
+.naan-gallery figure {
+  margin: 0;
+}
+
+.naan-hero-photo img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.naan-hero-photo figcaption,
+.naan-gallery figcaption,
+.naan-credit {
+  color: #9b9487;
+  font-size: 0.84rem;
+}
+
+.naan-hero-photo figcaption {
+  margin-top: 8px;
+}
+
+.naan-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  margin: 0 0 30px;
+}
+
+.naan-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+}
+
+.naan-gallery figcaption {
+  display: grid;
+  gap: 3px;
+  margin-top: 9px;
+  line-height: 1.45;
+}
+
+.naan-gallery figcaption strong {
+  color: var(--primary);
+  font-size: 0.96rem;
+  font-weight: 650;
+}
+
+.naan-gallery figcaption span {
+  display: block;
+}
+
+.naan-credit {
+  margin: 26px 0 0;
+  line-height: 1.55;
+}
+
+@media (max-width: 760px) {
+  .naan-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .naan-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 420px) {
+  .naan-gallery {
+    grid-template-columns: 1fr;
+  }
+}
+
 .post-content a {
   text-decoration: underline;
   text-decoration-color: #ccc;
