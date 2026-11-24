@@ -1,3 +1,21 @@
+# =============================================================================
+# Cloudflare deployment for abhijitmohanty.com (active pipeline).
+# -----------------------------------------------------------------------------
+# Stage 1: build Hugo → GitHub Pages (staging preview). Unchanged.
+# Stage 2: on manual approval, build Hugo → Cloudflare Pages (production) and
+#          deploy the interactions/counter Worker (Workers + D1) in server-worker/.
+#
+# Required repo secrets:
+#   CLOUDFLARE_API_TOKEN  (Pages:Edit, D1:Edit, Workers Scripts:Edit,
+#                          Workers Routes:Edit)
+#   CLOUDFLARE_ACCOUNT_ID
+#
+# Infra already provisioned: Pages project `abhijitmohanty`, D1 `blog-interactions`
+# (id in server-worker/wrangler.toml), Worker route `abhijitmohanty.com/api/*`.
+# The old rsync/systemd-to-DigitalOcean deploy has been replaced; the droplet is
+# no longer part of the blog's production path.
+# =============================================================================
+
 name: Build and Deploy
 
 on:
@@ -6,20 +24,21 @@ on:
     branches:
       - main
 
-# Sets permissions of the GITHUB_TOKEN for GitHub Pages deployment
+# Permissions for the GitHub Pages staging stage.
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow only one concurrent deployment per environment
+# Allow only one concurrent deployment per environment.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   # ------------------------------------------------------------------
-  # Stage 1: Build Hugo and deploy to GitHub Pages (automatic)
+  # Stage 1: Build Hugo and deploy to GitHub Pages (staging, automatic)
+  # Unchanged from the old pipeline.
   # ------------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
@@ -54,7 +73,9 @@ jobs:
         uses: actions/deploy-pages@v4
 
   # ------------------------------------------------------------------
-  # Stage 2: Deploy to production (requires manual approval)
+  # Stage 2: Deploy the static site to Cloudflare Pages (production)
+  # Gated behind manual approval via the `production` environment,
+  # matching the old behaviour.
   # ------------------------------------------------------------------
   deploy-production:
     runs-on: ubuntu-latest
@@ -62,6 +83,7 @@ jobs:
     if: github.event_name == 'push'
     environment:
       name: production
+      url: https://abhijitmohanty.com/
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -75,48 +97,22 @@ jobs:
       - name: Build site for production
         run: hugo --minify --baseURL "https://abhijitmohanty.com/"
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: "1.23"
-          cache-dependency-path: server/go.sum
+      - name: Deploy to Cloudflare Pages
+        run: npx --yes wrangler@4.166.0 pages deploy public --project-name=abhijitmohanty --branch=main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
-      - name: Build API server
-        run: |
-          cd server
-          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o blog-api .
-
-      - name: Setup SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DO_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p "${{ secrets.DO_PORT }}" "${{ secrets.DO_HOST }}" >> ~/.ssh/known_hosts
-
-      - name: Deploy to DigitalOcean
-        run: |
-          TS=$(date +%Y%m%d%H%M%S)
-          REMOTE_RELEASE="/srv/blog/releases/$TS"
-          SSH="ssh -p ${{ secrets.DO_PORT }} ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}"
-          SCP="scp -P ${{ secrets.DO_PORT }}"
-
-          $SSH "mkdir -p $REMOTE_RELEASE /srv/blog/releases /srv/blog/data"
-
-          rsync -az --delete \
-            -e "ssh -p ${{ secrets.DO_PORT }}" \
-            public/ "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:$REMOTE_RELEASE/"
-
-          $SCP server/blog-api "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/srv/blog/blog-api.new"
-          $SSH "chmod +x /srv/blog/blog-api.new && mv /srv/blog/blog-api.new /srv/blog/blog-api"
-
-          $SSH "ln -sfn $REMOTE_RELEASE /srv/blog/current && ls -1dt /srv/blog/releases/* | tail -n +8 | xargs -r rm -rf"
-
-          $SSH "sudo systemctl restart blog-api" || echo "⚠ Could not restart blog-api service (may need initial setup)"
-
-          echo "✓ Production deployed to /srv/blog/current"
+      - name: Deploy interactions + counter Worker (D1)
+        run: npx --yes wrangler@4.166.0 deploy
+        working-directory: server-worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
   # ------------------------------------------------------------------
-  # Manual production deploy, used when we intentionally skip Pages
+  # Manual production deploy (workflow_dispatch) — used when we
+  # intentionally skip the GitHub Pages stage.
   # ------------------------------------------------------------------
   deploy-production-manual:
     runs-on: ubuntu-latest
@@ -124,6 +120,7 @@ jobs:
     if: github.event_name == 'workflow_dispatch'
     environment:
       name: production
+      url: https://abhijitmohanty.com/
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -137,42 +134,24 @@ jobs:
       - name: Build site for production
         run: hugo --minify --baseURL "https://abhijitmohanty.com/"
 
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: "1.23"
-          cache-dependency-path: server/go.sum
+      - name: Deploy to Cloudflare Pages
+        run: npx --yes wrangler@4.166.0 pages deploy public --project-name=abhijitmohanty --branch=main --commit-dirty=true
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
-      - name: Build API server
-        run: |
-          cd server
-          CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o blog-api .
+      - name: Deploy interactions + counter Worker (D1)
+        run: npx --yes wrangler@4.166.0 deploy
+        working-directory: server-worker
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
 
-      - name: Setup SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.DO_SSH_KEY }}" > ~/.ssh/id_rsa
-          chmod 600 ~/.ssh/id_rsa
-          ssh-keyscan -p "${{ secrets.DO_PORT }}" "${{ secrets.DO_HOST }}" >> ~/.ssh/known_hosts
-
-      - name: Deploy to DigitalOcean
-        run: |
-          TS=$(date +%Y%m%d%H%M%S)
-          REMOTE_RELEASE="/srv/blog/releases/$TS"
-          SSH="ssh -p ${{ secrets.DO_PORT }} ${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}"
-          SCP="scp -P ${{ secrets.DO_PORT }}"
-
-          $SSH "mkdir -p $REMOTE_RELEASE /srv/blog/releases /srv/blog/data"
-
-          rsync -az --delete \
-            -e "ssh -p ${{ secrets.DO_PORT }}" \
-            public/ "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:$REMOTE_RELEASE/"
-
-          $SCP server/blog-api "${{ secrets.DO_USER }}@${{ secrets.DO_HOST }}:/srv/blog/blog-api.new"
-          $SSH "chmod +x /srv/blog/blog-api.new && mv /srv/blog/blog-api.new /srv/blog/blog-api"
-
-          $SSH "ln -sfn $REMOTE_RELEASE /srv/blog/current && ls -1dt /srv/blog/releases/* | tail -n +8 | xargs -r rm -rf"
-
-          $SSH "sudo systemctl restart blog-api" || echo "⚠ Could not restart blog-api service (may need initial setup)"
-
-          echo "✓ Production deployed to /srv/blog/current"
+  # ------------------------------------------------------------------
+  # The /api/interactions (likes + threaded comments) and /api/counter
+  # (view counter) endpoints are served by the Worker in server-worker/,
+  # deployed by the "Deploy interactions + counter Worker (D1)" step above.
+  # Keep the URL paths identical so the inlined front-end JS needs no
+  # change. See server-worker/README.md for D1 creation, schema and data
+  # import. Set database_id in server-worker/wrangler.toml before flipping.
+  # ------------------------------------------------------------------

@@ -34,11 +34,11 @@ Hugo static site (PaperMod theme, vendored in `themes/PaperMod/`) with a Go back
 
 **Two separate systems to be aware of:**
 1. **Hugo site** — everything except `server/`
-2. **Go API server** (`server/main.go`) — SQLite-backed, serves `/api/interactions` (likes + threaded comments). Deployed as a systemd service on the DigitalOcean droplet alongside the static files.
+2. **API Worker** (`server-worker/`) — Cloudflare Worker + D1, serves `/api/interactions` (likes + threaded comments) and `/api/counter` (view counter). Legacy Go `server/main.go` and the Python counter are the originals it replaces; production no longer runs a droplet for these.
 
 **Deployment pipeline (two stages):**
 - Push to `main` → GitHub Actions builds Hugo → auto-deploys to GitHub Pages (staging at `mohantyabhijit.github.io`)
-- Manual approval in GitHub Actions → rsync to DigitalOcean droplet (production at `abhijitmohanty.com`) using timestamped release dirs + `current` symlink for instant rollback
+- Manual approval in GitHub Actions → build Hugo → `wrangler pages deploy` to Cloudflare Pages (production at `abhijitmohanty.com`) **and** `wrangler deploy` the `server-worker/` Worker. Cloudflare Pages keeps every deployment for instant rollback.
 
 ## Conventions
 

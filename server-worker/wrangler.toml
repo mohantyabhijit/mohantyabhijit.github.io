@@ -1,0 +1,22 @@
+name = "blog-api"
+main = "src/index.js"
+compatibility_date = "2026-11-01"
+
+# --- Routing --------------------------------------------------------------
+# Serve /api/* on the live site so the front-end URLs stay identical.
+# A Worker route takes precedence over the Pages custom domain for the paths
+# it matches (Pages still serves everything else).
+#
+# TIP: comment this out, `wrangler deploy`, and test against the generated
+# https://blog-api.<subdomain>.workers.dev URL first; then uncomment and
+# deploy again to attach the live route.
+routes = [
+  { pattern = "abhijitmohanty.com/api/*", zone_name = "abhijitmohanty.com" }
+]
+
+# --- D1 -------------------------------------------------------------------
+# Created with: npx --yes wrangler@4.166.0 d1 create blog-interactions
+[[d1_databases]]
+binding = "DB"
+database_name = "blog-interactions"
+database_id = "a9659c85-52af-40f2-a97a-5e142a4a3513"
